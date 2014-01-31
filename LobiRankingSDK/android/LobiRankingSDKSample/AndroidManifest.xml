@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kayac.lobirankingsdksample"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:name="com.kayac.lobirankingsdksample.application.SampleApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.kayac.lobirankingsdksample.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+    <!-- Lobi Ranking Templete START -->
+    <activity
+        android:name="com.kayac.lobi.ranking.sdk.activity.RankingActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+        >
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="nakamapapp-8550eef2e3eb415389d08689bda44ffb6a827b00" />
+        </intent-filter>
+    </activity>
+    
+    <!-- 広告の効果測定の為に使用します -->
+    <receiver
+        android:name="com.kayac.lobi.ranking.sdk.receiver.PackageAddedReceiver"
+        android:exported="true" >
+        <intent-filter>
+            <action android:name="com.android.vending.INSTALL_REFERRER" />
+        </intent-filter>
+    </receiver>
+    <!-- Lobi Ranking Templete END -->        
+    </application>
+
+</manifest>

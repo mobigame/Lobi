@@ -1,0 +1,2 @@
+iOS版LobiRankingSDKはLobiRecSDKに統合されました
+
