@@ -14,13 +14,16 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 - v5.0.2 - 2014/02/04
-	- 投稿画面のオリエンテーションを修正、動画一覧のメニュー幅を修正
-	[https://github.com/kayac/Lobi/issues/2](https://github.com/kayac/Lobi/issues/2)
-	[https://github.com/kayac/Lobi/issues/3](https://github.com/kayac/Lobi/issues/3)
-	[https://github.com/kayac/Lobi/issues/3](https://github.com/kayac/Lobi/issues/6)
+	- 横画面で動画投稿画面表示時にタイトル等の入力欄やプレビューが表示されないことがある問題を修正  
+    [https://github.com/kayac/Lobi/issues/2](https://github.com/kayac/Lobi/issues/2)
+    - 横画面で Twitter, Facebook の認証が縦画面の幅で表示される問題を修正  
+    [https://github.com/kayac/Lobi/issues/3](https://github.com/kayac/Lobi/issues/3)
+    - 動画リストのメニュー幅が横画面時正しく表示されない問題を修正  
+	[https://github.com/kayac/Lobi/issues/6](https://github.com/kayac/Lobi/issues/6)
+
 - v5.0.1 - 2014/02/04
     - 録画開始時に組み込みアプリのパフォーマンスが一時的に悪くなる問題を修正  
-      [https://github.com/kayac/Lobi/issues/1](https://github.com/kayac/Lobi/issues/1)
+    [https://github.com/kayac/Lobi/issues/1](https://github.com/kayac/Lobi/issues/1)
 
 - v5.0.0 - 2014/01/31
     - リリース
