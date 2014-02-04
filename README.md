@@ -13,6 +13,10 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.0.3 - 2014/02/04
+	- 録画開始時のパフォーマンス修正の影響を収束させるため、録音の初期化を同期処理に戻す。
+	[https://github.com/kayac/Lobi/issues/1](https://github.com/kayac/Lobi/issues/1)  
+
 - v5.0.2 - 2014/02/04
 	- 横画面で動画投稿画面表示時にタイトル等の入力欄やプレビューが表示されないことがある問題を修正  
     [https://github.com/kayac/Lobi/issues/2](https://github.com/kayac/Lobi/issues/2)
