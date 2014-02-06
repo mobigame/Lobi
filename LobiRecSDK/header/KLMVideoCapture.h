@@ -37,9 +37,19 @@ extern NSString *const KLMDryingUpInStorageNotification;
 extern NSString *const KLMMovieCreatedNotification;
 
 /**
+ *  ゲーム録画情報をサーバにPOST中エラーが発生した際に、userInfoにnilを格納して通知する通知名称です。
+ */
+extern NSString *const KLMMovieCreatedErrorNotification;
+
+/**
  *  ゲーム録画ファイルをサーバにPOSTした際に、userInfoにnilを格納して通知する通知名称です。
  */
 extern NSString *const KLMMovieUploadedNotification;
+
+/**
+ *  ゲーム録画ファイルをサーバにPOSTエラーが発生した際に、userInfoにnilを格納して通知する通知名称です。
+ */
+extern NSString *const KLMMovieUploadedErrorNotification;
 
 /**
  *  動画ポストviewControllerを閉じた時に、userInfoに動画のポスト処理の有無を格納して通知する通知名称です。
@@ -58,9 +68,15 @@ extern NSString *const KLMDismissingPostVideoViewControllerNotification;
 
   - KLMMovieCreatedNotification
   ゲーム録画情報をサーバにPOSTした際に、userInfoに"url"をキーとしたhttp://play.lobi.coのプレビューURLを格納して通知する通知名称です。
- 
+
+  - KLMMovieCreatedErrorNotification
+  ゲーム録画情報をサーバにPOST中エラーが発生した際に、userInfoにnilを格納して通知する通知名称です。
+
   - KLMMovieUploadedNotification
   ゲーム録画ファイルをサーバにPOSTした際に、userInfoにnilを格納して通知する通知名称です。
+ 
+  - KLMMovieUploadedErrorNotification;
+  ゲーム録画ファイルをサーバにPOSTエラーが発生した際に、userInfoにnilを格納して通知する通知名称です。
  */
 @interface KLMVideoCapture : NSObject
 

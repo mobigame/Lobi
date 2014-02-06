@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		494F70071893821E00E82F03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70061893821E00E82F03 /* Foundation.framework */; };
+		494F70091893821E00E82F03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70081893821E00E82F03 /* CoreGraphics.framework */; };
+		494F700B1893821E00E82F03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F700A1893821E00E82F03 /* UIKit.framework */; };
+		494F700D1893821E00E82F03 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F700C1893821E00E82F03 /* GLKit.framework */; };
+		494F700F1893821E00E82F03 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F700E1893821E00E82F03 /* OpenGLES.framework */; };
+		494F70151893821E00E82F03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 494F70131893821E00E82F03 /* InfoPlist.strings */; };
+		494F70171893821E00E82F03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F70161893821E00E82F03 /* main.m */; };
+		494F701B1893821E00E82F03 /* RRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F701A1893821E00E82F03 /* RRAppDelegate.m */; };
+		494F701E1893821E00E82F03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494F701C1893821E00E82F03 /* Main.storyboard */; };
+		494F70201893821E00E82F03 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 494F701F1893821E00E82F03 /* Shader.fsh */; };
+		494F70221893821E00E82F03 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 494F70211893821E00E82F03 /* Shader.vsh */; };
+		494F70251893821E00E82F03 /* RRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F70241893821E00E82F03 /* RRViewController.m */; };
+		494F70271893821E00E82F03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494F70261893821E00E82F03 /* Images.xcassets */; };
+		494F702E1893821F00E82F03 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F702D1893821F00E82F03 /* XCTest.framework */; };
+		494F702F1893821F00E82F03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70061893821E00E82F03 /* Foundation.framework */; };
+		494F70301893821F00E82F03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F700A1893821E00E82F03 /* UIKit.framework */; };
+		494F70381893821F00E82F03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 494F70361893821F00E82F03 /* InfoPlist.strings */; };
+		494F703A1893821F00E82F03 /* GLKitTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F70391893821F00E82F03 /* GLKitTestTests.m */; };
+		494F70771893832700E82F03 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70761893832700E82F03 /* libsqlite3.0.dylib */; };
+		494F70791893833100E82F03 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70781893833100E82F03 /* QuartzCore.framework */; };
+		494F707B1893833500E82F03 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F707A1893833500E82F03 /* StoreKit.framework */; };
+		494F707D1893833900E82F03 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F707C1893833900E82F03 /* CoreVideo.framework */; };
+		494F707F1893833D00E82F03 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F707E1893833D00E82F03 /* CoreMedia.framework */; };
+		494F70811893834200E82F03 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70801893834200E82F03 /* AVFoundation.framework */; };
+		494F70831893834800E82F03 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70821893834800E82F03 /* Security.framework */; };
+		494F70851893834D00E82F03 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70841893834D00E82F03 /* AudioToolbox.framework */; };
+		494F70871893835300E82F03 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70861893835300E82F03 /* MediaPlayer.framework */; };
+		4969BEAB18A3352400277E51 /* libLobiRankingSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4969BE9A18A3352400277E51 /* libLobiRankingSDK.a */; };
+		4969BEAC18A3352400277E51 /* LobiRanking.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4969BE9B18A3352400277E51 /* LobiRanking.bundle */; };
+		496F380618973E7700E2D203 /* EAGLContext+lift.m in Sources */ = {isa = PBXBuildFile; fileRef = 496F380518973E7700E2D203 /* EAGLContext+lift.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		494F70311893821F00E82F03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 494F6FFB1893821E00E82F03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 494F70021893821E00E82F03;
+			remoteInfo = GLKitTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		494F70031893821E00E82F03 /* GLKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		494F70061893821E00E82F03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		494F70081893821E00E82F03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		494F700A1893821E00E82F03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		494F700C1893821E00E82F03 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		494F700E1893821E00E82F03 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		494F70121893821E00E82F03 /* GLKitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLKitTest-Info.plist"; sourceTree = "<group>"; };
+		494F70141893821E00E82F03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		494F70161893821E00E82F03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		494F70181893821E00E82F03 /* GLKitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLKitTest-Prefix.pch"; sourceTree = "<group>"; };
+		494F70191893821E00E82F03 /* RRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRAppDelegate.h; sourceTree = "<group>"; };
+		494F701A1893821E00E82F03 /* RRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRAppDelegate.m; sourceTree = "<group>"; };
+		494F701D1893821E00E82F03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		494F701F1893821E00E82F03 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		494F70211893821E00E82F03 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		494F70231893821E00E82F03 /* RRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRViewController.h; sourceTree = "<group>"; };
+		494F70241893821E00E82F03 /* RRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRViewController.m; sourceTree = "<group>"; };
+		494F70261893821E00E82F03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		494F702C1893821F00E82F03 /* GLKitTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLKitTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		494F702D1893821F00E82F03 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		494F70351893821F00E82F03 /* GLKitTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLKitTestTests-Info.plist"; sourceTree = "<group>"; };
+		494F70371893821F00E82F03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		494F70391893821F00E82F03 /* GLKitTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKitTestTests.m; sourceTree = "<group>"; };
+		494F70761893832700E82F03 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		494F70781893833100E82F03 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		494F707A1893833500E82F03 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		494F707C1893833900E82F03 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		494F707E1893833D00E82F03 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		494F70801893834200E82F03 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		494F70821893834800E82F03 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		494F70841893834D00E82F03 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		494F70861893835300E82F03 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4969BE9018A3352400277E51 /* KLMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMNavigationController.h; sourceTree = "<group>"; };
+		4969BE9118A3352400277E51 /* KLMPlayWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMPlayWebViewController.h; sourceTree = "<group>"; };
+		4969BE9218A3352400277E51 /* KLMPostVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMPostVideoViewController.h; sourceTree = "<group>"; };
+		4969BE9318A3352400277E51 /* KLMVideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMVideoCapture.h; sourceTree = "<group>"; };
+		4969BE9418A3352400277E51 /* KLRAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRAPI.h; sourceTree = "<group>"; };
+		4969BE9518A3352400277E51 /* KLRConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRConfiguration.h; sourceTree = "<group>"; };
+		4969BE9618A3352400277E51 /* KLRRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRRanking.h; sourceTree = "<group>"; };
+		4969BE9718A3352400277E51 /* KLRRankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRRankingViewController.h; sourceTree = "<group>"; };
+		4969BE9818A3352400277E51 /* NakamapRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NakamapRanking.h; sourceTree = "<group>"; };
+		4969BE9A18A3352400277E51 /* libLobiRankingSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLobiRankingSDK.a; sourceTree = "<group>"; };
+		4969BE9B18A3352400277E51 /* LobiRanking.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LobiRanking.bundle; sourceTree = "<group>"; };
+		496F380418973E7700E2D203 /* EAGLContext+lift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EAGLContext+lift.h"; sourceTree = "<group>"; };
+		496F380518973E7700E2D203 /* EAGLContext+lift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EAGLContext+lift.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		494F70001893821E00E82F03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494F70871893835300E82F03 /* MediaPlayer.framework in Frameworks */,
+				494F70851893834D00E82F03 /* AudioToolbox.framework in Frameworks */,
+				494F70831893834800E82F03 /* Security.framework in Frameworks */,
+				494F70811893834200E82F03 /* AVFoundation.framework in Frameworks */,
+				494F707F1893833D00E82F03 /* CoreMedia.framework in Frameworks */,
+				494F707D1893833900E82F03 /* CoreVideo.framework in Frameworks */,
+				494F707B1893833500E82F03 /* StoreKit.framework in Frameworks */,
+				494F70791893833100E82F03 /* QuartzCore.framework in Frameworks */,
+				494F70771893832700E82F03 /* libsqlite3.0.dylib in Frameworks */,
+				494F700F1893821E00E82F03 /* OpenGLES.framework in Frameworks */,
+				494F70091893821E00E82F03 /* CoreGraphics.framework in Frameworks */,
+				494F700B1893821E00E82F03 /* UIKit.framework in Frameworks */,
+				494F700D1893821E00E82F03 /* GLKit.framework in Frameworks */,
+				494F70071893821E00E82F03 /* Foundation.framework in Frameworks */,
+				4969BEAB18A3352400277E51 /* libLobiRankingSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494F70291893821F00E82F03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494F702E1893821F00E82F03 /* XCTest.framework in Frameworks */,
+				494F70301893821F00E82F03 /* UIKit.framework in Frameworks */,
+				494F702F1893821F00E82F03 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		494F6FFA1893821E00E82F03 = {
+			isa = PBXGroup;
+			children = (
+				4969BE7A18A3352400277E51 /* LobiRecSDK */,
+				494F70101893821E00E82F03 /* GLKitTest */,
+				494F70331893821F00E82F03 /* GLKitTestTests */,
+				494F70051893821E00E82F03 /* Frameworks */,
+				494F70041893821E00E82F03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		494F70041893821E00E82F03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				494F70031893821E00E82F03 /* GLKitTest.app */,
+				494F702C1893821F00E82F03 /* GLKitTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		494F70051893821E00E82F03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				494F70861893835300E82F03 /* MediaPlayer.framework */,
+				494F70841893834D00E82F03 /* AudioToolbox.framework */,
+				494F70821893834800E82F03 /* Security.framework */,
+				494F70801893834200E82F03 /* AVFoundation.framework */,
+				494F707E1893833D00E82F03 /* CoreMedia.framework */,
+				494F707C1893833900E82F03 /* CoreVideo.framework */,
+				494F707A1893833500E82F03 /* StoreKit.framework */,
+				494F70781893833100E82F03 /* QuartzCore.framework */,
+				494F70761893832700E82F03 /* libsqlite3.0.dylib */,
+				494F70061893821E00E82F03 /* Foundation.framework */,
+				494F70081893821E00E82F03 /* CoreGraphics.framework */,
+				494F700A1893821E00E82F03 /* UIKit.framework */,
+				494F700C1893821E00E82F03 /* GLKit.framework */,
+				494F700E1893821E00E82F03 /* OpenGLES.framework */,
+				494F702D1893821F00E82F03 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		494F70101893821E00E82F03 /* GLKitTest */ = {
+			isa = PBXGroup;
+			children = (
+				494F70191893821E00E82F03 /* RRAppDelegate.h */,
+				494F701A1893821E00E82F03 /* RRAppDelegate.m */,
+				494F701C1893821E00E82F03 /* Main.storyboard */,
+				494F701F1893821E00E82F03 /* Shader.fsh */,
+				494F70211893821E00E82F03 /* Shader.vsh */,
+				494F70231893821E00E82F03 /* RRViewController.h */,
+				494F70241893821E00E82F03 /* RRViewController.m */,
+				494F70261893821E00E82F03 /* Images.xcassets */,
+				494F70111893821E00E82F03 /* Supporting Files */,
+				496F380418973E7700E2D203 /* EAGLContext+lift.h */,
+				496F380518973E7700E2D203 /* EAGLContext+lift.m */,
+			);
+			path = GLKitTest;
+			sourceTree = "<group>";
+		};
+		494F70111893821E00E82F03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				494F70121893821E00E82F03 /* GLKitTest-Info.plist */,
+				494F70131893821E00E82F03 /* InfoPlist.strings */,
+				494F70161893821E00E82F03 /* main.m */,
+				494F70181893821E00E82F03 /* GLKitTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		494F70331893821F00E82F03 /* GLKitTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				494F70391893821F00E82F03 /* GLKitTestTests.m */,
+				494F70341893821F00E82F03 /* Supporting Files */,
+			);
+			path = GLKitTestTests;
+			sourceTree = "<group>";
+		};
+		494F70341893821F00E82F03 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				494F70351893821F00E82F03 /* GLKitTestTests-Info.plist */,
+				494F70361893821F00E82F03 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4969BE7A18A3352400277E51 /* LobiRecSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4969BE8F18A3352400277E51 /* header */,
+				4969BE9918A3352400277E51 /* lib */,
+				4969BE9B18A3352400277E51 /* LobiRanking.bundle */,
+			);
+			name = LobiRecSDK;
+			path = ../LobiRecSDK;
+			sourceTree = "<group>";
+		};
+		4969BE8F18A3352400277E51 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				4969BE9018A3352400277E51 /* KLMNavigationController.h */,
+				4969BE9118A3352400277E51 /* KLMPlayWebViewController.h */,
+				4969BE9218A3352400277E51 /* KLMPostVideoViewController.h */,
+				4969BE9318A3352400277E51 /* KLMVideoCapture.h */,
+				4969BE9418A3352400277E51 /* KLRAPI.h */,
+				4969BE9518A3352400277E51 /* KLRConfiguration.h */,
+				4969BE9618A3352400277E51 /* KLRRanking.h */,
+				4969BE9718A3352400277E51 /* KLRRankingViewController.h */,
+				4969BE9818A3352400277E51 /* NakamapRanking.h */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		4969BE9918A3352400277E51 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4969BE9A18A3352400277E51 /* libLobiRankingSDK.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		494F70021893821E00E82F03 /* GLKitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 494F703D1893821F00E82F03 /* Build configuration list for PBXNativeTarget "GLKitTest" */;
+			buildPhases = (
+				494F6FFF1893821E00E82F03 /* Sources */,
+				494F70001893821E00E82F03 /* Frameworks */,
+				494F70011893821E00E82F03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLKitTest;
+			productName = GLKitTest;
+			productReference = 494F70031893821E00E82F03 /* GLKitTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		494F702B1893821F00E82F03 /* GLKitTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 494F70401893821F00E82F03 /* Build configuration list for PBXNativeTarget "GLKitTestTests" */;
+			buildPhases = (
+				494F70281893821F00E82F03 /* Sources */,
+				494F70291893821F00E82F03 /* Frameworks */,
+				494F702A1893821F00E82F03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				494F70321893821F00E82F03 /* PBXTargetDependency */,
+			);
+			name = GLKitTestTests;
+			productName = GLKitTestTests;
+			productReference = 494F702C1893821F00E82F03 /* GLKitTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		494F6FFB1893821E00E82F03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "RaftRiders Inc.";
+				TargetAttributes = {
+					494F70021893821E00E82F03 = {
+						DevelopmentTeam = 8H5S2J79M4;
+					};
+					494F702B1893821F00E82F03 = {
+						TestTargetID = 494F70021893821E00E82F03;
+					};
+				};
+			};
+			buildConfigurationList = 494F6FFE1893821E00E82F03 /* Build configuration list for PBXProject "GLKitTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 494F6FFA1893821E00E82F03;
+			productRefGroup = 494F70041893821E00E82F03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				494F70021893821E00E82F03 /* GLKitTest */,
+				494F702B1893821F00E82F03 /* GLKitTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		494F70011893821E00E82F03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494F70221893821E00E82F03 /* Shader.vsh in Resources */,
+				494F70271893821E00E82F03 /* Images.xcassets in Resources */,
+				494F70201893821E00E82F03 /* Shader.fsh in Resources */,
+				494F70151893821E00E82F03 /* InfoPlist.strings in Resources */,
+				494F701E1893821E00E82F03 /* Main.storyboard in Resources */,
+				4969BEAC18A3352400277E51 /* LobiRanking.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494F702A1893821F00E82F03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494F70381893821F00E82F03 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		494F6FFF1893821E00E82F03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494F701B1893821E00E82F03 /* RRAppDelegate.m in Sources */,
+				494F70171893821E00E82F03 /* main.m in Sources */,
+				494F70251893821E00E82F03 /* RRViewController.m in Sources */,
+				496F380618973E7700E2D203 /* EAGLContext+lift.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494F70281893821F00E82F03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494F703A1893821F00E82F03 /* GLKitTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		494F70321893821F00E82F03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 494F70021893821E00E82F03 /* GLKitTest */;
+			targetProxy = 494F70311893821F00E82F03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		494F70131893821E00E82F03 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				494F70141893821E00E82F03 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		494F701C1893821E00E82F03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				494F701D1893821E00E82F03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		494F70361893821F00E82F03 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				494F70371893821F00E82F03 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		494F703B1893821F00E82F03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		494F703C1893821F00E82F03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		494F703E1893821F00E82F03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLKitTest/GLKitTest-Prefix.pch";
+				INFOPLIST_FILE = "GLKitTest/GLKitTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/LobiRankingSDK/lib",
+					"/Users/takahashi-kohei/Desktop/Lobi/LobiRecSDK/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		494F703F1893821F00E82F03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLKitTest/GLKitTest-Prefix.pch";
+				INFOPLIST_FILE = "GLKitTest/GLKitTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/LobiRankingSDK/lib",
+					"/Users/takahashi-kohei/Desktop/Lobi/LobiRecSDK/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		494F70411893821F00E82F03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLKitTest.app/GLKitTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLKitTest/GLKitTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GLKitTestTests/GLKitTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		494F70421893821F00E82F03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GLKitTest.app/GLKitTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLKitTest/GLKitTest-Prefix.pch";
+				INFOPLIST_FILE = "GLKitTestTests/GLKitTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		494F6FFE1893821E00E82F03 /* Build configuration list for PBXProject "GLKitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494F703B1893821F00E82F03 /* Debug */,
+				494F703C1893821F00E82F03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		494F703D1893821F00E82F03 /* Build configuration list for PBXNativeTarget "GLKitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494F703E1893821F00E82F03 /* Debug */,
+				494F703F1893821F00E82F03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		494F70401893821F00E82F03 /* Build configuration list for PBXNativeTarget "GLKitTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494F70411893821F00E82F03 /* Debug */,
+				494F70421893821F00E82F03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 494F6FFB1893821E00E82F03 /* Project object */;
+}
