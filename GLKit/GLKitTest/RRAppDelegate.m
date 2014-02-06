@@ -14,7 +14,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [KLRConfiguration currentConfiguration].clientID = @"337c32eca5c4014d66e527c1bdb64ff4649e2907";
+    [KLRConfiguration currentConfiguration].clientID = @"8550eef2e3eb415389d08689bda44ffb6a827b00";
     [KLRConfiguration currentConfiguration].accountBaseName = @"account base name";
     return YES;
 }
