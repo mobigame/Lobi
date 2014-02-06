@@ -13,6 +13,15 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.0.4 - 2014/02/06
+	- GLKit サンプルを追加
+	- 横画面の投稿画面UIを改善  
+	[https://github.com/kayac/Lobi/issues/11](https://github.com/kayac/Lobi/issues/11)  
+	- 投稿画面でのSNS投稿UIを改善  
+	[https://github.com/kayac/Lobi/issues/12](https://github.com/kayac/Lobi/issues/12)  
+	- 投稿失敗時のステータスを通知するように修正  
+	[https://github.com/kayac/Lobi/issues/13](https://github.com/kayac/Lobi/issues/13)  
+	
 - v5.0.3 - 2014/02/04
 	- 録画開始時のパフォーマンス修正の影響を収束させるため、録音の初期化を同期処理に戻す。
 	[https://github.com/kayac/Lobi/issues/1](https://github.com/kayac/Lobi/issues/1)  
