@@ -22,3 +22,5 @@ DerivedData
 # CocoaPods
 Pods
 
+# for huge file
+libiPhone-lib.a

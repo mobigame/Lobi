@@ -91,7 +91,7 @@
 @end
 
 // 投稿開始
-@interface KLMMovieCreateObserver : NSObject
+@interface KLMMovieCreatedObserver : NSObject
 @property (nonatomic, copy) NSString *gameObjectName;
 @property (nonatomic, copy) NSString *callbackMethodName;
 
@@ -102,7 +102,7 @@
 
 @end
 
-@implementation KLMMovieCreateObserver
+@implementation KLMMovieCreatedObserver
 
 - (void)dealloc{
     self.gameObjectName = nil;
@@ -135,9 +135,9 @@
 
 + (void)register:(NSString*)gameObjectName callbackMethod:(NSString*)callbackMethodName
 {
-    [KLMMovieCreateObserver unregister];
-    [KLMMovieCreateObserver sharedInstance].gameObjectName = gameObjectName;
-    [KLMMovieCreateObserver sharedInstance].callbackMethodName = callbackMethodName;
+    [KLMMovieCreatedObserver unregister];
+    [KLMMovieCreatedObserver sharedInstance].gameObjectName = gameObjectName;
+    [KLMMovieCreatedObserver sharedInstance].callbackMethodName = callbackMethodName;
     [[NSNotificationCenter defaultCenter] addObserver:[self.class sharedInstance]
                                              selector:@selector(notify)
                                                  name:KLMMovieCreatedNotification
@@ -146,8 +146,71 @@
 
 + (void)unregister
 {
-    [KLMMovieCreateObserver sharedInstance].gameObjectName = nil;
-    [KLMMovieCreateObserver sharedInstance].callbackMethodName = nil;
+    [KLMMovieCreatedObserver sharedInstance].gameObjectName = nil;
+    [KLMMovieCreatedObserver sharedInstance].callbackMethodName = nil;
+    [[NSNotificationCenter defaultCenter] removeObserver:[self.class sharedInstance]];
+}
+
+@end
+
+// 投稿失敗
+@interface KLMMovieCreatedErrorObserver : NSObject
+@property (nonatomic, copy) NSString *gameObjectName;
+@property (nonatomic, copy) NSString *callbackMethodName;
+
++ (instancetype) sharedInstance;
++ (void)register:(NSString*)gameObjectName callbackMethod:(NSString*)callbackMethodName;
++ (void)unregister;
+- (void)notify;
+
+@end
+
+@implementation KLMMovieCreatedErrorObserver
+
+- (void)dealloc{
+    self.gameObjectName = nil;
+    self.callbackMethodName = nil;
+    [super dealloc];
+}
+
+- (void)notify;
+{
+    NSString *gameObjectName = [[self.gameObjectName copy] autorelease];
+    NSString *callbackMethodName = [[self.callbackMethodName copy] autorelease];
+    
+    if(gameObjectName != nil && [gameObjectName length] != 0 &&
+       callbackMethodName != nil && [callbackMethodName length] != 0){
+        UnitySendMessage([gameObjectName cStringUsingEncoding:NSUTF8StringEncoding],
+                         [callbackMethodName cStringUsingEncoding:NSUTF8StringEncoding],
+                         [@"" cStringUsingEncoding:NSUTF8StringEncoding]);
+    }
+}
+
++ (instancetype) sharedInstance
+{
+    static id sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[self.class alloc] init];
+    });
+    return sharedInstance;
+}
+
++ (void)register:(NSString*)gameObjectName callbackMethod:(NSString*)callbackMethodName
+{
+    [KLMMovieCreatedErrorObserver unregister];
+    [KLMMovieCreatedErrorObserver sharedInstance].gameObjectName = gameObjectName;
+    [KLMMovieCreatedErrorObserver sharedInstance].callbackMethodName = callbackMethodName;
+    [[NSNotificationCenter defaultCenter] addObserver:[self.class sharedInstance]
+                                             selector:@selector(notify)
+                                                 name:KLMMovieCreatedErrorNotification
+                                               object:nil];
+}
+
++ (void)unregister
+{
+    [KLMMovieCreatedErrorObserver sharedInstance].gameObjectName = nil;
+    [KLMMovieCreatedErrorObserver sharedInstance].callbackMethodName = nil;
     [[NSNotificationCenter defaultCenter] removeObserver:[self.class sharedInstance]];
 }
 
@@ -211,6 +274,69 @@
 {
     [KLMMovieUploadedObserver sharedInstance].gameObjectName = nil;
     [KLMMovieUploadedObserver sharedInstance].callbackMethodName = nil;
+    [[NSNotificationCenter defaultCenter] removeObserver:[self.class sharedInstance]];
+}
+
+@end
+
+// 投稿失敗
+@interface KLMMovieUploadedErrorObserver : NSObject
+@property (nonatomic, copy) NSString *gameObjectName;
+@property (nonatomic, copy) NSString *callbackMethodName;
+
++ (instancetype) sharedInstance;
++ (void)register:(NSString*)gameObjectName callbackMethod:(NSString*)callbackMethodName;
++ (void)unregister;
+- (void)notify;
+
+@end
+
+@implementation KLMMovieUploadedErrorObserver
+
+- (void)dealloc{
+    self.gameObjectName = nil;
+    self.callbackMethodName = nil;
+    [super dealloc];
+}
+
+- (void)notify;
+{
+    NSString *gameObjectName = [[self.gameObjectName copy] autorelease];
+    NSString *callbackMethodName = [[self.callbackMethodName copy] autorelease];
+    
+    if(gameObjectName != nil && [gameObjectName length] != 0 &&
+       callbackMethodName != nil && [callbackMethodName length] != 0){
+        UnitySendMessage([gameObjectName cStringUsingEncoding:NSUTF8StringEncoding],
+                         [callbackMethodName cStringUsingEncoding:NSUTF8StringEncoding],
+                         [@"" cStringUsingEncoding:NSUTF8StringEncoding]);
+    }
+}
+
++ (instancetype) sharedInstance
+{
+    static id sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[self.class alloc] init];
+    });
+    return sharedInstance;
+}
+
++ (void)register:(NSString*)gameObjectName callbackMethod:(NSString*)callbackMethodName
+{
+    [KLMMovieUploadedErrorObserver unregister];
+    [KLMMovieUploadedErrorObserver sharedInstance].gameObjectName = gameObjectName;
+    [KLMMovieUploadedErrorObserver sharedInstance].callbackMethodName = callbackMethodName;
+    [[NSNotificationCenter defaultCenter] addObserver:[self.class sharedInstance]
+                                             selector:@selector(notify)
+                                                 name:KLMMovieUploadedErrorNotification
+                                               object:nil];
+}
+
++ (void)unregister
+{
+    [KLMMovieUploadedErrorObserver sharedInstance].gameObjectName = nil;
+    [KLMMovieUploadedErrorObserver sharedInstance].callbackMethodName = nil;
     [[NSNotificationCenter defaultCenter] removeObserver:[self.class sharedInstance]];
 }
 
@@ -578,6 +704,14 @@ int KLM_is_prevent_spoiler_(){
     return [KLMVideoCapture sharedInstance].preventSpoiler ? 1 : 0;
 }
 
+void KLM_hide_face_on_preview_(int enable){
+    [KLMVideoCapture sharedInstance].hideFaceOnPreview = (enable != 0);
+}
+
+int KLM_is_hide_face_on_preview_(){
+    return [KLMVideoCapture sharedInstance].hideFaceOnPreview ? 1 : 0;
+}
+
 void KLM_set_capture_per_frame_(int frame){
     [KLMVideoCapture sharedInstance].capturePerFrame = frame;
 }
@@ -656,12 +790,29 @@ void KLM_register_movie_created_observer_(const char *game_object_name, int game
     NSString *callbackMethodName = [[[NSString alloc] initWithBytes:callback_method_name
                                                              length:callback_method_name_len
                                                            encoding:NSUTF8StringEncoding] autorelease];
-    [KLMMovieCreateObserver register:gameObjectName callbackMethod:callbackMethodName];
+    [KLMMovieCreatedObserver register:gameObjectName callbackMethod:callbackMethodName];
 }
 
 void KLM_unregister_movie_created_observer_()
 {
-    [KLMMovieCreateObserver unregister];
+    [KLMMovieCreatedObserver unregister];
+}
+
+void KLM_register_movie_created_error_observer_(const char *game_object_name, int game_object_name_len,
+                                                const char *callback_method_name, int callback_method_name_len)
+{
+    NSString *gameObjectName = [[[NSString alloc] initWithBytes:game_object_name
+                                                         length:game_object_name_len
+                                                       encoding:NSUTF8StringEncoding] autorelease];
+    NSString *callbackMethodName = [[[NSString alloc] initWithBytes:callback_method_name
+                                                             length:callback_method_name_len
+                                                           encoding:NSUTF8StringEncoding] autorelease];
+    [KLMMovieCreatedErrorObserver register:gameObjectName callbackMethod:callbackMethodName];
+}
+
+void KLM_unregister_movie_created_error_observer_()
+{
+    [KLMMovieCreatedErrorObserver unregister];
 }
 
 void KLM_register_movie_uploaded_observer_(const char *game_object_name, int game_object_name_len,
@@ -679,6 +830,23 @@ void KLM_register_movie_uploaded_observer_(const char *game_object_name, int gam
 void KLM_unregister_movie_uploaded_observer_()
 {
     [KLMMovieUploadedObserver unregister];
+}
+
+void KLM_register_movie_uploaded_error_observer_(const char *game_object_name, int game_object_name_len,
+                                                 const char *callback_method_name, int callback_method_name_len)
+{
+    NSString *gameObjectName = [[[NSString alloc] initWithBytes:game_object_name
+                                                         length:game_object_name_len
+                                                       encoding:NSUTF8StringEncoding] autorelease];
+    NSString *callbackMethodName = [[[NSString alloc] initWithBytes:callback_method_name
+                                                             length:callback_method_name_len
+                                                           encoding:NSUTF8StringEncoding] autorelease];
+    [KLMMovieUploadedErrorObserver register:gameObjectName callbackMethod:callbackMethodName];
+}
+
+void KLM_unregister_movie_uploaded_error_observer_()
+{
+    [KLMMovieUploadedErrorObserver unregister];
 }
 
 void KLM_register_dismissing_post_video_view_controller_observer_(const char *game_object_name, int game_object_name_len,

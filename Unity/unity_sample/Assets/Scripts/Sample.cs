@@ -50,7 +50,7 @@ public class Sample : MonoBehaviour {
 				LobiRec.StartCapturing();
 			}
 			if (GUI.Button(new Rect(0, 150, 200, 50), "Share")){
-				LobiRec.OpenPostVideo("sample title", "sample description", 123, 456);
+				LobiRec.OpenPostVideo("sample title", "sample description", 123, 0);
 			}
 			if (GUI.Button(new Rect(0, 250, 200, 50), "Web")){
 				LobiRec.OpenPlayVideo();
