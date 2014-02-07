@@ -1,14 +1,17 @@
 Lobi
 ====
 
-SDKを使用するにはアプリケーションの登録しクライアントIDを発行する必要があります。  
-アプリケーションの登録は[https://developer.lobi.co/myapps](https://developer.lobi.co/myapps)から行ってください。
-
 ダウンロード
 ------------
 
-以下にからバージョン毎のファイル一式が取得できます。
+バージョン毎のファイル一式が取得できます。  
 [https://github.com/kayac/Lobi/releases](https://github.com/kayac/Lobi/releases)
+
+登録
+----
+
+SDKを使用するにはアプリケーションの登録しクライアントIDを発行する必要があります。  
+アプリケーションの登録は[https://developer.lobi.co/myapps](https://developer.lobi.co/myapps)から行ってください。
 
 ドキュメント
 -----------
