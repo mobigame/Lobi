@@ -414,7 +414,39 @@ namespace Kayac.Lobi
 			#endif
 			return enable;
 		}
+
+		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+		[DllImport("__Internal")]
+		private static extern void KLM_hide_face_on_preview_(int enable);
+		#endif
 		
+		public static void HideFaceOnPreview(bool enable){
+			#if UNITY_ANDROID
+			Debug.Log("not supported yet");
+			#endif
+			
+			#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+			KLM_hide_face_on_preview_(enable ? 1 : 0);
+			#endif
+		}
+		
+		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+		[DllImport("__Internal")]
+		private static extern int KLM_is_hide_face_on_preview_();
+		#endif
+		
+		public static bool IsHideFaceOnPreview(){
+			bool enable = false;
+			#if UNITY_ANDROID
+			Debug.Log("not supported yet");
+			#endif
+			
+			#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+			enable = KLM_is_hide_face_on_preview_() != 0;
+			#endif
+			return enable;
+		}
+
 		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
 		[DllImport("__Internal")]
 		private static extern void KLM_set_capture_per_frame_(int frame);
@@ -599,7 +631,41 @@ namespace Kayac.Lobi
 			KLM_unregister_movie_created_observer_();
 			#endif
 		}
+
+		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+		[DllImport("__Internal")]
+		private static extern void KLM_register_movie_created_error_observer_(byte[] game_object_name, int game_object_name_len,
+		                                                                      byte[] callback_method_name, int callback_method_name_len);
+		#endif
+
+		public static void RegisterMovieCreatedErrorObserver(string game_object_name, string callback_method_name){
+			#if UNITY_ANDROID
+			Debug.Log("not supported yet");
+			#endif
+			
+			#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+			byte[] GameObjectName = System.Text.Encoding.UTF8.GetBytes(game_object_name);
+			byte[] CallbackMethodName = System.Text.Encoding.UTF8.GetBytes(callback_method_name);
+			KLM_register_movie_created_error_observer_(GameObjectName, GameObjectName.Length,
+			                                           CallbackMethodName, CallbackMethodName.Length);
+			#endif
+		}
 		
+		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+		[DllImport("__Internal")]
+		private static extern void KLM_unregister_movie_created_error_observer_();
+		#endif
+		
+		public static void UnregisterMovieCreatedErrorObserver(){
+			#if UNITY_ANDROID
+			Debug.Log("not supported yet");
+			#endif
+			
+			#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+			KLM_unregister_movie_created_error_observer_();
+			#endif
+		}
+
 		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
 		[DllImport("__Internal")]
 		private static extern void KLM_register_movie_uploaded_observer_(byte[] game_object_name, int game_object_name_len,
@@ -633,7 +699,41 @@ namespace Kayac.Lobi
 			KLM_unregister_movie_uploaded_observer_();
 			#endif
 		}
+
+		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+		[DllImport("__Internal")]
+		private static extern void KLM_register_movie_uploaded_error_observer_(byte[] game_object_name, int game_object_name_len,
+		                                                                       byte[] callback_method_name, int callback_method_name_len);
+		#endif
 		
+		public static void RegisterMovieUploadedErrorObserver(string game_object_name, string callback_method_name){
+			#if UNITY_ANDROID
+			Debug.Log("not supported yet");
+			#endif
+			
+			#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+			byte[] GameObjectName = System.Text.Encoding.UTF8.GetBytes(game_object_name);
+			byte[] CallbackMethodName = System.Text.Encoding.UTF8.GetBytes(callback_method_name);
+			KLM_register_movie_uploaded_error_observer_(GameObjectName, GameObjectName.Length,
+			                                            CallbackMethodName, CallbackMethodName.Length);
+			#endif
+		}
+		
+		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+		[DllImport("__Internal")]
+		private static extern void KLM_unregister_movie_uploaded_error_observer_();
+		#endif
+		
+		public static void UnregisterMovieUploadedErrorObserver(){
+			#if UNITY_ANDROID
+			Debug.Log("not supported yet");
+			#endif
+			
+			#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+			KLM_unregister_movie_uploaded_error_observer_();
+			#endif
+		}
+
 		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
 		[DllImport("__Internal")]
 		private static extern void KLM_register_dismissing_post_video_view_controller_observer_(byte[] game_object_name, int game_object_name_len,

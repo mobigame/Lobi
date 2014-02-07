@@ -41,6 +41,8 @@ extern "C"
 	void	KLM_is_mic_enable_();
 	void	KLM_prevent_spoiler_();
 	void	KLM_is_prevent_spoiler_();
+	void	KLM_hide_face_on_preview_();
+	void	KLM_is_hide_face_on_preview_();
 	void	KLM_set_capture_per_frame_();
 	void	KLM_get_capture_per_frame_();
 	void	KLM_start_capturing_();
@@ -52,8 +54,12 @@ extern "C"
 	void	KLM_unregister_drying_up_in_storage_observer_();
 	void	KLM_register_movie_created_observer_();
 	void	KLM_unregister_movie_created_observer_();
+	void	KLM_register_movie_created_error_observer_();
+	void	KLM_unregister_movie_created_error_observer_();
 	void	KLM_register_movie_uploaded_observer_();
 	void	KLM_unregister_movie_uploaded_observer_();
+	void	KLM_register_movie_uploaded_error_observer_();
+	void	KLM_unregister_movie_uploaded_error_observer_();
 	void	KLM_register_dismissing_post_video_view_controller_observer_();
 	void	KLM_unregister_dismissing_post_video_view_controller_observer_();
 	void	KLM_util_clear_user_();
@@ -93,6 +99,8 @@ void RegisterMonoModules()
 	mono_dl_register_symbol("KLM_is_mic_enable_", (void*)&KLM_is_mic_enable_);
 	mono_dl_register_symbol("KLM_prevent_spoiler_", (void*)&KLM_prevent_spoiler_);
 	mono_dl_register_symbol("KLM_is_prevent_spoiler_", (void*)&KLM_is_prevent_spoiler_);
+	mono_dl_register_symbol("KLM_hide_face_on_preview_", (void*)&KLM_hide_face_on_preview_);
+	mono_dl_register_symbol("KLM_is_hide_face_on_preview_", (void*)&KLM_is_hide_face_on_preview_);
 	mono_dl_register_symbol("KLM_set_capture_per_frame_", (void*)&KLM_set_capture_per_frame_);
 	mono_dl_register_symbol("KLM_get_capture_per_frame_", (void*)&KLM_get_capture_per_frame_);
 	mono_dl_register_symbol("KLM_start_capturing_", (void*)&KLM_start_capturing_);
@@ -104,8 +112,12 @@ void RegisterMonoModules()
 	mono_dl_register_symbol("KLM_unregister_drying_up_in_storage_observer_", (void*)&KLM_unregister_drying_up_in_storage_observer_);
 	mono_dl_register_symbol("KLM_register_movie_created_observer_", (void*)&KLM_register_movie_created_observer_);
 	mono_dl_register_symbol("KLM_unregister_movie_created_observer_", (void*)&KLM_unregister_movie_created_observer_);
+	mono_dl_register_symbol("KLM_register_movie_created_error_observer_", (void*)&KLM_register_movie_created_error_observer_);
+	mono_dl_register_symbol("KLM_unregister_movie_created_error_observer_", (void*)&KLM_unregister_movie_created_error_observer_);
 	mono_dl_register_symbol("KLM_register_movie_uploaded_observer_", (void*)&KLM_register_movie_uploaded_observer_);
 	mono_dl_register_symbol("KLM_unregister_movie_uploaded_observer_", (void*)&KLM_unregister_movie_uploaded_observer_);
+	mono_dl_register_symbol("KLM_register_movie_uploaded_error_observer_", (void*)&KLM_register_movie_uploaded_error_observer_);
+	mono_dl_register_symbol("KLM_unregister_movie_uploaded_error_observer_", (void*)&KLM_unregister_movie_uploaded_error_observer_);
 	mono_dl_register_symbol("KLM_register_dismissing_post_video_view_controller_observer_", (void*)&KLM_register_dismissing_post_video_view_controller_observer_);
 	mono_dl_register_symbol("KLM_unregister_dismissing_post_video_view_controller_observer_", (void*)&KLM_unregister_dismissing_post_video_view_controller_observer_);
 	mono_dl_register_symbol("KLM_util_clear_user_", (void*)&KLM_util_clear_user_);
