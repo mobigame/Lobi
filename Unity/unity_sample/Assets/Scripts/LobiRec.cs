@@ -514,10 +514,10 @@ namespace Kayac.Lobi
 		private static extern void KLM_open_post_video_(byte[] title, int title_len,
 		                                                byte[] description, int description_len,
 		                                                System.Int64 score,
-		                                                System.Int64 rankingId);
+		                                                System.Int64 category);
 		#endif
 		
-		public static void OpenPostVideo(string title, string description, System.Int64 score, System.Int64 rankingId){
+		public static void OpenPostVideo(string title, string description, System.Int64 score, System.Int64 category){
 			#if UNITY_ANDROID
 			Debug.Log("not supported yet");
 			#endif
@@ -528,7 +528,7 @@ namespace Kayac.Lobi
 			KLM_open_post_video_(Title, Title.Length,
 			                     Description, Description.Length,
 			                     score,
-			                     rankingId);
+			                     category);
 			#endif
 		}
 		

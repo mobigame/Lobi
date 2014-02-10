@@ -731,7 +731,7 @@ void KLM_stop_capturing_(){
 void KLM_open_post_video_(const char *title, int title_len,
                           const char *description, int description_len,
                           int64_t score,
-                          int64_t scoreId)
+                          int64_t category)
 {
     KLMPostVideoViewController *next = [[KLMPostVideoViewController alloc] init];
     NSString *t = [[[NSString alloc] initWithBytes:title length:title_len encoding:NSUTF8StringEncoding] autorelease];
@@ -740,7 +740,7 @@ void KLM_open_post_video_(const char *title, int title_len,
     next.postTitle = t;
     next.postDescriotion = d;
     next.postScore = score;
-    next.rankingId = scoreId;
+    next.postCategory = category;
     
     KLMUINavigationController *navigationController = [[KLMUINavigationController alloc] initWithRootViewController:next];
     

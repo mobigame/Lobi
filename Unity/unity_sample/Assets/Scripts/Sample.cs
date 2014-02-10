@@ -33,8 +33,8 @@ public class Sample : MonoBehaviour {
 	void OnGUI () {
 		if(!isRecoding){
 			if (GUI.Button(new Rect(0, 50, 200, 50), "Capture")){
-				restTime   = 10.0f;
 				isRecoding = true;
+				restTime   = 10.0f;
 
 				LobiRec.MicEnable(true);
 				LobiRec.SetMicVolume(1.0f);

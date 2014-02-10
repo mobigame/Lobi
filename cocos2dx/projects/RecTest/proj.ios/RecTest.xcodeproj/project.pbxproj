@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CD1A46018A863FD008F5D04 /* libLobiRecSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD1A44F18A863FD008F5D04 /* libLobiRecSDK.a */; };
+		0CD1A46118A863FD008F5D04 /* LobiRec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0CD1A45018A863FD008F5D04 /* LobiRec.bundle */; };
 		15A3D8FF1682F7D5002FB0C5 /* b2BroadPhase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A3D88B1682F7D5002FB0C5 /* b2BroadPhase.cpp */; };
 		15A3D9001682F7D5002FB0C5 /* b2CollideCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A3D88D1682F7D5002FB0C5 /* b2CollideCircle.cpp */; };
 		15A3D9011682F7D5002FB0C5 /* b2CollideEdge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A3D88E1682F7D5002FB0C5 /* b2CollideEdge.cpp */; };
@@ -233,8 +235,6 @@
 		49446B2518975CB00099BD8B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49446B2418975CB00099BD8B /* libsqlite3.0.dylib */; };
 		49446D33189781890099BD8B /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49446D32189781890099BD8B /* libcurl.a */; };
 		4956CAA81897B5FC005C0BF8 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 4956CAA71897B5FC005C0BF8 /* star.png */; };
-		4994448B189B34950071FEED /* libLobiRankingSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4994447A189B34950071FEED /* libLobiRankingSDK.a */; };
-		4994448C189B34960071FEED /* LobiRanking.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4994447B189B34950071FEED /* LobiRanking.bundle */; };
 		49A2CD6A189A457200BC1215 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A2CD69189A457200BC1215 /* libwebsockets.a */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
@@ -270,6 +270,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CD1A44518A863FD008F5D04 /* KLMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMNavigationController.h; sourceTree = "<group>"; };
+		0CD1A44618A863FD008F5D04 /* KLMPlayWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMPlayWebViewController.h; sourceTree = "<group>"; };
+		0CD1A44718A863FD008F5D04 /* KLMPostVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMPostVideoViewController.h; sourceTree = "<group>"; };
+		0CD1A44818A863FD008F5D04 /* KLMVideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMVideoCapture.h; sourceTree = "<group>"; };
+		0CD1A44918A863FD008F5D04 /* KLRAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRAPI.h; sourceTree = "<group>"; };
+		0CD1A44A18A863FD008F5D04 /* KLRConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRConfiguration.h; sourceTree = "<group>"; };
+		0CD1A44B18A863FD008F5D04 /* KLRRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRRanking.h; sourceTree = "<group>"; };
+		0CD1A44C18A863FD008F5D04 /* KLRRankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRRankingViewController.h; sourceTree = "<group>"; };
+		0CD1A44D18A863FD008F5D04 /* NakamapRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NakamapRanking.h; sourceTree = "<group>"; };
+		0CD1A44F18A863FD008F5D04 /* libLobiRecSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLobiRecSDK.a; sourceTree = "<group>"; };
+		0CD1A45018A863FD008F5D04 /* LobiRec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LobiRec.bundle; sourceTree = "<group>"; };
 		15A3D87E1682F7B3002FB0C5 /* cocos2dx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2dx.xcodeproj; path = ../../../cocos2dx/proj.ios/cocos2dx.xcodeproj; sourceTree = "<group>"; };
 		15A3D8891682F7D5002FB0C5 /* Box2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2D.h; sourceTree = "<group>"; };
 		15A3D88B1682F7D5002FB0C5 /* b2BroadPhase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2BroadPhase.cpp; sourceTree = "<group>"; };
@@ -733,17 +744,6 @@
 		49446B2418975CB00099BD8B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		49446D32189781890099BD8B /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		4956CAA71897B5FC005C0BF8 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
-		49944470189B34950071FEED /* KLMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMNavigationController.h; sourceTree = "<group>"; };
-		49944471189B34950071FEED /* KLMPlayWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMPlayWebViewController.h; sourceTree = "<group>"; };
-		49944472189B34950071FEED /* KLMPostVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMPostVideoViewController.h; sourceTree = "<group>"; };
-		49944473189B34950071FEED /* KLMVideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMVideoCapture.h; sourceTree = "<group>"; };
-		49944474189B34950071FEED /* KLRAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRAPI.h; sourceTree = "<group>"; };
-		49944475189B34950071FEED /* KLRConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRConfiguration.h; sourceTree = "<group>"; };
-		49944476189B34950071FEED /* KLRRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRRanking.h; sourceTree = "<group>"; };
-		49944477189B34950071FEED /* KLRRankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRRankingViewController.h; sourceTree = "<group>"; };
-		49944478189B34950071FEED /* NakamapRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NakamapRanking.h; sourceTree = "<group>"; };
-		4994447A189B34950071FEED /* libLobiRankingSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLobiRankingSDK.a; sourceTree = "<group>"; };
-		4994447B189B34950071FEED /* LobiRanking.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LobiRanking.bundle; sourceTree = "<group>"; };
 		49A2CD69189A457200BC1215 /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebsockets.a; sourceTree = "<group>"; };
 		7855E0DF153FEF240059DD9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -770,6 +770,7 @@
 				49446B2518975CB00099BD8B /* libsqlite3.0.dylib in Frameworks */,
 				49446B2318975CA90099BD8B /* MediaPlayer.framework in Frameworks */,
 				49446B2118975CA00099BD8B /* Security.framework in Frameworks */,
+				0CD1A46018A863FD008F5D04 /* libLobiRecSDK.a in Frameworks */,
 				49446B1F18975C970099BD8B /* CoreMedia.framework in Frameworks */,
 				49446B1D18975C910099BD8B /* CoreVideo.framework in Frameworks */,
 				49446B1B18975C8B0099BD8B /* StoreKit.framework in Frameworks */,
@@ -786,7 +787,6 @@
 				D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */,
 				D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */,
 				D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */,
-				4994448B189B34950071FEED /* libLobiRankingSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -806,6 +806,41 @@
 			);
 			name = ios;
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		0CD1A42F18A863FC008F5D04 /* LobiRecSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1A44418A863FD008F5D04 /* header */,
+				0CD1A44E18A863FD008F5D04 /* lib */,
+				0CD1A45018A863FD008F5D04 /* LobiRec.bundle */,
+			);
+			name = LobiRecSDK;
+			path = ../../../../LobiRecSDK;
+			sourceTree = "<group>";
+		};
+		0CD1A44418A863FD008F5D04 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1A44518A863FD008F5D04 /* KLMNavigationController.h */,
+				0CD1A44618A863FD008F5D04 /* KLMPlayWebViewController.h */,
+				0CD1A44718A863FD008F5D04 /* KLMPostVideoViewController.h */,
+				0CD1A44818A863FD008F5D04 /* KLMVideoCapture.h */,
+				0CD1A44918A863FD008F5D04 /* KLRAPI.h */,
+				0CD1A44A18A863FD008F5D04 /* KLRConfiguration.h */,
+				0CD1A44B18A863FD008F5D04 /* KLRRanking.h */,
+				0CD1A44C18A863FD008F5D04 /* KLRRankingViewController.h */,
+				0CD1A44D18A863FD008F5D04 /* NakamapRanking.h */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		0CD1A44E18A863FD008F5D04 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0CD1A44F18A863FD008F5D04 /* libLobiRecSDK.a */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 		15A3D87F1682F7B3002FB0C5 /* Products */ = {
@@ -1398,7 +1433,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				4994445A189B34950071FEED /* LobiRecSDK */,
+				0CD1A42F18A863FC008F5D04 /* LobiRecSDK */,
 				49446AFB18974A1D0099BD8B /* KLRInterface.mm */,
 				49446AFC18974A1D0099BD8B /* KLRInterface.h */,
 				15A3D87E1682F7B3002FB0C5 /* cocos2dx.xcodeproj */,
@@ -1749,41 +1784,6 @@
 			path = CocoStudio;
 			sourceTree = "<group>";
 		};
-		4994445A189B34950071FEED /* LobiRecSDK */ = {
-			isa = PBXGroup;
-			children = (
-				4994446F189B34950071FEED /* header */,
-				49944479189B34950071FEED /* lib */,
-				4994447B189B34950071FEED /* LobiRanking.bundle */,
-			);
-			name = LobiRecSDK;
-			path = ../../../../LobiRecSDK;
-			sourceTree = "<group>";
-		};
-		4994446F189B34950071FEED /* header */ = {
-			isa = PBXGroup;
-			children = (
-				49944470189B34950071FEED /* KLMNavigationController.h */,
-				49944471189B34950071FEED /* KLMPlayWebViewController.h */,
-				49944472189B34950071FEED /* KLMPostVideoViewController.h */,
-				49944473189B34950071FEED /* KLMVideoCapture.h */,
-				49944474189B34950071FEED /* KLRAPI.h */,
-				49944475189B34950071FEED /* KLRConfiguration.h */,
-				49944476189B34950071FEED /* KLRRanking.h */,
-				49944477189B34950071FEED /* KLRRankingViewController.h */,
-				49944478189B34950071FEED /* NakamapRanking.h */,
-			);
-			path = header;
-			sourceTree = "<group>";
-		};
-		49944479189B34950071FEED /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				4994447A189B34950071FEED /* libLobiRankingSDK.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -1873,13 +1873,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7855E0E1153FEF240059DD9A /* Default.png in Resources */,
-				4994448C189B34960071FEED /* LobiRanking.bundle in Resources */,
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
 				4956CAA81897B5FC005C0BF8 /* star.png in Resources */,
+				0CD1A46118A863FD008F5D04 /* LobiRec.bundle in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
@@ -2155,9 +2155,9 @@
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios/libraries\"",
-					"\"$(SRCROOT)/../../../external/libwebsockets/ios/lib\"",
-					"\"$(SRCROOT)/../../../../LobiRecSDK/lib\"",
+					"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios/libraries",
+					"$(SRCROOT)/../../../external/libwebsockets/ios/lib",
+					"$(SRCROOT)/../../../../LobiRecSDK/lib",
 				);
 				OTHER_CFLAGS = "-O2";
 				OTHER_LDFLAGS = "-ObjC";
@@ -2205,9 +2205,9 @@
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios/libraries\"",
-					"\"$(SRCROOT)/../../../external/libwebsockets/ios/lib\"",
-					"\"$(SRCROOT)/../../../../LobiRecSDK/lib\"",
+					"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios/libraries",
+					"$(SRCROOT)/../../../external/libwebsockets/ios/lib",
+					"$(SRCROOT)/../../../../LobiRecSDK/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RecTest;
