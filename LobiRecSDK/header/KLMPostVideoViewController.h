@@ -13,6 +13,6 @@
 @property (nonatomic, copy) NSString *postTitle;
 @property (nonatomic, copy) NSString *postDescriotion;
 @property (nonatomic, assign) int64_t postScore;
-@property (nonatomic, assign) NSInteger rankingId;
+@property (nonatomic, assign) NSInteger postCategory;
 
 @end
