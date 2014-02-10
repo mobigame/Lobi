@@ -21,10 +21,23 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.0.6 - 2014/02/10
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.6.zip)
+	- 動画投稿時のバリデーション不正を修正  
+	[https://github.com/kayac/Lobi/issues/15](https://github.com/kayac/Lobi/issues/15)  
+    - 録画終了時に組み込みアプリのパフォーマンスが一時的に悪くなる。  
+    [https://github.com/kayac/Lobi/issues/5](https://github.com/kayac/Lobi/issues/5)  
+    - ScoreID ではなく Category とする。  
+    [https://github.com/kayac/Lobi/issues/17](https://github.com/kayac/Lobi/issues/17)  
+    - Ranking となっているところを Rec に名称を統一する。  
+    [https://github.com/kayac/Lobi/issues/19](https://github.com/kayac/Lobi/issues/19)  
+    - Lobi/Line 投稿時の文言がわかりにくいので修正する。  
+    [https://github.com/kayac/Lobi/issues/20](https://github.com/kayac/Lobi/issues/20)  
+
 - v5.0.5 - 2014/02/06
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.5.zip)
 	- 動画投稿時のバリデーション不正を修正  
-		[https://github.com/kayac/Lobi/issues/15](https://github.com/kayac/Lobi/issues/15)  
+	[https://github.com/kayac/Lobi/issues/15](https://github.com/kayac/Lobi/issues/15)  
 
 - v5.0.4 - 2014/02/06
 	- GLKit サンプルを追加
