@@ -23,8 +23,6 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 ----------------------------
 - v5.0.6 - 2014/02/10
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.6.zip)
-	- 動画投稿時のバリデーション不正を修正  
-	[https://github.com/kayac/Lobi/issues/15](https://github.com/kayac/Lobi/issues/15)  
     - 録画終了時に組み込みアプリのパフォーマンスが一時的に悪くなる。  
     [https://github.com/kayac/Lobi/issues/5](https://github.com/kayac/Lobi/issues/5)  
     - ScoreID ではなく Category とする。  
