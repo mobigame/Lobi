@@ -21,6 +21,14 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+
+- v5.0.7 - 2014/02/12
+	[ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.7.zip)
+	- SDK 内の動画詳細から動画再生を押下後、動画読み込み中がわかるようにする。  
+	[https://github.com/kayac/Lobi/issues/24](https://github.com/kayac/Lobi/issues/24)  
+	- 動画シェア時にクリップボードに URL がコピーできない。  
+	[https://github.com/kayac/Lobi/issues/25](https://github.com/kayac/Lobi/issues/25)  
+
 - v5.0.6 - 2014/02/10
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.6.zip)
     - 録画終了時に組み込みアプリのパフォーマンスが一時的に悪くなる。  
