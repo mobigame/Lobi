@@ -22,6 +22,13 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.0.8 - 2014/02/13
+	[ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.8.zip)
+	- 動画投稿時にアップロードが完了するまでにしばらく時間がかかることを表示する。  
+	[https://github.com/kayac/Lobi/issues/24](https://github.com/kayac/Lobi/issues/27)  
+	- iPod touch 第五世代で音が正しく扱えない  
+	[https://github.com/kayac/Lobi/issues/25](https://github.com/kayac/Lobi/issues/28)  
+
 - v5.0.7 - 2014/02/12
 	[ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.7.zip)
 	- SDK 内の動画詳細から動画再生を押下後、動画読み込み中がわかるようにする。  
