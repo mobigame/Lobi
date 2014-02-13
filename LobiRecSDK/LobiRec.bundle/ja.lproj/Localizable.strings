@@ -31,3 +31,5 @@
 "KLR_ALERT_MESSAGE_COPY_URL" = "動画を投稿してURLをコピーします";
 "KLR_ALERT_MESSAGE_SHARE_TWITTER" = "Twitterに投稿します";
 "KLR_ALERT_MESSAGE_SHARE_FACEBOOK" = "Facebookに投稿します";
+"KLR_ALERT_MESSAGE_MOVIE_POSTED" = "動画を投稿しました。";
+"KLR_ALERT_MESSAGE_MOVIE_SHARED" = "SNSへの反映はしばらくお待ちください。";

@@ -31,3 +31,5 @@
 "KLR_ALERT_MESSAGE_COPY_URL" = "Post Movie and Copy URL";
 "KLR_ALERT_MESSAGE_SHARE_TWITTER" = "Share to Twitter";
 "KLR_ALERT_MESSAGE_SHARE_FACEBOOK" = "Share to Facebook";
+"KLR_ALERT_MESSAGE_MOVIE_POSTED" = "Movie posted.";
+"KLR_ALERT_MESSAGE_MOVIE_SHARED" = "Please wait a minute for SNS posts";
