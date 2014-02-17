@@ -4,7 +4,7 @@ Lobi
 ダウンロード
 ------------
 
-バージョン毎のファイル一式が取得できます。  
+バージョン毎のSDK及びサンプルコードがパッケージされたものが取得できます。  
 [https://github.com/kayac/Lobi/releases](https://github.com/kayac/Lobi/releases)
 
 登録
