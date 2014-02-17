@@ -21,6 +21,12 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.0.9 - 2014/02/17
+	[ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.9.zip)
+	- 動画投稿後のポップアップを非表示にするフラグを追加する
+	[https://github.com/kayac/Lobi/issues/33](https://github.com/kayac/Lobi/issues/33)  
+	- 同じ動画を複数回上げることができてしまう。
+	[https://github.com/kayac/Lobi/issues/32](https://github.com/kayac/Lobi/issues/32)  
 
 - v5.0.8 - 2014/02/13
 	[ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.8.zip)
