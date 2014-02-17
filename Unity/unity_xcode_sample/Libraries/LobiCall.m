@@ -728,10 +728,12 @@ void KLM_stop_capturing_(){
     [[KLMVideoCapture sharedInstance] stopCapturing];
 }
 
-void KLM_open_post_video_(const char *title, int title_len,
-                          const char *description, int description_len,
-                          int64_t score,
-                          int64_t category)
+void KLM_open_post_video_with_options_(const char *title, int title_len,
+                                       const char *description, int description_len,
+                                       int64_t score,
+                                       int64_t category,
+                                       // options
+                                       int hide_post_anotation)
 {
     KLMPostVideoViewController *next = [[KLMPostVideoViewController alloc] init];
     NSString *t = [[[NSString alloc] initWithBytes:title length:title_len encoding:NSUTF8StringEncoding] autorelease];
@@ -741,6 +743,7 @@ void KLM_open_post_video_(const char *title, int title_len,
     next.postDescriotion = d;
     next.postScore = score;
     next.postCategory = category;
+    next.hidePostAnotation = (hide_post_anotation != 0);
     
     KLMUINavigationController *navigationController = [[KLMUINavigationController alloc] initWithRootViewController:next];
     
