@@ -47,7 +47,7 @@ extern "C"
 	void	KLM_get_capture_per_frame_();
 	void	KLM_start_capturing_();
 	void	KLM_stop_capturing_();
-	void	KLM_open_post_video_();
+	void	KLM_open_post_video_with_options_();
 	void	KLM_open_play_video_();
 	void	KLM_has_movie_();
 	void	KLM_register_drying_up_in_storage_observer_();
@@ -105,7 +105,7 @@ void RegisterMonoModules()
 	mono_dl_register_symbol("KLM_get_capture_per_frame_", (void*)&KLM_get_capture_per_frame_);
 	mono_dl_register_symbol("KLM_start_capturing_", (void*)&KLM_start_capturing_);
 	mono_dl_register_symbol("KLM_stop_capturing_", (void*)&KLM_stop_capturing_);
-	mono_dl_register_symbol("KLM_open_post_video_", (void*)&KLM_open_post_video_);
+	mono_dl_register_symbol("KLM_open_post_video_with_options_", (void*)&KLM_open_post_video_with_options_);
 	mono_dl_register_symbol("KLM_open_play_video_", (void*)&KLM_open_play_video_);
 	mono_dl_register_symbol("KLM_has_movie_", (void*)&KLM_has_movie_);
 	mono_dl_register_symbol("KLM_register_drying_up_in_storage_observer_", (void*)&KLM_register_drying_up_in_storage_observer_);

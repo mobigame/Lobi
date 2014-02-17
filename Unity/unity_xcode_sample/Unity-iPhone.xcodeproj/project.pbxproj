@@ -157,16 +157,16 @@
 		D82DCFBB0E8000A5005D6AD8 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = Classes/main.mm; sourceTree = SOURCE_ROOT; };
 		D82DCFBD0E8000A5005D6AD8 /* RegisterClasses.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RegisterClasses.cpp; path = Classes/RegisterClasses.cpp; sourceTree = SOURCE_ROOT; };
 		D82DCFBE0E8000A5005D6AD8 /* RegisterClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterClasses.h; path = Classes/RegisterClasses.h; sourceTree = SOURCE_ROOT; };
-		D8A1C7000E80637F100160D4 /* Assembly-CSharp.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "Assembly-CSharp.dll.s"; path = "Libraries/Assembly-CSharp.dll.s"; sourceTree = SOURCE_ROOT; };
+		D8A1C7000E80637F100160D4 /* Assembly-CSharp.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = Assembly-CSharp.dll.s; path = Libraries/Assembly-CSharp.dll.s; sourceTree = SOURCE_ROOT; };
 		D8A1C7001E80637F100160D4 /* Mono.Security.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = Mono.Security.dll.s; path = Libraries/Mono.Security.dll.s; sourceTree = SOURCE_ROOT; };
 		D8A1C7002E80637F100160D4 /* System.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = System.dll.s; path = Libraries/System.dll.s; sourceTree = SOURCE_ROOT; };
 		D8A1C7003E80637F100160D4 /* UnityEngine.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = UnityEngine.dll.s; path = Libraries/UnityEngine.dll.s; sourceTree = SOURCE_ROOT; };
 		D8A1C7004E80637F100160D4 /* mscorlib.dll.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = mscorlib.dll.s; path = Libraries/mscorlib.dll.s; sourceTree = SOURCE_ROOT; };
 		D8A1C7005E80637F100160D4 /* LobiCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LobiCall.m; path = Libraries/LobiCall.m; sourceTree = SOURCE_ROOT; };
 		D8A1C7006E80637F100160D4 /* LobiUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LobiUtil.m; path = Libraries/LobiUtil.m; sourceTree = SOURCE_ROOT; };
-		D8A1C7007E80637F100160D4 /* Icon@2x.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = SOURCE_ROOT; };
-		D8A1C7008E80637F100160D4 /* Default@2x.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
-		D8A1C7009E80637F100160D4 /* Default-568h@2x.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		D8A1C7007E80637F100160D4 /* Icon@2x.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Icon@2x.png"; sourceTree = SOURCE_ROOT; };
+		D8A1C7008E80637F100160D4 /* Default@2x.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		D8A1C7009E80637F100160D4 /* Default-568h@2x.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		D8A1C7240E80637F000160D3 /* RegisterMonoModules.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RegisterMonoModules.cpp; path = Libraries/RegisterMonoModules.cpp; sourceTree = SOURCE_ROOT; };
 		D8A1C7250E80637F000160D3 /* RegisterMonoModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterMonoModules.h; path = Libraries/RegisterMonoModules.h; sourceTree = SOURCE_ROOT; };
 		D8A1C72A0E8063A1000160D3 /* libiPhone-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libiPhone-lib.a"; path = "Libraries/libiPhone-lib.a"; sourceTree = SOURCE_ROOT; };
@@ -537,7 +537,7 @@
 				PRODUCT_NAME = sample;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1";
 			};
 			name = Debug;
 		};
@@ -574,7 +574,7 @@
 				PRODUCT_NAME = sample;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1";
 			};
 			name = Release;
 		};

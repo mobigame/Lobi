@@ -511,13 +511,18 @@ namespace Kayac.Lobi
 		
 		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
 		[DllImport("__Internal")]
-		private static extern void KLM_open_post_video_(byte[] title, int title_len,
-		                                                byte[] description, int description_len,
-		                                                System.Int64 score,
-		                                                System.Int64 category);
+		private static extern void KLM_open_post_video_with_options_(byte[] title, int title_len,
+		                                                             byte[] description, int description_len,
+		                                                             System.Int64 score,
+		                                                             System.Int64 category,
+		                                                             int hide_post_anotation);
 		#endif
-		
+
 		public static void OpenPostVideo(string title, string description, System.Int64 score, System.Int64 category){
+			OpenPostVideo(title, description, score, category, false);
+		}
+
+		public static void OpenPostVideo(string title, string description, System.Int64 score, System.Int64 category, bool hidePostAnotation){
 			#if UNITY_ANDROID
 			Debug.Log("not supported yet");
 			#endif
@@ -525,13 +530,14 @@ namespace Kayac.Lobi
 			#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
 			byte[] Title = System.Text.Encoding.UTF8.GetBytes(title);
 			byte[] Description = System.Text.Encoding.UTF8.GetBytes(description);
-			KLM_open_post_video_(Title, Title.Length,
-			                     Description, Description.Length,
-			                     score,
-			                     category);
+			KLM_open_post_video_with_options_(Title, Title.Length,
+			                                  Description, Description.Length,
+			                                  score,
+			                                  category,
+			                                  hidePostAnotation ? 1 : 0);
 			#endif
 		}
-		
+
 		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
 		[DllImport("__Internal")]
 		private static extern void KLM_open_play_video_();
