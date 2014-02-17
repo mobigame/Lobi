@@ -33,3 +33,4 @@
 "KLR_ALERT_MESSAGE_SHARE_FACEBOOK" = "Facebookに投稿します";
 "KLR_ALERT_MESSAGE_MOVIE_POSTED" = "動画を投稿しました。";
 "KLR_ALERT_MESSAGE_MOVIE_SHARED" = "SNSへの反映はしばらくお待ちください。";
+"KLR_ERROR_MESASGE_POST_MOVIE" = "この動画は投稿済みです";
