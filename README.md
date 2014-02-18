@@ -22,11 +22,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 - v5.0.11 - 2014/02/17
-	[ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.11.zip)
-	- Unity で設定している KLMDismissingPostVideoViewControllerObserver 内部で別のクラスを指定している。  
-	[https://github.com/kayac/Lobi/issues/36](https://github.com/kayac/Lobi/issues/36)  
-	- Category は文字列とする  
-	[https://github.com/kayac/Lobi/issues/37](https://github.com/kayac/Lobi/issues/37)  
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.11.zip)
+    - Unity で設定している KLMDismissingPostVideoViewControllerObserver 内部で別のクラスを指定している。  
+    [https://github.com/kayac/Lobi/issues/36](https://github.com/kayac/Lobi/issues/36)  
+    - Category は文字列とする  
+    [https://github.com/kayac/Lobi/issues/37](https://github.com/kayac/Lobi/issues/37)  
     - youtubeにもアップロードできるようにする  
     [https://github.com/kayac/Lobi/issues/38](https://github.com/kayac/Lobi/issues/38)  
     - 出力された動画をトリム出来るようにする  
