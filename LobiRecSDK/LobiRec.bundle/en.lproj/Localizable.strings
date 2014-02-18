@@ -34,3 +34,7 @@
 "KLR_ALERT_MESSAGE_MOVIE_POSTED" = "Movie posted.";
 "KLR_ALERT_MESSAGE_MOVIE_SHARED" = "Please wait a minute for SNS posts";
 "KLR_ERROR_MESASGE_POST_MOVIE" = "Movie already posted.";
+"KLR_BUTTON_TITLE_TRIMMING" = "Trimming";
+"KLR_BUTTON_TITLE_LIVEWITHWIPE" = "Playback with Wipe";
+"KLR_BUTTON_TITLE_LIVEWITHSOUND" = "Playback with Sound";
+"KLR_ALERT_MESSAGE_TRIM_FAILED" = "Failed Trimming.";
