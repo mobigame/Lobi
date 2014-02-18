@@ -21,6 +21,17 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.0.12 - 2014/02/18
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.12.zip)
+    - 同じ動画を再度投稿しようとした際の KLMDismissingPostVideoViewControllerNotification の tryPost は false とする。  
+    [https://github.com/kayac/Lobi/issues/42](https://github.com/kayac/Lobi/issues/42)  
+    - 投稿画面の「アプリに投稿」と「一緒に共有する」が逆になっている。  
+    [https://github.com/kayac/Lobi/issues/43](https://github.com/kayac/Lobi/issues/43)  
+    - Twitter 等の SNS シェアのログイン画面の表示時にインジケータを表示する。  
+    [https://github.com/kayac/Lobi/issues/44](https://github.com/kayac/Lobi/issues/44)  
+    - 動画一覧、詳細画面のチラツキを抑止する  
+    [https://github.com/kayac/Lobi/issues/45](https://github.com/kayac/Lobi/issues/45)  
+
 - v5.0.11 - 2014/02/17
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.11.zip)
     - Unity で設定している KLMDismissingPostVideoViewControllerObserver 内部で別のクラスを指定している。  
