@@ -81,7 +81,7 @@
                 vc.postTitle = @"プレイ動画をシェアします！";
                 vc.postDescriotion = @"神懸ったこの華麗なプレイ。やばい。";
                 vc.postScore = 100;
-                vc.postCategory = 0;
+                vc.postCategory = @"";
                 vc.hidePostAnotation = NO;
                 KLMNavigationController *nc = [[[KLMNavigationController alloc] initWithRootViewController:vc] autorelease];
                 AppController *app = (AppController*)[UIApplication sharedApplication].delegate;
