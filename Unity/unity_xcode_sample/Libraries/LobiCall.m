@@ -389,9 +389,9 @@
 
 + (void)register:(NSString*)gameObjectName callbackMethod:(NSString*)callbackMethodName
 {
-    [KLMMovieUploadedObserver unregister];
-    [KLMMovieUploadedObserver sharedInstance].gameObjectName = gameObjectName;
-    [KLMMovieUploadedObserver sharedInstance].callbackMethodName = callbackMethodName;
+    [KLMDismissingPostVideoViewControllerObserver unregister];
+    [KLMDismissingPostVideoViewControllerObserver sharedInstance].gameObjectName = gameObjectName;
+    [KLMDismissingPostVideoViewControllerObserver sharedInstance].callbackMethodName = callbackMethodName;
     [[NSNotificationCenter defaultCenter] addObserver:[self.class sharedInstance]
                                              selector:@selector(notify:)
                                                  name:KLMDismissingPostVideoViewControllerNotification
@@ -400,8 +400,8 @@
 
 + (void)unregister
 {
-    [KLMMovieUploadedObserver sharedInstance].gameObjectName = nil;
-    [KLMMovieUploadedObserver sharedInstance].callbackMethodName = nil;
+    [KLMDismissingPostVideoViewControllerObserver sharedInstance].gameObjectName = nil;
+    [KLMDismissingPostVideoViewControllerObserver sharedInstance].callbackMethodName = nil;
     [[NSNotificationCenter defaultCenter] removeObserver:[self.class sharedInstance]];
 }
 
@@ -731,18 +731,19 @@ void KLM_stop_capturing_(){
 void KLM_open_post_video_with_options_(const char *title, int title_len,
                                        const char *description, int description_len,
                                        int64_t score,
-                                       int64_t category,
+                                       const char *category, int category_len,
                                        // options
                                        int hide_post_anotation)
 {
     KLMPostVideoViewController *next = [[KLMPostVideoViewController alloc] init];
     NSString *t = [[[NSString alloc] initWithBytes:title length:title_len encoding:NSUTF8StringEncoding] autorelease];
     NSString *d = [[[NSString alloc] initWithBytes:description length:description_len encoding:NSUTF8StringEncoding] autorelease];
+    NSString *c = [[[NSString alloc] initWithBytes:category length:category_len encoding:NSUTF8StringEncoding] autorelease];
     
     next.postTitle = t;
     next.postDescriotion = d;
     next.postScore = score;
-    next.postCategory = category;
+    next.postCategory = c;
     next.hidePostAnotation = (hide_post_anotation != 0);
     
     KLMUINavigationController *navigationController = [[KLMUINavigationController alloc] initWithRootViewController:next];
