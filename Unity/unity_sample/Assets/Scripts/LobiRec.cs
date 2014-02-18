@@ -514,15 +514,15 @@ namespace Kayac.Lobi
 		private static extern void KLM_open_post_video_with_options_(byte[] title, int title_len,
 		                                                             byte[] description, int description_len,
 		                                                             System.Int64 score,
-		                                                             System.Int64 category,
+		                                                             byte[] category, int category_len,
 		                                                             int hide_post_anotation);
 		#endif
 
-		public static void OpenPostVideo(string title, string description, System.Int64 score, System.Int64 category){
+		public static void OpenPostVideo(string title, string description, System.Int64 score, string category){
 			OpenPostVideo(title, description, score, category, false);
 		}
 
-		public static void OpenPostVideo(string title, string description, System.Int64 score, System.Int64 category, bool hidePostAnotation){
+		public static void OpenPostVideo(string title, string description, System.Int64 score, string category, bool hidePostAnotation){
 			#if UNITY_ANDROID
 			Debug.Log("not supported yet");
 			#endif
@@ -530,10 +530,11 @@ namespace Kayac.Lobi
 			#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
 			byte[] Title = System.Text.Encoding.UTF8.GetBytes(title);
 			byte[] Description = System.Text.Encoding.UTF8.GetBytes(description);
+			byte[] Category = System.Text.Encoding.UTF8.GetBytes(category);
 			KLM_open_post_video_with_options_(Title, Title.Length,
 			                                  Description, Description.Length,
 			                                  score,
-			                                  category,
+			                                  Category, Category.Length,
 			                                  hidePostAnotation ? 1 : 0);
 			#endif
 		}

@@ -13,7 +13,7 @@
 @property (nonatomic, copy) NSString *postTitle;
 @property (nonatomic, copy) NSString *postDescriotion;
 @property (nonatomic, assign) int64_t postScore;
-@property (nonatomic, assign) NSInteger postCategory;
+@property (nonatomic, copy) NSString *postCategory;
 
 /**
  *  動画投稿後のポップアップメッセージを表示しないようにします。
