@@ -22,7 +22,7 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
-- v5.0.13 - 2014/02/19
+- v5.0.14 - 2014/02/19
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.14.zip)
     - 実況ワイプのvertex設定を画面スケールに依存させていた。  
     [https://github.com/kayac/Lobi/issues/50](https://github.com/kayac/Lobi/issues/50)  
