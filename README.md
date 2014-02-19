@@ -23,6 +23,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 ----------------------------
 
 - v5.0.13 - 2014/02/19
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.14.zip)
+    - 実況ワイプのvertex設定を画面スケールに依存させていた。  
+    [https://github.com/kayac/Lobi/issues/50](https://github.com/kayac/Lobi/issues/50)  
+
+- v5.0.13 - 2014/02/19
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.13.zip)
     - 録画終了時に gameSoundVolume を開始前の状態に自動的に戻す。  
     [https://github.com/kayac/Lobi/issues/48](https://github.com/kayac/Lobi/issues/48)  
