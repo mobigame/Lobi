@@ -22,6 +22,15 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.0.15 - 2014/02/20
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.15.zip)
+    - capturePerFrame の初期値を 3 に変更する。  
+    [https://github.com/kayac/Lobi/issues/54](https://github.com/kayac/Lobi/issues/54)  
+    - micEnable の初期値を NO とする  
+    [https://github.com/kayac/Lobi/issues/55](https://github.com/kayac/Lobi/issues/55)  
+    - 利用規約に同意してない場合の KLMDismissingPostVideoViewControllerNotification の tryPost は false とする。  
+    [https://github.com/kayac/Lobi/issues/56](https://github.com/kayac/Lobi/issues/56)  
+
 - v5.0.14 - 2014/02/19
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.14.zip)
     - 実況ワイプのvertex設定を画面スケールに依存させていた。  
