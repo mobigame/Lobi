@@ -1,12 +1,5 @@
 Lobi
 ====
-利用規約
-------------
-開発会社等利用規約  
-[https://developer.lobi.co/terms/ja](https://developer.lobi.co/terms/ja)  
-
-Terms of Use for Developers  
-[https://developer.lobi.co/terms/en](https://developer.lobi.co/terms/en)  
 
 ダウンロード
 ------------
@@ -129,3 +122,12 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 - v5.0.0 - 2014/01/31
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.0.zip)
     - リリース
+
+
+利用規約
+------------
+開発会社等利用規約  
+[https://developer.lobi.co/terms/ja](https://developer.lobi.co/terms/ja)  
+
+Terms of Use for Developers  
+[https://developer.lobi.co/terms/en](https://developer.lobi.co/terms/en)  
