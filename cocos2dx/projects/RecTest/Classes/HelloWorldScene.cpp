@@ -1,6 +1,8 @@
 #include "HelloWorldScene.h"
 #include "KLRInterface.h"
+#include "SimpleAudioEngine.h"
 
+using namespace CocosDenshion;
 USING_NS_CC;
 
 CCScene* HelloWorld::scene()
@@ -71,6 +73,8 @@ bool HelloWorld::init()
         addChild(menu, 1);
     }
 
+    SimpleAudioEngine::sharedEngine()->playBackgroundMusic("track.mp3");
+    
     return true;
 }
 

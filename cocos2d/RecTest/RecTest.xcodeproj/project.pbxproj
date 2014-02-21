@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0CD1A42C18A86313008F5D04 /* libLobiRecSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD1A41B18A86313008F5D04 /* libLobiRecSDK.a */; };
 		0CD1A42D18A86314008F5D04 /* LobiRec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0CD1A41C18A86313008F5D04 /* LobiRec.bundle */; };
+		491C413A18B7008700303564 /* track.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 491C413918B7008700303564 /* track.mp3 */; };
 		49259F0F1898ED2700B98CA3 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49259F0E1898ED2700B98CA3 /* libsqlite3.0.dylib */; };
 		49446D43189783DC0099BD8B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49446D42189783DC0099BD8B /* QuartzCore.framework */; };
 		49446D45189783DC0099BD8B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49446D44189783DC0099BD8B /* OpenGLES.framework */; };
@@ -162,6 +163,7 @@
 		0CD1A41918A86313008F5D04 /* NakamapRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NakamapRanking.h; sourceTree = "<group>"; };
 		0CD1A41B18A86313008F5D04 /* libLobiRecSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLobiRecSDK.a; sourceTree = "<group>"; };
 		0CD1A41C18A86313008F5D04 /* LobiRec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LobiRec.bundle; sourceTree = "<group>"; };
+		491C413918B7008700303564 /* track.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = track.mp3; path = Resources/track.mp3; sourceTree = "<group>"; };
 		49259F0E1898ED2700B98CA3 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		49446D3F189783DC0099BD8B /* RecTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49446D42189783DC0099BD8B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -570,6 +572,7 @@
 		49446D55189783DC0099BD8B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				491C413918B7008700303564 /* track.mp3 */,
 				4956CA9F18979B96005C0BF8 /* star.png */,
 				49446D56189783DC0099BD8B /* Default.png */,
 				49446D58189783DC0099BD8B /* Default@2x.png */,
@@ -1000,6 +1003,7 @@
 			files = (
 				49446D67189783DC0099BD8B /* Icon.png in Resources */,
 				0CD1A42D18A86314008F5D04 /* LobiRec.bundle in Resources */,
+				491C413A18B7008700303564 /* track.mp3 in Resources */,
 				49446EC2189783DF0099BD8B /* ChangeLog in Resources */,
 				49446D59189783DC0099BD8B /* Default@2x.png in Resources */,
 				49446D63189783DC0099BD8B /* Icon-Small.png in Resources */,

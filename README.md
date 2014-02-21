@@ -22,6 +22,13 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.0.16 - 2014/02/21
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.16.zip)
+    - Cocos2d/Cocos2d-xにてアプリをバックグラウンドに落とすとBGMが出力されなくなる  
+    [https://github.com/kayac/Lobi/issues/58](https://github.com/kayac/Lobi/issues/58)  
+    - Cocos2d-xにてアプリをバックグラウンドに落とすとループしたSEが出力されなくなる  
+    [https://github.com/kayac/Lobi/issues/59](https://github.com/kayac/Lobi/issues/59)  
+
 - v5.0.15 - 2014/02/20
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.15.zip)
     - capturePerFrame の初期値を 3 に変更する。  
