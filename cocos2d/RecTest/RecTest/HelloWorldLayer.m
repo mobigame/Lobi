@@ -15,6 +15,7 @@
 #import "KLMPlayWebViewController.h"
 #import "KLMNavigationController.h"
 #import "KLMVideoCapture.h"
+#import "SimpleAudioEngine.h"
 
 #define KEY_IDENTIFIER @"sdk_install_id"
 
@@ -144,6 +145,7 @@
 		[resetMenu setPosition:ccp(size.width - 100, 20)];
 		[self addChild:resetMenu];
 
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"track.mp3" loop:YES];
 		[self scheduleUpdate];
 	}
 	return self;

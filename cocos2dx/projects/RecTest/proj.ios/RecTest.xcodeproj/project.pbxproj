@@ -235,6 +235,7 @@
 		49446B2518975CB00099BD8B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49446B2418975CB00099BD8B /* libsqlite3.0.dylib */; };
 		49446D33189781890099BD8B /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49446D32189781890099BD8B /* libcurl.a */; };
 		4956CAA81897B5FC005C0BF8 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 4956CAA71897B5FC005C0BF8 /* star.png */; };
+		497ACD7218B70E7100998DE6 /* track.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 497ACD7118B70E7100998DE6 /* track.mp3 */; };
 		49A2CD6A189A457200BC1215 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A2CD69189A457200BC1215 /* libwebsockets.a */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
@@ -744,6 +745,7 @@
 		49446B2418975CB00099BD8B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		49446D32189781890099BD8B /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		4956CAA71897B5FC005C0BF8 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		497ACD7118B70E7100998DE6 /* track.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = track.mp3; sourceTree = "<group>"; };
 		49A2CD69189A457200BC1215 /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebsockets.a; sourceTree = "<group>"; };
 		7855E0DF153FEF240059DD9A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1787,6 +1789,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				497ACD7118B70E7100998DE6 /* track.mp3 */,
 				4956CAA71897B5FC005C0BF8 /* star.png */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
@@ -1876,6 +1879,7 @@
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
+				497ACD7218B70E7100998DE6 /* track.mp3 in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
 				4956CAA81897B5FC005C0BF8 /* star.png in Resources */,
