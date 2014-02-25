@@ -22,6 +22,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.0.17 - 2014/02/24
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.17.zip)
+    - Siriの起動や着信が発生すると音声が再生されなくなる。  
+    [https://github.com/kayac/Lobi/issues/53](https://github.com/kayac/Lobi/issues/53)  
+
 - v5.0.16 - 2014/02/21
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.16.zip)
     - Cocos2d/Cocos2d-xにてアプリをバックグラウンドに落とすとBGMが出力されなくなる  
