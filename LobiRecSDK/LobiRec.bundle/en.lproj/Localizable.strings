@@ -35,8 +35,8 @@
 "KLR_ALERT_MESSAGE_MOVIE_SHARED" = "Please wait a minute for SNS posts";
 "KLR_ERROR_MESASGE_POST_MOVIE" = "Movie already posted.";
 "KLR_BUTTON_TITLE_TRIMMING" = "Croping";
-"KLR_BUTTON_TITLE_LIVEWITHWIPE" = "Playback with Camera";
-"KLR_BUTTON_TITLE_LIVEWITHSOUND" = "Playback with Voice";
+"KLR_BUTTON_TITLE_LIVEWITHWIPE" = "Playback\nwith Camera";
+"KLR_BUTTON_TITLE_LIVEWITHSOUND" = "Playback\nwith Voice";
 "KLR_ALERT_MESSAGE_TRIM_FAILED" = "Failed Croping.";
 "KLR_BUTTON_TITLE_STOP_LIVE" = "Stop PlayBack";
 "KLR_BUTTON_TITLE_UNDO" = "Undo";
