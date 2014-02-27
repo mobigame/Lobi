@@ -157,6 +157,11 @@ extern NSString *const KLMDismissingPostVideoViewControllerNotification;
 @property (nonatomic, copy) void(^activeFramebufferCallback)(GLuint);
 
 /**
+ * 本クラスに設定されたコンテキストを返します。
+ */
+@property (nonatomic, readonly) EAGLContext *context;
+
+/**
  *  OpenGLコンテキストとviewをゲーム録画エンジンに設定します。
  *
  *  @param context ゲームにて生成したコンテキストを設定します。
