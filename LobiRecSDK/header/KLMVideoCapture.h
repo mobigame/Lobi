@@ -116,6 +116,11 @@ extern NSString *const KLMDismissingPostVideoViewControllerNotification;
 @property (nonatomic, assign) CGFloat           gameSoundVolume;
 
 /**
+ *  アフレコ録画中のボリュームの大きさを設定します。(0.0 - 1.0)
+ */
+@property (nonatomic, assign) CGFloat           afterRecordingVolume;
+
+/**
  *  録画中のマイク入力ボリュームの大きさを設定します。(0.0 - 1.0)
  */
 @property (nonatomic, assign) CGFloat           micVolume;

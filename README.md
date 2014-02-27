@@ -22,6 +22,13 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.1.0 - 2014/02/27
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.0.zip)  
+    - 録画後実況を入れられるようにする。  
+    [https://github.com/kayac/Lobi/issues/62](https://github.com/kayac/Lobi/issues/62)  
+
+----
+
 - v5.0.17 - 2014/02/24
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.17.zip)
     - Siriの起動や着信が発生すると音声が再生されなくなる。  
