@@ -26,6 +26,8 @@ SDKを使用するにはアプリケーションの登録しクライアントID
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.0.zip)  
     - 録画後実況を入れられるようにする。  
     [https://github.com/kayac/Lobi/issues/62](https://github.com/kayac/Lobi/issues/62)  
+    - ゲーム中の音やマイクは取得できるが Unity のサンプルではうまくいかない。  
+    [https://github.com/kayac/Lobi/issues/16](https://github.com/kayac/Lobi/issues/16)  
 
 ----
 
