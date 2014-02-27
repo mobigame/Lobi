@@ -9,6 +9,8 @@ public class Sample : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		// Lobi REC SDK を使用する際は起動時に以下の設定を必ず行ってください。
+		AudioSettings.outputSampleRate = 44100;
 	}
 
 	// Update is called once per frame
