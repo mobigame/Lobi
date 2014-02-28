@@ -22,7 +22,7 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
-- v5.1.0 - 2014/02/27
+- v5.1.0 - 2014/02/28
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.0.zip)  
     - 録画後実況を入れられるようにする。  
     [https://github.com/kayac/Lobi/issues/62](https://github.com/kayac/Lobi/issues/62)  
