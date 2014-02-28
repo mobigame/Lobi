@@ -29,6 +29,9 @@ SDKを使用するにはアプリケーションの登録しクライアントID
     - ゲーム中の音やマイクは取得できるが Unity のサンプルではうまくいかない。  
     [https://github.com/kayac/Lobi/issues/16](https://github.com/kayac/Lobi/issues/16)  
 
+> **NOTE**  
+> Unity版の5.0.x バージョンから更新する場合は全てのファイルの更新及び[KLR_set_unity_pause_funcの呼び出し](https://github.com/kayac/Lobi/wiki/Unity-LobiRecSDK-Docs#wiki-2.10)を行う必要があります。
+    
 ----
 
 - v5.0.17 - 2014/02/24
