@@ -116,6 +116,11 @@ extern NSString *const KLMDismissingPostVideoViewControllerNotification;
 @property (nonatomic, assign) CGFloat           gameSoundVolume;
 
 /**
+ *  アフレコ録画中のボリュームの大きさを設定します。(0.0 - 1.0)
+ */
+@property (nonatomic, assign) CGFloat           afterRecordingVolume;
+
+/**
  *  録画中のマイク入力ボリュームの大きさを設定します。(0.0 - 1.0)
  */
 @property (nonatomic, assign) CGFloat           micVolume;
@@ -150,6 +155,11 @@ extern NSString *const KLMDismissingPostVideoViewControllerNotification;
   Unityエンジンを使用する場合に利用します。このコールバックのパラメータから取得できるフレームバッファをgDefaultFBOに設定します。
  */
 @property (nonatomic, copy) void(^activeFramebufferCallback)(GLuint);
+
+/**
+ * 本クラスに設定されたコンテキストを返します。
+ */
+@property (nonatomic, readonly) EAGLContext *context;
 
 /**
  *  OpenGLコンテキストとviewをゲーム録画エンジンに設定します。

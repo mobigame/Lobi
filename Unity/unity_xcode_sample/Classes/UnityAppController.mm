@@ -406,6 +406,8 @@ void UnityInitTrampoline()
 {
     // UnityのViewControllerを取得する
     KLR_set_root_view_controller_func(UnityGetGLViewController);
+    // UnityPause関数を取得する
+    KLR_set_unity_pause_func(UnityPause);
     
     // 初期化を行う
     KLRConfiguration *configuration = [KLRConfiguration currentConfiguration];

@@ -22,6 +22,18 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.1.0 - 2014/02/28
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.0.zip)  
+    - 録画後実況を入れられるようにする。  
+    [https://github.com/kayac/Lobi/issues/62](https://github.com/kayac/Lobi/issues/62)  
+    - ゲーム中の音やマイクは取得できるが Unity のサンプルではうまくいかない。  
+    [https://github.com/kayac/Lobi/issues/16](https://github.com/kayac/Lobi/issues/16)  
+
+> **NOTE**  
+> Unity版の5.0.x バージョンから更新する場合は全てのファイルの更新及び[KLR_set_unity_pause_funcの呼び出し](https://github.com/kayac/Lobi/wiki/Unity-LobiRecSDK-Docs#wiki-2.10)を行う必要があります。
+    
+----
+
 - v5.0.17 - 2014/02/24
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.0.17.zip)
     - Siriの起動や着信が発生すると音声が再生されなくなる。  

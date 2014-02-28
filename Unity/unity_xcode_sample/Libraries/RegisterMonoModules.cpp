@@ -35,6 +35,8 @@ extern "C"
 	void	KLM_get_wipe_square_size_();
 	void	KLM_set_game_sound_volume_();
 	void	KLM_get_game_sound_volume_();
+	void	KLM_set_after_recording_volume_();
+	void	KLM_get_after_recording_volume_();
 	void	KLM_set_mic_volume_();
 	void	KLM_get_mic_volume_();
 	void	KLM_mic_enable_();
@@ -93,6 +95,8 @@ void RegisterMonoModules()
 	mono_dl_register_symbol("KLM_get_wipe_square_size_", (void*)&KLM_get_wipe_square_size_);
 	mono_dl_register_symbol("KLM_set_game_sound_volume_", (void*)&KLM_set_game_sound_volume_);
 	mono_dl_register_symbol("KLM_get_game_sound_volume_", (void*)&KLM_get_game_sound_volume_);
+	mono_dl_register_symbol("KLM_set_after_recording_volume_", (void*)&KLM_set_after_recording_volume_);
+	mono_dl_register_symbol("KLM_get_after_recording_volume_", (void*)&KLM_get_after_recording_volume_);
 	mono_dl_register_symbol("KLM_set_mic_volume_", (void*)&KLM_set_mic_volume_);
 	mono_dl_register_symbol("KLM_get_mic_volume_", (void*)&KLM_get_mic_volume_);
 	mono_dl_register_symbol("KLM_mic_enable_", (void*)&KLM_mic_enable_);

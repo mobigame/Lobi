@@ -318,7 +318,39 @@ namespace Kayac.Lobi
 			#endif
 			return volume;
 		}
+
+		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+		[DllImport("__Internal")]
+		private static extern void KLM_set_after_recording_volume_(float volume);
+		#endif
 		
+		public static void SetAfterRecodingVolume(float volume){
+			#if UNITY_ANDROID
+			Debug.Log("not supported yet");
+			#endif
+			
+			#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+			KLM_set_after_recording_volume_(volume);
+			#endif
+		}
+		
+		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+		[DllImport("__Internal")]
+		private static extern float KLM_get_after_recording_volume_();
+		#endif
+		
+		public static float GetAfterRecodingVolume(){
+			float volume = 0.0f;
+			#if UNITY_ANDROID
+			Debug.Log("not supported yet");
+			#endif
+			
+			#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+			volume = KLM_get_after_recording_volume_();
+			#endif
+			return volume;
+		}
+
 		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
 		[DllImport("__Internal")]
 		private static extern void KLM_set_mic_volume_(float volume);

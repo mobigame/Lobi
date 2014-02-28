@@ -9,6 +9,12 @@
 #import "KLMPostVideoViewController.h"
 #import "KLMPlayWebViewController.h"
 #import "KLRRankingViewController.h"
+#import "KLMVideoCapture.h"
+
+#pragma mark - static variables
+static UIViewController *rootViewController;
+static UIViewController*(*getRootViewController)() = NULL;
+static void(*UnityPause)(bool) = NULL;
 
 #pragma mark - classes
 // 回転対策
@@ -407,9 +413,23 @@
 
 @end
 
-#pragma mark - static variables
-static UIViewController *rootViewController;
-static UIViewController*(*getRootViewController)() = NULL;
+// 内部用投稿画面を閉じた
+@interface KLMPrivateDismissingPostVideoViewControllerObserver : NSObject
++ (void)notify;
+@end
+
+@implementation KLMPrivateDismissingPostVideoViewControllerObserver
+
++ (void)notify
+{
+    KLMVideoCapture *instance = [KLMVideoCapture sharedInstance];
+    [EAGLContext setCurrentContext:instance.context];
+    if(UnityPause != NULL){
+        UnityPause(false);
+    }
+}
+
+@end
 
 #pragma mark - private functions
 static NSString* error_message(NSString *callbackId)
@@ -680,6 +700,14 @@ float KLM_get_game_sound_volume_(){
     return [KLMVideoCapture sharedInstance].gameSoundVolume;
 }
 
+void KLM_set_after_recording_volume_(float volume){
+    [KLMVideoCapture sharedInstance].afterRecordingVolume = volume;
+}
+
+float KLM_get_after_recording_volume_(){
+    return [KLMVideoCapture sharedInstance].afterRecordingVolume;
+}
+
 void KLM_set_mic_volume_(float volume){
     [KLMVideoCapture sharedInstance].micVolume = volume;
 }
@@ -735,6 +763,17 @@ void KLM_open_post_video_with_options_(const char *title, int title_len,
                                        // options
                                        int hide_post_anotation)
 {
+    if(UnityPause != NULL){
+        UnityPause(true);
+    }
+    [[NSNotificationCenter defaultCenter] removeObserver:[KLMPrivateDismissingPostVideoViewControllerObserver class]
+                                                    name:KLMDismissingPostVideoViewControllerNotification
+                                                  object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:[KLMPrivateDismissingPostVideoViewControllerObserver class]
+                                             selector:@selector(notify)
+                                                 name:KLMDismissingPostVideoViewControllerNotification
+                                               object:nil];
+    
     KLMPostVideoViewController *next = [[KLMPostVideoViewController alloc] init];
     NSString *t = [[[NSString alloc] initWithBytes:title length:title_len encoding:NSUTF8StringEncoding] autorelease];
     NSString *d = [[[NSString alloc] initWithBytes:description length:description_len encoding:NSUTF8StringEncoding] autorelease];
@@ -874,4 +913,9 @@ void KLM_unregister_dismissing_post_video_view_controller_observer_()
 void KLR_set_root_view_controller_func(UIViewController*(*getViewController)())
 {
     getRootViewController = getViewController;
+}
+
+void KLR_set_unity_pause_func(void(*func)(bool pause))
+{
+    UnityPause = func;
 }

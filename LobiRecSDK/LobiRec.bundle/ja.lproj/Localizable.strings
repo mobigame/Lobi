@@ -18,9 +18,9 @@
 "KLR_CAMERA_SHEET" = "写真を撮る";
 "KLR_PHOTOLIB_SHEET" = "写真を選ぶ";
 "KLR_ALERT_MESSAGE_CHANGE_APP_LOBI" = "動画を投稿してアプリ\"Lobi\"を起動します";
-"KLR_ALERT_MESSAGE_CHANGE_APP_LINE" = "動画を投稿してアプリ\"Line\"を起動します";
+"KLR_ALERT_MESSAGE_CHANGE_APP_LINE" = "動画を投稿してアプリ\"LINE\"を起動します";
 "KLR_LABEL_SHARE_LOBI" = "Lobiに投稿";
-"KLR_LABEL_SHARE_LINE" = "Lineに投稿";
+"KLR_LABEL_SHARE_LINE" = "LINEに投稿";
 "KLR_LABEL_SHARE_URL" = "URLをコピー";
 "KLR_LABEL_SHARE_TWITTER_ON" = "Twitter ON";
 "KLR_LABEL_SHARE_TWITTER_OFF" = "Twitter OFF";
@@ -38,3 +38,10 @@
 "KLR_BUTTON_TITLE_LIVEWITHWIPE" = "顔入りで実況";
 "KLR_BUTTON_TITLE_LIVEWITHSOUND" = "音声で実況";
 "KLR_ALERT_MESSAGE_TRIM_FAILED" = "トリミングに失敗しました。";
+"KLR_BUTTON_TITLE_STOP_LIVE" = "実況終了";
+"KLR_BUTTON_TITLE_UNDO" = "もとに戻す";
+"KLR_ALERT_MESSAGE_DISABLE_TO_UNDO_TRIM" = "実況をすると、トリミングをもとに戻せなくなります。\nよろしいですか？";
+"KLR_ALERT_MESSAGE_DISABLE_TO_UNDO_LIVE" = "トリミングをすると、実況録画をもとに戻せなくなります。\nよろしいですか？";
+"KLR_ALERT_MESSAGE_UNDO_LIVE" = "実況録画をもとに戻します。\nよろしいですか？";
+"KLR_ALERT_MESSAGE_UNDO_TRIM" = "トリミングをもとに戻します。\nよろしいですか？";
+"KLR_BUTTON_TITLE_UNDO_LIVE" = "実況を取り消す";

@@ -17,13 +17,11 @@
 
 void KLRInterface::startCapturing()
 {
-    static int const offset   = 20;
+    static int const offset   = 8;
     static int const wipesize = 100;
-    CGFloat width  = [UIScreen mainScreen].bounds.size.width;
-    CGFloat height = [UIScreen mainScreen].bounds.size.height;
     [KLMVideoCapture sharedInstance].liveWipeStatus    = KLMWipeStatusInCamera;
     [KLMVideoCapture sharedInstance].wipeSquareSize    = wipesize;
-    [KLMVideoCapture sharedInstance].wipePositionX     = MAX(width, height) -offset -wipesize;
+    [KLMVideoCapture sharedInstance].wipePositionX     = offset;
     [KLMVideoCapture sharedInstance].wipePositionY     = offset;
     [KLMVideoCapture sharedInstance].micEnable         = YES;
     [KLMVideoCapture sharedInstance].micVolume         = 1;
