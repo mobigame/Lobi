@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C9F1D7018A8702F006A79A4 /* libLobiRecSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9F1D5F18A8702F006A79A4 /* libLobiRecSDK.a */; };
-		0C9F1D7118A8702F006A79A4 /* LobiRec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C9F1D6018A8702F006A79A4 /* LobiRec.bundle */; };
 		494F70071893821E00E82F03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70061893821E00E82F03 /* Foundation.framework */; };
 		494F70091893821E00E82F03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70081893821E00E82F03 /* CoreGraphics.framework */; };
 		494F700B1893821E00E82F03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F700A1893821E00E82F03 /* UIKit.framework */; };
@@ -29,14 +27,31 @@
 		494F703A1893821F00E82F03 /* GLKitTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F70391893821F00E82F03 /* GLKitTestTests.m */; };
 		494F70771893832700E82F03 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70761893832700E82F03 /* libsqlite3.0.dylib */; };
 		494F70791893833100E82F03 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70781893833100E82F03 /* QuartzCore.framework */; };
-		494F707B1893833500E82F03 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F707A1893833500E82F03 /* StoreKit.framework */; };
 		494F707D1893833900E82F03 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F707C1893833900E82F03 /* CoreVideo.framework */; };
 		494F707F1893833D00E82F03 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F707E1893833D00E82F03 /* CoreMedia.framework */; };
 		494F70811893834200E82F03 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70801893834200E82F03 /* AVFoundation.framework */; };
 		494F70831893834800E82F03 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70821893834800E82F03 /* Security.framework */; };
 		494F70851893834D00E82F03 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70841893834D00E82F03 /* AudioToolbox.framework */; };
 		494F70871893835300E82F03 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F70861893835300E82F03 /* MediaPlayer.framework */; };
-		496F380618973E7700E2D203 /* EAGLContext+lift.m in Sources */ = {isa = PBXBuildFile; fileRef = 496F380518973E7700E2D203 /* EAGLContext+lift.m */; };
+		49FBCB4718C73EB50036284A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FBCB4618C73EB50036284A /* StoreKit.framework */; };
+		49FBCB6B18C741430036284A /* KLMPostVideoViewController.html in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB4B18C741430036284A /* KLMPostVideoViewController.html */; };
+		49FBCB6C18C741430036284A /* KLMVideoCapture.html in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB4C18C741430036284A /* KLMVideoCapture.html */; };
+		49FBCB6D18C741430036284A /* KLMLiveWipeStatus.html in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB4E18C741430036284A /* KLMLiveWipeStatus.html */; };
+		49FBCB6E18C741430036284A /* KLRAPIStatusCode.html in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB4F18C741430036284A /* KLRAPIStatusCode.html */; };
+		49FBCB6F18C741430036284A /* KLRRankingCursorOrigin.html in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB5018C741430036284A /* KLRRankingCursorOrigin.html */; };
+		49FBCB7018C741430036284A /* KLRRankingPage.html in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB5118C741430036284A /* KLRRankingPage.html */; };
+		49FBCB7118C741430036284A /* KLRRankingRange.html in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB5218C741430036284A /* KLRRankingRange.html */; };
+		49FBCB7218C741430036284A /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB5418C741430036284A /* styles.css */; };
+		49FBCB7318C741430036284A /* stylesPrint.css in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB5518C741430036284A /* stylesPrint.css */; };
+		49FBCB7418C741430036284A /* hierarchy.html in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB5618C741430036284A /* hierarchy.html */; };
+		49FBCB7518C741430036284A /* button_bar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB5818C741430036284A /* button_bar_background.png */; };
+		49FBCB7618C741430036284A /* disclosure.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB5918C741430036284A /* disclosure.png */; };
+		49FBCB7718C741430036284A /* disclosure_open.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB5A18C741430036284A /* disclosure_open.png */; };
+		49FBCB7818C741430036284A /* library_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB5B18C741430036284A /* library_background.png */; };
+		49FBCB7918C741430036284A /* title_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB5C18C741430036284A /* title_background.png */; };
+		49FBCB7A18C741430036284A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB5D18C741430036284A /* index.html */; };
+		49FBCB7B18C741430036284A /* libLobiRecSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FBCB6918C741430036284A /* libLobiRecSDK.a */; };
+		49FBCB7C18C741430036284A /* LobiRec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 49FBCB6A18C741430036284A /* LobiRec.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,17 +65,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C9F1D5518A8702E006A79A4 /* KLMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMNavigationController.h; sourceTree = "<group>"; };
-		0C9F1D5618A8702E006A79A4 /* KLMPlayWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMPlayWebViewController.h; sourceTree = "<group>"; };
-		0C9F1D5718A8702F006A79A4 /* KLMPostVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMPostVideoViewController.h; sourceTree = "<group>"; };
-		0C9F1D5818A8702F006A79A4 /* KLMVideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMVideoCapture.h; sourceTree = "<group>"; };
-		0C9F1D5918A8702F006A79A4 /* KLRAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRAPI.h; sourceTree = "<group>"; };
-		0C9F1D5A18A8702F006A79A4 /* KLRConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRConfiguration.h; sourceTree = "<group>"; };
-		0C9F1D5B18A8702F006A79A4 /* KLRRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRRanking.h; sourceTree = "<group>"; };
-		0C9F1D5C18A8702F006A79A4 /* KLRRankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRRankingViewController.h; sourceTree = "<group>"; };
-		0C9F1D5D18A8702F006A79A4 /* NakamapRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NakamapRanking.h; sourceTree = "<group>"; };
-		0C9F1D5F18A8702F006A79A4 /* libLobiRecSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLobiRecSDK.a; sourceTree = "<group>"; };
-		0C9F1D6018A8702F006A79A4 /* LobiRec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LobiRec.bundle; sourceTree = "<group>"; };
 		494F70031893821E00E82F03 /* GLKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		494F70061893821E00E82F03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		494F70081893821E00E82F03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,15 +90,40 @@
 		494F70391893821F00E82F03 /* GLKitTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKitTestTests.m; sourceTree = "<group>"; };
 		494F70761893832700E82F03 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		494F70781893833100E82F03 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		494F707A1893833500E82F03 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		494F707C1893833900E82F03 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		494F707E1893833D00E82F03 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		494F70801893834200E82F03 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		494F70821893834800E82F03 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		494F70841893834D00E82F03 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		494F70861893835300E82F03 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		496F380418973E7700E2D203 /* EAGLContext+lift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EAGLContext+lift.h"; sourceTree = "<group>"; };
-		496F380518973E7700E2D203 /* EAGLContext+lift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EAGLContext+lift.m"; sourceTree = "<group>"; };
+		49FBCB4618C73EB50036284A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		49FBCB4B18C741430036284A /* KLMPostVideoViewController.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KLMPostVideoViewController.html; sourceTree = "<group>"; };
+		49FBCB4C18C741430036284A /* KLMVideoCapture.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KLMVideoCapture.html; sourceTree = "<group>"; };
+		49FBCB4E18C741430036284A /* KLMLiveWipeStatus.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KLMLiveWipeStatus.html; sourceTree = "<group>"; };
+		49FBCB4F18C741430036284A /* KLRAPIStatusCode.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KLRAPIStatusCode.html; sourceTree = "<group>"; };
+		49FBCB5018C741430036284A /* KLRRankingCursorOrigin.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KLRRankingCursorOrigin.html; sourceTree = "<group>"; };
+		49FBCB5118C741430036284A /* KLRRankingPage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KLRRankingPage.html; sourceTree = "<group>"; };
+		49FBCB5218C741430036284A /* KLRRankingRange.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = KLRRankingRange.html; sourceTree = "<group>"; };
+		49FBCB5418C741430036284A /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		49FBCB5518C741430036284A /* stylesPrint.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = stylesPrint.css; sourceTree = "<group>"; };
+		49FBCB5618C741430036284A /* hierarchy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = hierarchy.html; sourceTree = "<group>"; };
+		49FBCB5818C741430036284A /* button_bar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bar_background.png; sourceTree = "<group>"; };
+		49FBCB5918C741430036284A /* disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure.png; sourceTree = "<group>"; };
+		49FBCB5A18C741430036284A /* disclosure_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure_open.png; sourceTree = "<group>"; };
+		49FBCB5B18C741430036284A /* library_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library_background.png; sourceTree = "<group>"; };
+		49FBCB5C18C741430036284A /* title_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_background.png; sourceTree = "<group>"; };
+		49FBCB5D18C741430036284A /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		49FBCB5F18C741430036284A /* KLMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMNavigationController.h; sourceTree = "<group>"; };
+		49FBCB6018C741430036284A /* KLMPlayWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMPlayWebViewController.h; sourceTree = "<group>"; };
+		49FBCB6118C741430036284A /* KLMPostVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMPostVideoViewController.h; sourceTree = "<group>"; };
+		49FBCB6218C741430036284A /* KLMVideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMVideoCapture.h; sourceTree = "<group>"; };
+		49FBCB6318C741430036284A /* KLRAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRAPI.h; sourceTree = "<group>"; };
+		49FBCB6418C741430036284A /* KLRConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRConfiguration.h; sourceTree = "<group>"; };
+		49FBCB6518C741430036284A /* KLRRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRRanking.h; sourceTree = "<group>"; };
+		49FBCB6618C741430036284A /* KLRRankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRRankingViewController.h; sourceTree = "<group>"; };
+		49FBCB6718C741430036284A /* NakamapRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NakamapRanking.h; sourceTree = "<group>"; };
+		49FBCB6918C741430036284A /* libLobiRecSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLobiRecSDK.a; sourceTree = "<group>"; };
+		49FBCB6A18C741430036284A /* LobiRec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LobiRec.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,20 +131,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49FBCB4718C73EB50036284A /* StoreKit.framework in Frameworks */,
 				494F70871893835300E82F03 /* MediaPlayer.framework in Frameworks */,
 				494F70851893834D00E82F03 /* AudioToolbox.framework in Frameworks */,
 				494F70831893834800E82F03 /* Security.framework in Frameworks */,
 				494F70811893834200E82F03 /* AVFoundation.framework in Frameworks */,
 				494F707F1893833D00E82F03 /* CoreMedia.framework in Frameworks */,
 				494F707D1893833900E82F03 /* CoreVideo.framework in Frameworks */,
-				494F707B1893833500E82F03 /* StoreKit.framework in Frameworks */,
 				494F70791893833100E82F03 /* QuartzCore.framework in Frameworks */,
 				494F70771893832700E82F03 /* libsqlite3.0.dylib in Frameworks */,
 				494F700F1893821E00E82F03 /* OpenGLES.framework in Frameworks */,
 				494F70091893821E00E82F03 /* CoreGraphics.framework in Frameworks */,
 				494F700B1893821E00E82F03 /* UIKit.framework in Frameworks */,
 				494F700D1893821E00E82F03 /* GLKit.framework in Frameworks */,
-				0C9F1D7018A8702F006A79A4 /* libLobiRecSDK.a in Frameworks */,
+				49FBCB7B18C741430036284A /* libLobiRecSDK.a in Frameworks */,
 				494F70071893821E00E82F03 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,45 +162,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C9F1D3F18A8702E006A79A4 /* LobiRecSDK */ = {
-			isa = PBXGroup;
-			children = (
-				0C9F1D5418A8702E006A79A4 /* header */,
-				0C9F1D5E18A8702F006A79A4 /* lib */,
-				0C9F1D6018A8702F006A79A4 /* LobiRec.bundle */,
-			);
-			name = LobiRecSDK;
-			path = ../LobiRecSDK;
-			sourceTree = "<group>";
-		};
-		0C9F1D5418A8702E006A79A4 /* header */ = {
-			isa = PBXGroup;
-			children = (
-				0C9F1D5518A8702E006A79A4 /* KLMNavigationController.h */,
-				0C9F1D5618A8702E006A79A4 /* KLMPlayWebViewController.h */,
-				0C9F1D5718A8702F006A79A4 /* KLMPostVideoViewController.h */,
-				0C9F1D5818A8702F006A79A4 /* KLMVideoCapture.h */,
-				0C9F1D5918A8702F006A79A4 /* KLRAPI.h */,
-				0C9F1D5A18A8702F006A79A4 /* KLRConfiguration.h */,
-				0C9F1D5B18A8702F006A79A4 /* KLRRanking.h */,
-				0C9F1D5C18A8702F006A79A4 /* KLRRankingViewController.h */,
-				0C9F1D5D18A8702F006A79A4 /* NakamapRanking.h */,
-			);
-			path = header;
-			sourceTree = "<group>";
-		};
-		0C9F1D5E18A8702F006A79A4 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				0C9F1D5F18A8702F006A79A4 /* libLobiRecSDK.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
 		494F6FFA1893821E00E82F03 = {
 			isa = PBXGroup;
 			children = (
-				0C9F1D3F18A8702E006A79A4 /* LobiRecSDK */,
+				49FBCB4818C741430036284A /* LobiRecSDK */,
 				494F70101893821E00E82F03 /* GLKitTest */,
 				494F70331893821F00E82F03 /* GLKitTestTests */,
 				494F70051893821E00E82F03 /* Frameworks */,
@@ -191,13 +185,13 @@
 		494F70051893821E00E82F03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49FBCB4618C73EB50036284A /* StoreKit.framework */,
 				494F70861893835300E82F03 /* MediaPlayer.framework */,
 				494F70841893834D00E82F03 /* AudioToolbox.framework */,
 				494F70821893834800E82F03 /* Security.framework */,
 				494F70801893834200E82F03 /* AVFoundation.framework */,
 				494F707E1893833D00E82F03 /* CoreMedia.framework */,
 				494F707C1893833900E82F03 /* CoreVideo.framework */,
-				494F707A1893833500E82F03 /* StoreKit.framework */,
 				494F70781893833100E82F03 /* QuartzCore.framework */,
 				494F70761893832700E82F03 /* libsqlite3.0.dylib */,
 				494F70061893821E00E82F03 /* Foundation.framework */,
@@ -222,8 +216,6 @@
 				494F70241893821E00E82F03 /* RRViewController.m */,
 				494F70261893821E00E82F03 /* Images.xcassets */,
 				494F70111893821E00E82F03 /* Supporting Files */,
-				496F380418973E7700E2D203 /* EAGLContext+lift.h */,
-				496F380518973E7700E2D203 /* EAGLContext+lift.m */,
 			);
 			path = GLKitTest;
 			sourceTree = "<group>";
@@ -255,6 +247,97 @@
 				494F70361893821F00E82F03 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49FBCB4818C741430036284A /* LobiRecSDK */ = {
+			isa = PBXGroup;
+			children = (
+				49FBCB4918C741430036284A /* doc */,
+				49FBCB5E18C741430036284A /* header */,
+				49FBCB6818C741430036284A /* lib */,
+				49FBCB6A18C741430036284A /* LobiRec.bundle */,
+			);
+			name = LobiRecSDK;
+			path = ../LobiRecSDK;
+			sourceTree = "<group>";
+		};
+		49FBCB4918C741430036284A /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				49FBCB4A18C741430036284A /* Classes */,
+				49FBCB4D18C741430036284A /* Constants */,
+				49FBCB5318C741430036284A /* css */,
+				49FBCB5618C741430036284A /* hierarchy.html */,
+				49FBCB5718C741430036284A /* img */,
+				49FBCB5D18C741430036284A /* index.html */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		49FBCB4A18C741430036284A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				49FBCB4B18C741430036284A /* KLMPostVideoViewController.html */,
+				49FBCB4C18C741430036284A /* KLMVideoCapture.html */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		49FBCB4D18C741430036284A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				49FBCB4E18C741430036284A /* KLMLiveWipeStatus.html */,
+				49FBCB4F18C741430036284A /* KLRAPIStatusCode.html */,
+				49FBCB5018C741430036284A /* KLRRankingCursorOrigin.html */,
+				49FBCB5118C741430036284A /* KLRRankingPage.html */,
+				49FBCB5218C741430036284A /* KLRRankingRange.html */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		49FBCB5318C741430036284A /* css */ = {
+			isa = PBXGroup;
+			children = (
+				49FBCB5418C741430036284A /* styles.css */,
+				49FBCB5518C741430036284A /* stylesPrint.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		49FBCB5718C741430036284A /* img */ = {
+			isa = PBXGroup;
+			children = (
+				49FBCB5818C741430036284A /* button_bar_background.png */,
+				49FBCB5918C741430036284A /* disclosure.png */,
+				49FBCB5A18C741430036284A /* disclosure_open.png */,
+				49FBCB5B18C741430036284A /* library_background.png */,
+				49FBCB5C18C741430036284A /* title_background.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		49FBCB5E18C741430036284A /* header */ = {
+			isa = PBXGroup;
+			children = (
+				49FBCB5F18C741430036284A /* KLMNavigationController.h */,
+				49FBCB6018C741430036284A /* KLMPlayWebViewController.h */,
+				49FBCB6118C741430036284A /* KLMPostVideoViewController.h */,
+				49FBCB6218C741430036284A /* KLMVideoCapture.h */,
+				49FBCB6318C741430036284A /* KLRAPI.h */,
+				49FBCB6418C741430036284A /* KLRConfiguration.h */,
+				49FBCB6518C741430036284A /* KLRRanking.h */,
+				49FBCB6618C741430036284A /* KLRRankingViewController.h */,
+				49FBCB6718C741430036284A /* NakamapRanking.h */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		49FBCB6818C741430036284A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				49FBCB6918C741430036284A /* libLobiRecSDK.a */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +388,14 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "RaftRiders Inc.";
 				TargetAttributes = {
+					494F70021893821E00E82F03 = {
+						DevelopmentTeam = 8H5S2J79M4;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
 					494F702B1893821F00E82F03 = {
 						TestTargetID = 494F70021893821E00E82F03;
 					};
@@ -334,11 +425,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49FBCB7A18C741430036284A /* index.html in Resources */,
+				49FBCB6B18C741430036284A /* KLMPostVideoViewController.html in Resources */,
+				49FBCB7818C741430036284A /* library_background.png in Resources */,
+				49FBCB7018C741430036284A /* KLRRankingPage.html in Resources */,
 				494F70221893821E00E82F03 /* Shader.vsh in Resources */,
+				49FBCB7318C741430036284A /* stylesPrint.css in Resources */,
+				49FBCB7718C741430036284A /* disclosure_open.png in Resources */,
 				494F70271893821E00E82F03 /* Images.xcassets in Resources */,
-				0C9F1D7118A8702F006A79A4 /* LobiRec.bundle in Resources */,
+				49FBCB7218C741430036284A /* styles.css in Resources */,
+				49FBCB7618C741430036284A /* disclosure.png in Resources */,
 				494F70201893821E00E82F03 /* Shader.fsh in Resources */,
+				49FBCB6C18C741430036284A /* KLMVideoCapture.html in Resources */,
+				49FBCB6F18C741430036284A /* KLRRankingCursorOrigin.html in Resources */,
+				49FBCB7118C741430036284A /* KLRRankingRange.html in Resources */,
 				494F70151893821E00E82F03 /* InfoPlist.strings in Resources */,
+				49FBCB7518C741430036284A /* button_bar_background.png in Resources */,
+				49FBCB6E18C741430036284A /* KLRAPIStatusCode.html in Resources */,
+				49FBCB7918C741430036284A /* title_background.png in Resources */,
+				49FBCB6D18C741430036284A /* KLMLiveWipeStatus.html in Resources */,
+				49FBCB7418C741430036284A /* hierarchy.html in Resources */,
+				49FBCB7C18C741430036284A /* LobiRec.bundle in Resources */,
 				494F701E1893821E00E82F03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,7 +468,6 @@
 				494F701B1893821E00E82F03 /* RRAppDelegate.m in Sources */,
 				494F70171893821E00E82F03 /* main.m in Sources */,
 				494F70251893821E00E82F03 /* RRViewController.m in Sources */,
-				496F380618973E7700E2D203 /* EAGLContext+lift.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +602,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../LobiRecSDK/lib",
+					"/Users/takahashi-kohei/Desktop/Lobi/LobiRecSDK/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -517,6 +624,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../LobiRecSDK/lib",
+					"/Users/takahashi-kohei/Desktop/Lobi/LobiRecSDK/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -122,7 +122,7 @@ GLfloat gCubeVertexData[216] =
     GLKView *view = (GLKView *)self.view;
     view.context = self.context;
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
-    
+
     {
         self.startButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         self.startButton.frame = (CGRect){0, 240, 80, 54};
@@ -141,17 +141,19 @@ GLfloat gCubeVertexData[216] =
         self.shareButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         self.shareButton.frame = (CGRect){160, 240, 80, 54};
         [self.shareButton setTitle:@"share" forState:UIControlStateNormal];
-        [self.shareButton addTarget:self action:@selector(share) forControlEvents:UIControlEventTouchUpInside];
+        [self.shareButton addTarget:self action:@selector(showPostViewController) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:self.shareButton];
     }
     {
         self.webButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         self.webButton.frame = (CGRect){240, 240, 80, 54};
         [self.webButton setTitle:@"web" forState:UIControlStateNormal];
-        [self.webButton addTarget:self action:@selector(web) forControlEvents:UIControlEventTouchUpInside];
+        [self.webButton addTarget:self action:@selector(showPlayList) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:self.webButton];
     }
     [self setupGL];
+    
+    [[KLMVideoCapture sharedInstance] setCurrentContext:self.context withGLView:self.view];
 }
 
 
@@ -257,11 +259,10 @@ GLfloat gCubeVertexData[216] =
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
     if (_frameBuffer == 0) {
-        [[KLMVideoCapture sharedInstance] setCurrentContext:self.context withGLView:self.view];
         glGetIntegerv(GL_FRAMEBUFFER_BINDING, &_frameBuffer);
         [[KLMVideoCapture sharedInstance] createFramebuffer:_frameBuffer];
     }
-
+    
     [[KLMVideoCapture sharedInstance] prepareFrame];
     
     glClearColor(0.65f, 0.65f, 0.65f, 1.0f);
@@ -440,10 +441,40 @@ GLfloat gCubeVertexData[216] =
 
 - (void)startCapture
 {
-    [KLMVideoCapture sharedInstance].liveWipeStatus = KLMWipeStatusInCamera;
-    [KLMVideoCapture sharedInstance].wipePositionX = 0;
-    [KLMVideoCapture sharedInstance].wipePositionY = 0;
-    [KLMVideoCapture sharedInstance].wipeSquareSize = 100;
+    static int const offset   = 20;
+    static int const wipesize = 100;
+    
+    // ゲームに自撮りワイプを表示します。
+    [KLMVideoCapture sharedInstance].liveWipeStatus  = KLMWipeStatusInCamera;
+    
+    // ワイプのサイズを指定します。
+    [KLMVideoCapture sharedInstance].wipeSquareSize  = wipesize;
+    
+    // ワイプのX座標を指定します。
+    [KLMVideoCapture sharedInstance].wipePositionX   = offset;
+    
+    // ワイプのX座標を指定します。
+    [KLMVideoCapture sharedInstance].wipePositionY   = offset;
+    
+    // 実況録音にマイク仕様を許可します。
+    [KLMVideoCapture sharedInstance].micEnable       = YES;
+
+    // 実況録音のマイクボリュームを指定します。
+    [KLMVideoCapture sharedInstance].micVolume       = 1;
+    
+    // 実況録音のゲームボリュームを指定します。
+    [KLMVideoCapture sharedInstance].gameSoundVolume = 1;
+    
+    // ゲーム画面のワイプを非表示にする場合、YESを指定します。
+    [KLMVideoCapture sharedInstance].hideFaceOnPreview = NO;
+    
+    // ゲーム録画にモザイクを掛ける場合 YESを指定します。
+    [KLMVideoCapture sharedInstance].preventSpoiler    = NO;
+
+    // フレームのキャプチャ単位を設定します。
+    [KLMVideoCapture sharedInstance].capturePerFrame   = 1;
+    
+    // 録画開始します。
     [[KLMVideoCapture sharedInstance] startCapturing];
 }
 
@@ -452,7 +483,7 @@ GLfloat gCubeVertexData[216] =
     [[KLMVideoCapture sharedInstance] stopCapturing];
 }
 
-- (void)web
+- (void)showPlayList
 {
     if (![[KLMVideoCapture sharedInstance] isCapturing]) {
         KLMPlayWebViewController *vc = [[KLMPlayWebViewController alloc] init];
@@ -461,10 +492,16 @@ GLfloat gCubeVertexData[216] =
     }
 }
 
-- (void)share
+- (void)showPostViewController
 {
-    if (![[KLMVideoCapture sharedInstance] isCapturing] && [KLMVideoCapture sharedInstance].hasMovie) {
+    if (![KLMVideoCapture sharedInstance].isCapturing && [[KLMVideoCapture sharedInstance] hasMovie])
+    {
+        // プレイ動画シェア画面の表示
         KLMPostVideoViewController *vc = [[KLMPostVideoViewController alloc] init];
+        vc.postTitle = @"プレイ動画をシェアします！";
+        vc.postDescriotion = @"神懸ったこの華麗なプレイ。やばい。";
+        vc.postScore = 100;
+        vc.postCategory = @"stage1";
         KLMNavigationController *nc = [[KLMNavigationController alloc] initWithRootViewController:vc];
         [self presentViewController:nc animated:YES completion:^{}];
     }
