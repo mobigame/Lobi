@@ -77,6 +77,9 @@ extern NSString *const KLMDismissingPostVideoViewControllerNotification;
  
   - KLMMovieUploadedErrorNotification;
   ゲーム録画ファイルをサーバにPOSTエラーが発生した際に、userInfoにnilを格納して通知する通知名称です。
+
+  - KLMDismissingPostVideoViewControllerNotification;
+  動画ポストviewControllerを閉じた時に、userInfoに動画のポスト処理の有無を格納して通知する通知名称です。
  */
 @interface KLMVideoCapture : NSObject
 

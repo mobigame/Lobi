@@ -19,4 +19,5 @@
  *  動画投稿後のポップアップメッセージを表示しないようにします。
  */
 @property (nonatomic, assign) BOOL hidePostAnotation;
+@property (nonatomic, copy)   void(^completionBlock)(void);
 @end

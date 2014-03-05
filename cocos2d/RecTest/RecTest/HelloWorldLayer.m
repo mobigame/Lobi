@@ -65,6 +65,7 @@
             [KLMVideoCapture sharedInstance].gameSoundVolume = 1;
             [KLMVideoCapture sharedInstance].hideFaceOnPreview = NO;
             [KLMVideoCapture sharedInstance].preventSpoiler    = NO;
+            [KLMVideoCapture sharedInstance].capturePerFrame   = 1;
 
 			[[KLMVideoCapture sharedInstance] startCapturing];
 		}];
