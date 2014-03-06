@@ -83,9 +83,14 @@
                 vc.postScore = 100;
                 vc.postCategory = @"";
                 vc.hidePostAnotation = NO;
+                vc.completionBlock = ^{
+                    [[CCDirector sharedDirector] startAnimation];
+                };
                 KLMNavigationController *nc = [[[KLMNavigationController alloc] initWithRootViewController:vc] autorelease];
                 AppController *app = (AppController*)[UIApplication sharedApplication].delegate;
-                [app.navController presentViewController:nc animated:YES completion:^{}];
+                [app.navController presentViewController:nc animated:YES completion:^{
+                    [[CCDirector sharedDirector] stopAnimation];
+                }];
             }
 		}];
 
@@ -93,8 +98,13 @@
             if (![[KLMVideoCapture sharedInstance] isCapturing]) {
                 KLMPlayWebViewController *vc = [[[KLMPlayWebViewController alloc] init] autorelease];
                 KLMNavigationController *nc = [[[KLMNavigationController alloc] initWithRootViewController:vc] autorelease];
+                vc.completionBlock = ^{
+                    [[CCDirector sharedDirector] startAnimation];
+                };
                 AppController *app = (AppController*)[UIApplication sharedApplication].delegate;
-                [app.navController presentViewController:nc animated:YES completion:^{}];
+                [app.navController presentViewController:nc animated:YES completion:^{
+                    [[CCDirector sharedDirector] stopAnimation];
+                }];
             }
 		}];
 

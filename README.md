@@ -22,6 +22,15 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.1.2 - 2014/03/06
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.2.zip)  
+    - トリミングボタンを初期化時に非表示とする
+    [https://github.com/kayac/Lobi/issues/68](https://github.com/kayac/Lobi/issues/68)  
+
+- v5.1.1 - 2014/03/05
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.1.zip)  
+    - 録画後実況機能を一時的に取り外す  
+
 - v5.1.0 - 2014/02/28
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.0.zip)  
     - 録画後実況を入れられるようにする。  
