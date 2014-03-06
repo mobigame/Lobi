@@ -21,15 +21,25 @@ static AppDelegate s_sharedApplication;
 - (void)openWebViewController
 {
     KLMPlayWebViewController *vc = [[[KLMPlayWebViewController alloc] init] autorelease];
+    vc.completionBlock = ^{
+        cocos2d::CCDirector::sharedDirector()->startAnimation();
+    };
     KLMNavigationController *nc = [[KLMNavigationController alloc] initWithRootViewController:vc];
-    [viewController presentViewController:nc animated:YES completion:^{}];
+    [viewController presentViewController:nc animated:YES completion:^{
+        cocos2d::CCDirector::sharedDirector()->stopAnimation();
+    }];
 }
 
 - (void)openPostViewController
 {
     KLMPostVideoViewController *vc = [[[KLMPostVideoViewController alloc] init] autorelease];
+    vc.completionBlock = ^{
+        cocos2d::CCDirector::sharedDirector()->startAnimation();
+    };
     KLMNavigationController *nc = [[KLMNavigationController alloc] initWithRootViewController:vc];
-    [viewController presentViewController:nc animated:YES completion:^{}];
+    [viewController presentViewController:nc animated:YES completion:^{
+        cocos2d::CCDirector::sharedDirector()->stopAnimation();
+    }];
 }
 
 - (BOOL)application:(UIApplication *)application
