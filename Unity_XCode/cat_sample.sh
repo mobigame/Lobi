@@ -1,2 +1,2 @@
-cat sample.*>smaple.zip
+cat sample.*>sample.zip
 

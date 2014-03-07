@@ -22,6 +22,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.1.3 - 2014/03/07
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.3.zip)  
+    - ClippingNodeを利用時、録画表示が不正になる問題を修正
+    [https://github.com/kayac/Lobi/issues/70](https://github.com/kayac/Lobi/issues/70)  
+
 - v5.1.2 - 2014/03/06
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.2.zip)  
     - トリミングボタンを初期化時に非表示とする
