@@ -22,6 +22,15 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.1.4 - 2014/03/07
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.4.zip)  
+    - 録画後実況を入れられるようにする  
+    [https://github.com/kayac/Lobi/issues/62](https://github.com/kayac/Lobi/issues/62)  
+	- KLMPlayWebViewControllerにcompletionBlockを追加  
+    [https://github.com/kayac/Lobi/issues/65](https://github.com/kayac/Lobi/issues/65)  
+	- KLMPostVideoViewControllerにcompletionBlockを追加  
+    [https://github.com/kayac/Lobi/issues/66](https://github.com/kayac/Lobi/issues/66)  
+
 - v5.1.3 - 2014/03/07
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.3.zip)  
     - ClippingNodeを利用時、録画表示が不正になる問題を修正
