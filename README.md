@@ -22,6 +22,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.1.5 - 2014/03/10
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.5.zip)  
+    - Unity で OnGUI でボタン等を表示している場合に録画を始めると真っ暗になる。  
+    [https://github.com/kayac/Lobi/issues/22](https://github.com/kayac/Lobi/issues/22)  
+
 - v5.1.4 - 2014/03/07
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.4.zip)  
     - 録画後実況を入れられるようにする  

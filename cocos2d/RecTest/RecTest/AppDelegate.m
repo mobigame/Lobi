@@ -73,6 +73,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // サンプルのクライアントIDは公開されているIDです。アップロードされた動画は公開されます。
+    // アプリケーションに実装する場合は新規のクライアントIDを取得してご利用ください。
     [KLRConfiguration currentConfiguration].clientID = @"8550eef2e3eb415389d08689bda44ffb6a827b00";
     [KLRConfiguration currentConfiguration].accountBaseName = @"Kayac";
     
