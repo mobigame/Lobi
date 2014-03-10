@@ -33,6 +33,10 @@ static AppDelegate s_sharedApplication;
 - (void)openPostViewController
 {
     KLMPostVideoViewController *vc = [[[KLMPostVideoViewController alloc] init] autorelease];
+    vc.postTitle = @"タイトル";
+    vc.postDescriotion = @"説明";
+    vc.postScore = 100;
+    vc.postCategory = @"ステージ１";
     vc.completionBlock = ^{
         cocos2d::CCDirector::sharedDirector()->startAnimation();
     };
@@ -54,8 +58,10 @@ static AppDelegate s_sharedApplication;
     return NO;
 }
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // サンプルのクライアントIDは公開されているIDです。アップロードされた動画は公開されます。
+    // アプリケーションに実装する場合は新規のクライアントIDを取得してご利用ください。
     [KLRConfiguration currentConfiguration].clientID = @"8550eef2e3eb415389d08689bda44ffb6a827b00";
     [KLRConfiguration currentConfiguration].accountBaseName = @"Kayac";
     

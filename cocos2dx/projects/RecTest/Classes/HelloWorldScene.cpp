@@ -73,7 +73,7 @@ bool HelloWorld::init()
         addChild(menu, 1);
     }
 
-    SimpleAudioEngine::sharedEngine()->playBackgroundMusic("track.mp3");
+    SimpleAudioEngine::sharedEngine()->playBackgroundMusic("track.mp3", true);
     
     return true;
 }
