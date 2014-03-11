@@ -22,6 +22,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.1.6 - 2014/03/11
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.6.zip)  
+    - iOS 6.x以下のバージョンにて正しく録画処理がされない  
+    [https://github.com/kayac/Lobi/issues/77](https://github.com/kayac/Lobi/issues/77)  
+
 - v5.1.5 - 2014/03/10
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.5.zip)  
     - Unity で OnGUI でボタン等を表示している場合に録画を始めると真っ暗になる。  
