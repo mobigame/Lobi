@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>KLMLiveWipeStatus Constants Reference</title>
+		<title>KLMPlayWebDefaultView Constants Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">KLMLiveWipeStatus Constants Reference</h1>
+				<h1 class="hideInXcode">KLMPlayWebDefaultView Constants Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -45,7 +45,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="KLMLiveWipeStatus Constants Reference" name="top"></a>
+				<a title="KLMPlayWebDefaultView Constants Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -54,7 +54,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">KLMLiveWipeStatus Constants Reference</h1>
+						<h1 class="title title-header">KLMPlayWebDefaultView Constants Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -62,7 +62,7 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">KLMVideoCapture.h</td>
+	<td class="specification-value">KLMPlayWebViewController.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -74,25 +74,21 @@
 					
                     
                     
-                    <h3 class="subsubtitle method-title">KLMLiveWipeStatus</h3>
+                    <h3 class="subsubtitle method-title">KLMPlayWebDefaultView</h3>
                     
-					
-					<div class="section section-overview">
-                        <p>ゲーム録画中のワイプ表示</p>
-					</div>
-					
-					
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSUInteger, KLMLiveWipeStatus ) {<br/>
+                        <code>typedef NS_ENUM(NSInteger, KLMPlayWebDefaultView ) {<br/>
                             
-                            &nbsp;&nbsp; <a href="">KLMWipeStatusNone</a> = 0,<br/>
+                            &nbsp;&nbsp; <a href="">KLMPlayWebViewNone</a> = -1,<br/>
                             
-                            &nbsp;&nbsp; <a href="">KLMWipeStatusInCamera</a>,<br/>
+                            &nbsp;&nbsp; <a href="">KLMPlayWebViewProfile</a> = 0,<br/>
                             
-                            &nbsp;&nbsp; <a href="">KLMWipeStatusIcon</a>,<br/>
+                            &nbsp;&nbsp; <a href="">KLMPlayWebViewList</a>,<br/>
+                            
+                            &nbsp;&nbsp; <a href="">KLMPlayWebViewHelp</a>,<br/>
                             
                             };</code>
                     
@@ -102,53 +98,42 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="KLMWipeStatusNone"></a><code>KLMWipeStatusNone</code></dt>
+                            <dt><a name="" title="KLMPlayWebViewNone"></a><code>KLMPlayWebViewNone</code></dt>
 <dd>
-
-
-<p>ワイプなし</p>
-
-    
-
-    
 
     
 	<p>
-		Declared In <code class="declared-in-ref">KLMVideoCapture.h</code>.
+		Declared In <code class="declared-in-ref">KLMPlayWebViewController.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="KLMWipeStatusInCamera"></a><code>KLMWipeStatusInCamera</code></dt>
+                            <dt><a name="" title="KLMPlayWebViewProfile"></a><code>KLMPlayWebViewProfile</code></dt>
 <dd>
-
-
-<p>インカメラワイプ</p>
-
-    
-
-    
 
     
 	<p>
-		Declared In <code class="declared-in-ref">KLMVideoCapture.h</code>.
+		Declared In <code class="declared-in-ref">KLMPlayWebViewController.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="KLMWipeStatusIcon"></a><code>KLMWipeStatusIcon</code></dt>
+                            <dt><a name="" title="KLMPlayWebViewList"></a><code>KLMPlayWebViewList</code></dt>
 <dd>
-
-
-<p>アイコン</p>
-
-    
-
-    
 
     
 	<p>
-		Declared In <code class="declared-in-ref">KLMVideoCapture.h</code>.
+		Declared In <code class="declared-in-ref">KLMPlayWebViewController.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="KLMPlayWebViewHelp"></a><code>KLMPlayWebViewHelp</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">KLMPlayWebViewController.h</code>.
 	</p>
 	
 </dd>
@@ -156,17 +141,6 @@
                         </dl>
                     </div>
                     
-                    
-                    
-                    
-
-                    
-                    
-                    
-                    <div class="method-subsection declared-in-section">
-                        <h4 class="method-subtitle">Declared In</h4>
-                        <code class="declared-in-ref">KLMVideoCapture.h</code><br />
-                    </div>				
                     
                     
                     
