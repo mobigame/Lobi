@@ -22,6 +22,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.1.7 - 2014/03/14
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.7.zip)  
+    - 動画一覧を開く際に プロフィール画面 を設定できるようにする  
+    [https://github.com/kayac/Lobi/issues/79](https://github.com/kayac/Lobi/issues/79)  
+
 - v5.1.6 - 2014/03/11
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.6.zip)  
     - iOS 6.x以下のバージョンにて正しく録画処理がされない  
