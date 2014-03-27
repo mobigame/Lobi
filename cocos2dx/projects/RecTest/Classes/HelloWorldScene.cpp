@@ -30,6 +30,7 @@ bool HelloWorld::init()
 
     setTouchEnabled( true );
 
+    CCEGLView::sharedOpenGLView()->setDesignResolutionSize(568, 320, kResolutionShowAll);
     CCSize  visibleSize = CCDirector::sharedDirector()->getVisibleSize();
     CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
     CCSize  size = CCDirector::sharedDirector()->getWinSize();

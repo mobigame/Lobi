@@ -22,6 +22,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.1.8 - 2014/03/27
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.8.zip)  
+    - setDesignResolutionSize時、描画が正しく行われない  
+    [https://github.com/kayac/Lobi/issues/81](https://github.com/kayac/Lobi/issues/81)  
+
 - v5.1.7 - 2014/03/14
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.7.zip)  
     - 動画一覧を開く際に プロフィール画面 を設定できるようにする  
