@@ -22,6 +22,13 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.1.9 - 2014/03/28
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.9.zip)  
+    - プレビュー時自動でUIをフェードアウトさせる
+    [https://github.com/kayac/Lobi/issues/84](https://github.com/kayac/Lobi/issues/84)  
+    - アフレコ時の動画表示不正
+    [https://github.com/kayac/Lobi/issues/83](https://github.com/kayac/Lobi/issues/83)  
+
 - v5.1.8 - 2014/03/27
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.8.zip)  
     - setDesignResolutionSize時、描画が正しく行われない  
