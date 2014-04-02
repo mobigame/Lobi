@@ -22,6 +22,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.1.10 - 2014/04/02
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.10.zip)  
+    - アフレコ終了時、録画終端あたりが切れている
+    [https://github.com/kayac/Lobi/issues/86](https://github.com/kayac/Lobi/issues/86)  
+
 - v5.1.9 - 2014/03/28
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.9.zip)  
     - プレビュー時自動でUIをフェードアウトさせる
