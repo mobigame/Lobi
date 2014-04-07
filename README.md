@@ -17,7 +17,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 -----------
 
 ドキュメントは以下を確認してください  
-[https://github.com/kayac/Lobi/wiki](https://github.com/kayac/Lobi/wiki)
+
+- [https://github.com/kayac/Lobi/wiki](https://github.com/kayac/Lobi/wiki)  
+- [Lobi SDK Reference](http://kayac.github.io/Lobi/iOS/LobiSDK/LobiReference/index.html)  
+
+
 
 リリースノート
 ----------------------------
