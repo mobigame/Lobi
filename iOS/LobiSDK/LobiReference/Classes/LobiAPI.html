@@ -1,0 +1,1939 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>LobiAPI Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">LobiCore </a></h1>
+				<a id="developerHome" href="../index.html">KAYAC</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">LobiAPI Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/addFriendsWithExternalIDs:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ addFriendsWithExternalIDs:completion:</option>
+	
+	<option value="//api/name/addGroupMembersWithExternalIDs:groupExternalID:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ addGroupMembersWithExternalIDs:groupExternalID:completion:</option>
+	
+	<option value="//api/name/askStampUnlocked:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ askStampUnlocked:completion:</option>
+	
+	<option value="//api/name/callAPI:params:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ callAPI:params:completion:</option>
+	
+	<option value="//api/name/changeLeaderWithExternalID:groupExternalID:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ changeLeaderWithExternalID:groupExternalID:completion:</option>
+	
+	<option value="//api/name/createGroupWithExternalID:groupName:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ createGroupWithExternalID:groupName:completion:</option>
+	
+	<option value="//api/name/createGroupWithExternalID:groupName:invitePermission:addMembersPermission:joinPermission:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ createGroupWithExternalID:groupName:invitePermission:addMembersPermission:joinPermission:completion:</option>
+	
+	<option value="//api/name/deleteGroupWithExternalID:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ deleteGroupWithExternalID:completion:</option>
+	
+	<option value="//api/name/fetchGroupWithExternalID:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ fetchGroupWithExternalID:completion:</option>
+	
+	<option value="//api/name/getRanking:type:origin:cursor:limit:handler:">&nbsp;&nbsp;&nbsp;&nbsp;+ getRanking:type:origin:cursor:limit:handler:</option>
+	
+	<option value="//api/name/getRankingList:handler:">&nbsp;&nbsp;&nbsp;&nbsp;+ getRankingList:handler:</option>
+	
+	<option value="//api/name/getRankingList:user:handler:">&nbsp;&nbsp;&nbsp;&nbsp;+ getRankingList:user:handler:</option>
+	
+	<option value="//api/name/getUnreadCountGroupWithExternalID:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ getUnreadCountGroupWithExternalID:completion:</option>
+	
+	<option value="//api/name/getUnreadGroupCountWithHandler:">&nbsp;&nbsp;&nbsp;&nbsp;+ getUnreadGroupCountWithHandler:</option>
+	
+	<option value="//api/name/joinGroupWithExternalID:groupName:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ joinGroupWithExternalID:groupName:completion:</option>
+	
+	<option value="//api/name/kickUserWithExternalID:groupExternalID:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ kickUserWithExternalID:groupExternalID:completion:</option>
+	
+	<option value="//api/name/partGroupWithExternalID:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ partGroupWithExternalID:completion:</option>
+	
+	<option value="//api/name/postChatWithGroupExternalID:message:image:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ postChatWithGroupExternalID:message:image:completion:</option>
+	
+	<option value="//api/name/removeFriendsWithExternalID:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ removeFriendsWithExternalID:completion:</option>
+	
+	<option value="//api/name/sendRanking:score:handler:">&nbsp;&nbsp;&nbsp;&nbsp;+ sendRanking:score:handler:</option>
+	
+	<option value="//api/name/signupWithBaseName:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ signupWithBaseName:completion:</option>
+	
+	<option value="//api/name/signupWithBaseName:encryptedExternalID:IV:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ signupWithBaseName:encryptedExternalID:IV:completion:</option>
+	
+	<option value="//api/name/signupWithBaseName:encryptedExternalId:encryptIv:handler:">&nbsp;&nbsp;&nbsp;&nbsp;+ signupWithBaseName:encryptedExternalId:encryptIv:handler:</option>
+	
+	<option value="//api/name/unlockStamp:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ unlockStamp:completion:</option>
+	
+	<option value="//api/name/updateGroupWithExternalID:groupName:description:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ updateGroupWithExternalID:groupName:description:completion:</option>
+	
+	<option value="//api/name/updateUserIcon:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ updateUserIcon:completion:</option>
+	
+	<option value="//api/name/updateUserName:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ updateUserName:completion:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Manage Account">Manage Account</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Chat Methods">Chat Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Ranking Methods">Ranking Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addFriendsWithExternalIDs:completion:">addFriendsWithExternalIDs:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addGroupMembersWithExternalIDs:groupExternalID:completion:">addGroupMembersWithExternalIDs:groupExternalID:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/askStampUnlocked:completion:">askStampUnlocked:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/callAPI:params:completion:">callAPI:params:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changeLeaderWithExternalID:groupExternalID:completion:">changeLeaderWithExternalID:groupExternalID:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createGroupWithExternalID:groupName:completion:">createGroupWithExternalID:groupName:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createGroupWithExternalID:groupName:invitePermission:addMembersPermission:joinPermission:completion:">createGroupWithExternalID:groupName:invitePermission:addMembersPermission:joinPermission:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteGroupWithExternalID:completion:">deleteGroupWithExternalID:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchGroupWithExternalID:completion:">fetchGroupWithExternalID:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRanking:type:origin:cursor:limit:handler:">getRanking:type:origin:cursor:limit:handler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRankingList:handler:">getRankingList:handler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRankingList:user:handler:">getRankingList:user:handler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getUnreadCountGroupWithExternalID:completion:">getUnreadCountGroupWithExternalID:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getUnreadGroupCountWithHandler:">getUnreadGroupCountWithHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/joinGroupWithExternalID:groupName:completion:">joinGroupWithExternalID:groupName:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/kickUserWithExternalID:groupExternalID:completion:">kickUserWithExternalID:groupExternalID:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/partGroupWithExternalID:completion:">partGroupWithExternalID:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postChatWithGroupExternalID:message:image:completion:">postChatWithGroupExternalID:message:image:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeFriendsWithExternalID:completion:">removeFriendsWithExternalID:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendRanking:score:handler:">sendRanking:score:handler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/signupWithBaseName:completion:">signupWithBaseName:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/signupWithBaseName:encryptedExternalID:IV:completion:">signupWithBaseName:encryptedExternalID:IV:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/signupWithBaseName:encryptedExternalId:encryptIv:handler:">signupWithBaseName:encryptedExternalId:encryptIv:handler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unlockStamp:completion:">unlockStamp:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateGroupWithExternalID:groupName:description:completion:">updateGroupWithExternalID:groupName:description:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateUserIcon:completion:">updateUserIcon:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateUserName:completion:">updateUserName:completion:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="LobiAPI Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">LobiAPI Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">LobiAPI.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Manage Account" name="task_Manage Account"></a>
+						<h3 class="subsubtitle task-title">Manage Account</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/signupWithBaseName:completion:">+&nbsp;signupWithBaseName:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/signupWithBaseName:encryptedExternalId:encryptIv:handler:">+&nbsp;signupWithBaseName:encryptedExternalId:encryptIv:handler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateUserIcon:completion:">+&nbsp;updateUserIcon:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateUserName:completion:">+&nbsp;updateUserName:completion:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Chat Methods" name="task_Chat Methods"></a>
+						<h3 class="subsubtitle task-title">Chat Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/callAPI:params:completion:">+&nbsp;callAPI:params:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/signupWithBaseName:encryptedExternalID:IV:completion:">+&nbsp;signupWithBaseName:encryptedExternalID:IV:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createGroupWithExternalID:groupName:completion:">+&nbsp;createGroupWithExternalID:groupName:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createGroupWithExternalID:groupName:invitePermission:addMembersPermission:joinPermission:completion:">+&nbsp;createGroupWithExternalID:groupName:invitePermission:addMembersPermission:joinPermission:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateGroupWithExternalID:groupName:description:completion:">+&nbsp;updateGroupWithExternalID:groupName:description:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteGroupWithExternalID:completion:">+&nbsp;deleteGroupWithExternalID:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchGroupWithExternalID:completion:">+&nbsp;fetchGroupWithExternalID:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/joinGroupWithExternalID:groupName:completion:">+&nbsp;joinGroupWithExternalID:groupName:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/partGroupWithExternalID:completion:">+&nbsp;partGroupWithExternalID:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addGroupMembersWithExternalIDs:groupExternalID:completion:">+&nbsp;addGroupMembersWithExternalIDs:groupExternalID:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/kickUserWithExternalID:groupExternalID:completion:">+&nbsp;kickUserWithExternalID:groupExternalID:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changeLeaderWithExternalID:groupExternalID:completion:">+&nbsp;changeLeaderWithExternalID:groupExternalID:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addFriendsWithExternalIDs:completion:">+&nbsp;addFriendsWithExternalIDs:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeFriendsWithExternalID:completion:">+&nbsp;removeFriendsWithExternalID:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unlockStamp:completion:">+&nbsp;unlockStamp:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/askStampUnlocked:completion:">+&nbsp;askStampUnlocked:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getUnreadGroupCountWithHandler:">+&nbsp;getUnreadGroupCountWithHandler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getUnreadCountGroupWithExternalID:completion:">+&nbsp;getUnreadCountGroupWithExternalID:completion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postChatWithGroupExternalID:message:image:completion:">+&nbsp;postChatWithGroupExternalID:message:image:completion:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Ranking Methods" name="task_Ranking Methods"></a>
+						<h3 class="subsubtitle task-title">Ranking Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendRanking:score:handler:">+&nbsp;sendRanking:score:handler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRanking:type:origin:cursor:limit:handler:">+&nbsp;getRanking:type:origin:cursor:limit:handler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRankingList:handler:">+&nbsp;getRankingList:handler:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRankingList:user:handler:">+&nbsp;getRankingList:user:handler:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addFriendsWithExternalIDs:completion:" title="addFriendsWithExternalIDs:completion:"></a>
+	<h3 class="subsubtitle method-title">addFriendsWithExternalIDs:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>指定したユーザーとLobiSDK上で友だちになります。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)addFriendsWithExternalIDs:(NSArray *)<em>externalIDs</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>externalIDs</em></dt>
+			<dd><p>友達に追加するユーザーのUserExternalIDの配列を指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addGroupMembersWithExternalIDs:groupExternalID:completion:" title="addGroupMembersWithExternalIDs:groupExternalID:completion:"></a>
+	<h3 class="subsubtitle method-title">addGroupMembersWithExternalIDs:groupExternalID:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>ユーザーをグループのメンバーに追加します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)addGroupMembersWithExternalIDs:(NSArray *)<em>userExternalIDs</em> groupExternalID:(NSString *)<em>groupExternalID</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userExternalIDs</em></dt>
+			<dd><p>追加するユーザーのUserExternalIDの配列を指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupExternalID</em></dt>
+			<dd><p>追加先のグループのGroupExternalIDを指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/askStampUnlocked:completion:" title="askStampUnlocked:completion:"></a>
+	<h3 class="subsubtitle method-title">askStampUnlocked:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>IDが&lt;STAMP_UID>のスタンプグループの利用制限が解除されているか確認します。
+&lt;STAMP_UID>には開発チームからあらかじめ通知されたものを利用してください。
+成功時のresponseは@{@&ldquo;unlocked&rdquo;: (NSNumber *)value}のNSDictionaryとなります。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)askStampUnlocked:(NSString *)<em>stampID</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>stampID</em></dt>
+			<dd><p>解除されたかどうかを確認するスタンプ用のIDを指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/callAPI:params:completion:" title="callAPI:params:completion:"></a>
+	<h3 class="subsubtitle method-title">callAPI:params:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>REST APIのパスを指定してAPIを実行します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)callAPI:(NSString *)<em>path</em> params:(NSDictionary *)<em>params</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>REST APIのパスを指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>params</em></dt>
+			<dd><p>パラメータを指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>method</em></dt>
+			<dd><p>LobiHTTPMethodGETまたは、LobiHTTPMethodPOSTを指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changeLeaderWithExternalID:groupExternalID:completion:" title="changeLeaderWithExternalID:groupExternalID:completion:"></a>
+	<h3 class="subsubtitle method-title">changeLeaderWithExternalID:groupExternalID:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>グループのリーダーを変更します。
+このAPIはリーダーのみが実行することができます。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)changeLeaderWithExternalID:(NSString *)<em>leaderExternalID</em> groupExternalID:(NSString *)<em>groupExternalID</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>leaderExternalID</em></dt>
+			<dd><p>新しいリーダーのUserExternalIDを指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupExternalID</em></dt>
+			<dd><p>リーダー変更するグループのGroupExternalIDを指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createGroupWithExternalID:groupName:completion:" title="createGroupWithExternalID:groupName:completion:"></a>
+	<h3 class="subsubtitle method-title">createGroupWithExternalID:groupName:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>指定したGroupExternalIDに対応したグループを作成します。
+既にグループが存在する場合にはエラーとなります。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)createGroupWithExternalID:(NSString *)<em>groupExternalID</em> groupName:(NSString *)<em>groupName</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupExternalID</em></dt>
+			<dd><p>グループのIDを指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupName</em></dt>
+			<dd><p>グループの名前を指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createGroupWithExternalID:groupName:invitePermission:addMembersPermission:joinPermission:completion:" title="createGroupWithExternalID:groupName:invitePermission:addMembersPermission:joinPermission:completion:"></a>
+	<h3 class="subsubtitle method-title">createGroupWithExternalID:groupName:invitePermission:addMembersPermission:joinPermission:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>指定したGroupExternalIDに対応したグループを作成します。
+既にグループが存在する場合にはエラーとなります。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)createGroupWithExternalID:(NSString *)<em>groupExternalID</em> groupName:(NSString *)<em>groupName</em> invitePermission:(LobiPermissionType)<em>invitePermission</em> addMembersPermission:(LobiPermissionType)<em>addMembersPermission</em> joinPermission:(LobiPermissionType)<em>joinPermission</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupExternalID</em></dt>
+			<dd><p>グループのIDを指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupName</em></dt>
+			<dd><p>グループの名前を指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>invitePermission</em></dt>
+			<dd><p>グループに招待する権限をもつユーザーを指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>addMembersPermission</em></dt>
+			<dd><p>グループに追加する権限をもつユーザーを指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>joinPermission</em></dt>
+			<dd><p>グループに参加する権限をもつユーザーを指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteGroupWithExternalID:completion:" title="deleteGroupWithExternalID:completion:"></a>
+	<h3 class="subsubtitle method-title">deleteGroupWithExternalID:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>指定したGroupExternalIDに対応したグループを削除します。
+このAPIはリーダーのみが実行することができ、
+リーダー以外のメンバーが実行した場合にはエラーとなります。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)deleteGroupWithExternalID:(NSString *)<em>groupExternalID</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupExternalID</em></dt>
+			<dd><p>削除するグループのIDを指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchGroupWithExternalID:completion:" title="fetchGroupWithExternalID:completion:"></a>
+	<h3 class="subsubtitle method-title">fetchGroupWithExternalID:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>指定したGroupExternalIDに対応したグループの情報を取得します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)fetchGroupWithExternalID:(NSString *)<em>externalID</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupExternalID</em></dt>
+			<dd><p>取得するグループのIDを指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRanking:type:origin:cursor:limit:handler:" title="getRanking:type:origin:cursor:limit:handler:"></a>
+	<h3 class="subsubtitle method-title">getRanking:type:origin:cursor:limit:handler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>ランキング詳細を取得します。
+responseのself_orderには自分のランキングデータが設定されます。
+もしユーザがランキングにスコアが投稿してない場合、self_orderの値は空になります。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)getRanking:(NSString *)<em>rankingID</em> type:(KLRRankingRange)<em>type</em> origin:(KLRRankingCursorOrigin)<em>origin</em> cursor:(NSInteger)<em>cursor</em> limit:(NSInteger)<em>limit</em> handler:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rankingID</em></dt>
+			<dd><p>開発者向けページで作成したアプリのランキングIDを指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>ランキングの範囲をKLRRankingRangeToday（本日）,
+KLRRankingRangeWeek（今週）,
+KLRRankingRangeAll（全体）,
+KLRRankingRangeLastWeek（先週）から指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>origin</em></dt>
+			<dd><p>順位の取得の基準をKLRRankingCursorOriginTop（先頭）,
+KLRRankingCursorOriginSelf（自分中心）から指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cursor</em></dt>
+			<dd><p>KLRRankingCursorOriginTopを選択時に何位から取得するか指定します。
+default は 1。self の場合は無視します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>limit</em></dt>
+			<dd><p>KLRRankingCursorOriginTopを選択時、何人取得するか指定します。
+KLRRankingCursorOriginSelfを選択時、前後何人取得するか指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Ranking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRankingList:handler:" title="getRankingList:handler:"></a>
+	<h3 class="subsubtitle method-title">getRankingList:handler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>順位表(LeaderBoard)毎のランキングを取得します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)getRankingList:(KLRRankingRange)<em>type</em> handler:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>ランキングの範囲をKLRRankingRangeToday（本日）,
+KLRRankingRangeWeek（今週）,
+KLRRankingRangeAll（全体）,
+KLRRankingRangeLastWeek（先週）から指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Ranking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRankingList:user:handler:" title="getRankingList:user:handler:"></a>
+	<h3 class="subsubtitle method-title">getRankingList:user:handler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>ユーザの順位表(LeaderBoard)毎のランキングを取得します。
+responseのorderには自分のランキングデータが設定されます。
+もしユーザがランキングにスコアが投稿してない場合、orderの値は空になります。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)getRankingList:(KLRRankingRange)<em>type</em> user:(NSString *)<em>uid</em> handler:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>ランキングの範囲をKLRRankingRangeToday（本日）,
+KLRRankingRangeWeek（今週）,
+KLRRankingRangeAll（全体）,
+KLRRankingRangeLastWeek（先週）から指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>uid</em></dt>
+			<dd><p>取得するユーザのIDを指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Ranking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getUnreadCountGroupWithExternalID:completion:" title="getUnreadCountGroupWithExternalID:completion:"></a>
+	<h3 class="subsubtitle method-title">getUnreadCountGroupWithExternalID:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>グループを指定して未読のチャット数を取得します。
+成功時のresponseは@{@&ldquo;count&rdquo;: (NSNumber *)value}のNSDictionaryとなります。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)getUnreadCountGroupWithExternalID:(NSString *)<em>externalID</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupExternalID</em></dt>
+			<dd><p>未読チャット数を取得するグループのIDを指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getUnreadGroupCountWithHandler:" title="getUnreadGroupCountWithHandler:"></a>
+	<h3 class="subsubtitle method-title">getUnreadGroupCountWithHandler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>チャットの未読があるグループの数を取得します。
+成功時のresponseは@{@&ldquo;count&rdquo;:(NSString *)value}のNSDictionaryとなります。
+10件以上の未読グループが存在する場合のレスポンスは@{@&ldquo;count&rdquo;:@&ldquo;9+&rdquo;}となります。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)getUnreadGroupCountWithHandler:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/joinGroupWithExternalID:groupName:completion:" title="joinGroupWithExternalID:groupName:completion:"></a>
+	<h3 class="subsubtitle method-title">joinGroupWithExternalID:groupName:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>指定したGroupExternalIDに対応したグループに参加します。
+GroupExternalIDに対応するグループが存在しない場合、
+groupNameで指定した名前のグループが作成されます。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)joinGroupWithExternalID:(NSString *)<em>groupExternalID</em> groupName:(NSString *)<em>groupName</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupExternalID</em></dt>
+			<dd><p>参加するグループのIDを指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupName</em></dt>
+			<dd><p>グループの名前を指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/kickUserWithExternalID:groupExternalID:completion:" title="kickUserWithExternalID:groupExternalID:completion:"></a>
+	<h3 class="subsubtitle method-title">kickUserWithExternalID:groupExternalID:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>ユーザーをグループのメンバーから追放します。
+このAPIはリーダーのみが実行することができます。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)kickUserWithExternalID:(NSString *)<em>userExternalID</em> groupExternalID:(NSString *)<em>groupExternalID</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupExternalID</em></dt>
+			<dd><p>追放するグループのGroupExternalIDを指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userExternalIDs</em></dt>
+			<dd><p>追放するユーザーのUserExternalIDの配列を指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/partGroupWithExternalID:completion:" title="partGroupWithExternalID:completion:"></a>
+	<h3 class="subsubtitle method-title">partGroupWithExternalID:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>指定したGroupExternalIDに対応したグループから脱退します。
+なお、リーダーはこのAPIによってグループから抜けることはできません。
+リーダーがグループから脱退する場合には次いずれかの方法を選択してください。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)partGroupWithExternalID:(NSString *)<em>groupExternalID</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupExternalID</em></dt>
+			<dd><p>脱退するグループのIDを指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<ul>
+<li><p>先にリーダーの変更を行なってから、このAPIをコールしてください。</p></li>
+<li><p>グループを削除してください。</p></li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postChatWithGroupExternalID:message:image:completion:" title="postChatWithGroupExternalID:message:image:completion:"></a>
+	<h3 class="subsubtitle method-title">postChatWithGroupExternalID:message:image:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>テキストと画像を指定してチャットを投稿します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)postChatWithGroupExternalID:(NSString *)<em>groupExternalID</em> message:(NSString *)<em>message</em> image:(UIImage *)<em>image</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupExternalID</em></dt>
+			<dd><p>暗号化されたUserExternalIDを指定してください。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>UserExternalIDの暗号化に使用したIVを指定してください。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>image</em></dt>
+			<dd><p>UserExternalIDの暗号化に使用したIVを指定してください。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeFriendsWithExternalID:completion:" title="removeFriendsWithExternalID:completion:"></a>
+	<h3 class="subsubtitle method-title">removeFriendsWithExternalID:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>指定したユーザーをLobiSDK上の友だちから外します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)removeFriendsWithExternalID:(NSString *)<em>externalID</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>externalID</em></dt>
+			<dd><p>友達を解除するユーザーのUserExternalID。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendRanking:score:handler:" title="sendRanking:score:handler:"></a>
+	<h3 class="subsubtitle method-title">sendRanking:score:handler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>ランキングのスコアを送信します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)sendRanking:(NSString *)<em>rankingID</em> score:(int64_t)<em>score</em> handler:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rankingID</em></dt>
+			<dd><p>開発者向けページで作成したアプリのランキングIDを指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>score</em></dt>
+			<dd><p>整数形式で得点を指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Ranking.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/signupWithBaseName:completion:" title="signupWithBaseName:completion:"></a>
+	<h3 class="subsubtitle method-title">signupWithBaseName:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Lobiのアカウントを取得します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)signupWithBaseName:(NSString *)<em>baseName</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>baseName</em></dt>
+			<dd><p>Lobiのアカウント名となります。重複時には自動的に連番が振られます。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/signupWithBaseName:encryptedExternalID:IV:completion:" title="signupWithBaseName:encryptedExternalID:IV:completion:"></a>
+	<h3 class="subsubtitle method-title">signupWithBaseName:encryptedExternalID:IV:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>UserExternalIDの登録と同時にLobiのアカウントを取得します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)signupWithBaseName:(NSString *)<em>baseName</em> encryptedExternalID:(NSString *)<em>encryptedExternalID</em> IV:(NSString *)<em>IV</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>baseName</em></dt>
+			<dd><p>Lobiのアカウント名となります。重複時には自動的に連番が振られます。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>encryptedExternalID</em></dt>
+			<dd><p>暗号化されたUserExternalIDを指定してください。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>IV</em></dt>
+			<dd><p>UserExternalIDの暗号化に使用したIVを指定してください。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/signupWithBaseName:encryptedExternalId:encryptIv:handler:" title="signupWithBaseName:encryptedExternalId:encryptIv:handler:"></a>
+	<h3 class="subsubtitle method-title">signupWithBaseName:encryptedExternalId:encryptIv:handler:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>UserExternalIDの登録と同時にLobiのアカウントを取得します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)signupWithBaseName:(NSString *)<em>baseName</em> encryptedExternalId:(NSString *)<em>encryptedExternalId</em> encryptIv:(NSString *)<em>encryptIv</em> handler:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>baseName</em></dt>
+			<dd><p>Lobiのアカウント名となります。重複時には自動的に連番が振られます。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>encryptedExternalID</em></dt>
+			<dd><p>暗号化されたUserExternalIDを指定してください。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>IV</em></dt>
+			<dd><p>UserExternalIDの暗号化に使用したIVを指定してください。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unlockStamp:completion:" title="unlockStamp:completion:"></a>
+	<h3 class="subsubtitle method-title">unlockStamp:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>IDが&lt;STAMP_UID>のスタンプグループの利用制限を解除します。
+&lt;STAMP_UID>には開発チームからあらかじめ通知されたものを利用してください。
+成功時のresponseは@{@&ldquo;success&rdquo;: @1}のNSDictionaryとなります。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)unlockStamp:(NSString *)<em>stampID</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>stampID</em></dt>
+			<dd><p>開発チームからあらかじめ通知されたスタンプ用のIDを指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateGroupWithExternalID:groupName:description:completion:" title="updateGroupWithExternalID:groupName:description:completion:"></a>
+	<h3 class="subsubtitle method-title">updateGroupWithExternalID:groupName:description:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>指定したGroupExternalIDに対応したグループの名前とメモを変更します。
+このAPIはリーダーのみが実行することができ、リーダー以外のメンバーが実行した場合にはエラーとなります。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)updateGroupWithExternalID:(NSString *)<em>groupExternalID</em> groupName:(NSString *)<em>groupName</em> description:(NSString *)<em>description</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupExternalID</em></dt>
+			<dd><p>グループのIDを指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupName</em></dt>
+			<dd><p>グループの名前を指定します。</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>description</em></dt>
+			<dd><p>グループのメモに記述する内容を指定します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI+Chat.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateUserIcon:completion:" title="updateUserIcon:completion:"></a>
+	<h3 class="subsubtitle method-title">updateUserIcon:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Lobiアカウントのアイコンを更新します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)updateUserIcon:(UIImage *)<em>icon</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>icon</em></dt>
+			<dd><p>SDK内部で最大960x960のJPEGに圧縮されます。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateUserName:completion:" title="updateUserName:completion:"></a>
+	<h3 class="subsubtitle method-title">updateUserName:completion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Lobiのアカウント名を更新します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)updateUserName:(NSString *)<em>name</em> completion:(LobiNetworkHandler)<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>更新するLobiのアカウント名を指名します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiAPI.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 KAYAC. All rights reserved. (Last updated: 2014-04-07)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
