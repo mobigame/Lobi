@@ -28,6 +28,7 @@ SDKを使用するにはアプリケーションの登録しクライアントID
     [https://github.com/kayac/Lobi/issues/90](https://github.com/kayac/Lobi/issues/90)  
     - キャプチャ中任意の時点でサムネイルが取得できるようにする  
     [https://github.com/kayac/Lobi/issues/74](https://github.com/kayac/Lobi/issues/74)  
+	- gh-pagesにReferenceを追加
 
 ----------------------------
 
