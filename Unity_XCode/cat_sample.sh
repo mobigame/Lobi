@@ -1,2 +1,0 @@
-cat sample.*>sample.zip
-

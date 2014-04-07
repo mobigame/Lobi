@@ -1,1 +1,0 @@
-ファイルサイズの制限のためunity_sampleプロジェクトから出力したunity_xcode_sampleには`unity_xcode_sample/Libraries/libiPhone-lib.a`が含まれていません。
