@@ -16,8 +16,6 @@
 		494F70171893821E00E82F03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F70161893821E00E82F03 /* main.m */; };
 		494F701B1893821E00E82F03 /* RRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F701A1893821E00E82F03 /* RRAppDelegate.m */; };
 		494F701E1893821E00E82F03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494F701C1893821E00E82F03 /* Main.storyboard */; };
-		494F70201893821E00E82F03 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 494F701F1893821E00E82F03 /* Shader.fsh */; };
-		494F70221893821E00E82F03 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 494F70211893821E00E82F03 /* Shader.vsh */; };
 		494F70251893821E00E82F03 /* RRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 494F70241893821E00E82F03 /* RRViewController.m */; };
 		494F70271893821E00E82F03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494F70261893821E00E82F03 /* Images.xcassets */; };
 		494F702E1893821F00E82F03 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494F702D1893821F00E82F03 /* XCTest.framework */; };
@@ -78,8 +76,6 @@
 		494F70191893821E00E82F03 /* RRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRAppDelegate.h; sourceTree = "<group>"; };
 		494F701A1893821E00E82F03 /* RRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRAppDelegate.m; sourceTree = "<group>"; };
 		494F701D1893821E00E82F03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		494F701F1893821E00E82F03 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
-		494F70211893821E00E82F03 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		494F70231893821E00E82F03 /* RRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRViewController.h; sourceTree = "<group>"; };
 		494F70241893821E00E82F03 /* RRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRViewController.m; sourceTree = "<group>"; };
 		494F70261893821E00E82F03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -210,8 +206,6 @@
 				494F70191893821E00E82F03 /* RRAppDelegate.h */,
 				494F701A1893821E00E82F03 /* RRAppDelegate.m */,
 				494F701C1893821E00E82F03 /* Main.storyboard */,
-				494F701F1893821E00E82F03 /* Shader.fsh */,
-				494F70211893821E00E82F03 /* Shader.vsh */,
 				494F70231893821E00E82F03 /* RRViewController.h */,
 				494F70241893821E00E82F03 /* RRViewController.m */,
 				494F70261893821E00E82F03 /* Images.xcassets */,
@@ -429,13 +423,11 @@
 				49FBCB6B18C741430036284A /* KLMPostVideoViewController.html in Resources */,
 				49FBCB7818C741430036284A /* library_background.png in Resources */,
 				49FBCB7018C741430036284A /* KLRRankingPage.html in Resources */,
-				494F70221893821E00E82F03 /* Shader.vsh in Resources */,
 				49FBCB7318C741430036284A /* stylesPrint.css in Resources */,
 				49FBCB7718C741430036284A /* disclosure_open.png in Resources */,
 				494F70271893821E00E82F03 /* Images.xcassets in Resources */,
 				49FBCB7218C741430036284A /* styles.css in Resources */,
 				49FBCB7618C741430036284A /* disclosure.png in Resources */,
-				494F70201893821E00E82F03 /* Shader.fsh in Resources */,
 				49FBCB6C18C741430036284A /* KLMVideoCapture.html in Resources */,
 				49FBCB6F18C741430036284A /* KLRRankingCursorOrigin.html in Resources */,
 				49FBCB7118C741430036284A /* KLRRankingRange.html in Resources */,

@@ -45,3 +45,5 @@
 "KLR_ALERT_MESSAGE_UNDO_LIVE" = "Undo recording?";
 "KLR_ALERT_MESSAGE_UNDO_TRIM" = "Undo croping?";
 "KLR_BUTTON_TITLE_UNDO_LIVE" = "Undo Recording";
+"KLR_TITLE_LOBI_PLAY" = "Lobi Play";
+"KLR_TITLE_LOBI_PLAY_BUTTON" = "Lobi Play";

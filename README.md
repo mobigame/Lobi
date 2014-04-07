@@ -22,6 +22,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.1.11 - 2014/04/07
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.11.zip)  
+    - 投稿画面のSNSシェア導線を改修
+    [https://github.com/kayac/Lobi/issues/88](https://github.com/kayac/Lobi/issues/88)  
+
 - v5.1.10 - 2014/04/02
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.10.zip)  
     - アフレコ終了時、録画終端あたりが切れている

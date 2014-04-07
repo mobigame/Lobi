@@ -45,3 +45,5 @@
 "KLR_ALERT_MESSAGE_UNDO_LIVE" = "実況録画をもとに戻します。\nよろしいですか？";
 "KLR_ALERT_MESSAGE_UNDO_TRIM" = "トリミングをもとに戻します。\nよろしいですか？";
 "KLR_BUTTON_TITLE_UNDO_LIVE" = "実況を取り消す";
+"KLR_TITLE_LOBI_PLAY" = "Lobi Play";
+"KLR_TITLE_LOBI_PLAY_BUTTON" = "みんなの動画";
