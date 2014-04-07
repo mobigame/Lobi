@@ -22,21 +22,30 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.2.0 - 2014/04/07
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.0.zip)  
+    - iOS LobiSDKモジュール化  
+    [https://github.com/kayac/Lobi/issues/90](https://github.com/kayac/Lobi/issues/90)  
+    - キャプチャ中任意の時点でサムネイルが取得できるようにする  
+    [https://github.com/kayac/Lobi/issues/74](https://github.com/kayac/Lobi/issues/74)  
+
+----------------------------
+
 - v5.1.11 - 2014/04/07
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.11.zip)  
-    - 投稿画面のSNSシェア導線を改修
+    - 投稿画面のSNSシェア導線を改修  
     [https://github.com/kayac/Lobi/issues/88](https://github.com/kayac/Lobi/issues/88)  
 
 - v5.1.10 - 2014/04/02
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.10.zip)  
-    - アフレコ終了時、録画終端あたりが切れている
+    - アフレコ終了時、録画終端あたりが切れている  
     [https://github.com/kayac/Lobi/issues/86](https://github.com/kayac/Lobi/issues/86)  
 
 - v5.1.9 - 2014/03/28
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.9.zip)  
-    - プレビュー時自動でUIをフェードアウトさせる
+    - プレビュー時自動でUIをフェードアウトさせる  
     [https://github.com/kayac/Lobi/issues/84](https://github.com/kayac/Lobi/issues/84)  
-    - アフレコ時の動画表示不正
+    - アフレコ時の動画表示不正  
     [https://github.com/kayac/Lobi/issues/83](https://github.com/kayac/Lobi/issues/83)  
 
 - v5.1.8 - 2014/03/27
@@ -70,12 +79,12 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 - v5.1.3 - 2014/03/07
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.3.zip)  
-    - ClippingNodeを利用時、録画表示が不正になる問題を修正
+    - ClippingNodeを利用時、録画表示が不正になる問題を修正  
     [https://github.com/kayac/Lobi/issues/70](https://github.com/kayac/Lobi/issues/70)  
 
 - v5.1.2 - 2014/03/06
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.1.2.zip)  
-    - トリミングボタンを初期化時に非表示とする
+    - トリミングボタンを初期化時に非表示とする  
     [https://github.com/kayac/Lobi/issues/68](https://github.com/kayac/Lobi/issues/68)  
 
 - v5.1.1 - 2014/03/05
