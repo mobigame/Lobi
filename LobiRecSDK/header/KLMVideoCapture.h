@@ -114,6 +114,21 @@ extern NSString *const KLMDismissingPostVideoViewControllerNotification;
 @property (nonatomic, assign) CGFloat           wipeSquareSize;
 
 /**
+ *  アフレコ中に表示するポインタのx座標を設定します。デバイス毎に設定する必要があります。
+ */
+@property (nonatomic, assign) CGFloat           pointerPositionX;
+
+/**
+ *  アフレコ中に表示するポインタのy座標を設定します。デバイス毎に設定する必要があります。
+ */
+@property (nonatomic, assign) CGFloat           pointerPositionY;
+
+/**
+ *  アフレコ中に表示するポインタのサイズを設定します。
+ */
+@property (nonatomic, assign) CGFloat           pointerSquareSize;
+
+/**
  *  録画中のゲームボリュームの大きさを設定します。(0.0 - 1.0)
  */
 @property (nonatomic, assign) CGFloat           gameSoundVolume;
