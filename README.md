@@ -26,6 +26,12 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.2.4 - 2014/04/09
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.4.zip)  
+    - iOS 6.x以下のバージョンにて正しくナビゲーションバーが表示されない  
+    [https://github.com/kayac/Lobi/issues/102](https://github.com/kayac/Lobi/issues/102)  
+
+
 - v5.2.3 - 2014/04/09
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.3.zip)  
     - Unityサンプルの更新 
