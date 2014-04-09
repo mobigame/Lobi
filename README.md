@@ -26,6 +26,10 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.2.2 - 2014/04/08
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.2.zip)  
+    - Unityパッケージの追加  
+
 - v5.2.1 - 2014/04/08
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.1.zip)  
     - Unityモジュール化対応  
