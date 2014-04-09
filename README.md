@@ -33,7 +33,6 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 
 - v5.2.3 - 2014/04/09
-    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.3.zip)  
     - Unityサンプルの更新 
     - ココそこ機能のポインタを改修 
 
@@ -48,7 +47,6 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 
 - v5.2.0 - 2014/04/07
-    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.0.zip)  
     - iOS LobiSDKモジュール化  
     [https://github.com/kayac/Lobi/issues/90](https://github.com/kayac/Lobi/issues/90)  
     - キャプチャ中任意の時点でサムネイルが取得できるようにする  
