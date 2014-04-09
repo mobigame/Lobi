@@ -70,4 +70,13 @@ typedef NS_ENUM(NSUInteger, LobiChatGroupListType)
  */
 + (void)presentChatViewController:(UIViewController *)viewController;
 
+/**
+ *  チャット内のジャンプ機能（要設定）から開いたURLからメッセージを抽出する。
+ *
+ *  @param url　チャット内のジャンプ機能（要設定）から開いたURL
+ *
+ *  @return チャット内で"#"の後に記述されたメッセージ
+ */
++ (NSString *)appFromURL:(NSURL *)url;
+
 @end
