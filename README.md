@@ -26,6 +26,12 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.2.1 - 2014/04/08
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.1.zip)  
+    - Unityモジュール化対応  
+    [https://github.com/kayac/Lobi/issues/96](https://github.com/kayac/Lobi/issues/96)  
+
+
 - v5.2.0 - 2014/04/07
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.0.zip)  
     - iOS LobiSDKモジュール化  
