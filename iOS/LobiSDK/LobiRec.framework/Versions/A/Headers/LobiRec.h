@@ -55,7 +55,7 @@ extern NSString *const KLVMovieUploadedNotification;
 extern NSString *const KLVMovieUploadedErrorNotification;
 
 /**
- *  動画ポストviewControllerを閉じた時に、userInfoに動画のポスト処理の有無を格納して通知する通知名称です。
+ *  動画ポストviewControllerを閉じた時に、userInfoに"tryPost"キー、BOOL値を値とした動画のポスト処理の有無を格納して通知する通知名称です。
  */
 extern NSString *const KLVDismissingPostVideoViewControllerNotification;
 
