@@ -26,6 +26,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.2.5 - 2014/04/10
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.5.zip)  
+    - 英語でローカライズされた友だち削除のラベルがプレースホルダのまま  
+    [https://github.com/kayac/Lobi/issues/104](https://github.com/kayac/Lobi/issues/104)  
+
 - v5.2.4 - 2014/04/09
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.4.zip)  
     - iOS 6.x以下のバージョンにて正しくナビゲーションバーが表示されない  

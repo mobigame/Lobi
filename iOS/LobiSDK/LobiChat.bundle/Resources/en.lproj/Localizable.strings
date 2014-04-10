@@ -373,6 +373,7 @@
 "KLM_PROFILE_BUTTON_WHERE" = "           Where are you?           ";
 "KLM_PROFILE_BUTTON_CHAT" = "                     Chat                     ";
 "KLM_PROFILE_BUTTON_ADD" = "           Add as a friend           ";
+"KLM_PROFILE_BUTTON_REMOVE" = "               Friend               ";
 "KLM_PROFILE_DESCRIPTION_EDIT_TEXT" = "Profile";
 "KLM_SETTINGS_SECTION_TITLE_AD" = "Ads";
 "KLM_SETTINGS_CELL_DISABLE_AD_EVER" = "Remove ads";
