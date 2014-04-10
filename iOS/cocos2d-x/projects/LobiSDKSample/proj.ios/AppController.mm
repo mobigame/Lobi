@@ -28,7 +28,7 @@ static AppDelegate s_sharedApplication;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [LobiCore setupClientId:@"8550eef2e3eb415389d08689bda44ffb6a827b00" accountBaseName:@"Kayac"];
+    [LobiCore setupClientId:@"f92bd261db0bf4a1cf277fcee37d26d07d1e06ec" accountBaseName:@"Kayac"];
     // Override point for customization after application launch.
 
     // Add the view controller's view to the window and display.
