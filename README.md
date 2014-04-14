@@ -26,6 +26,16 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.2.6 - 2014/04/11
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.6.zip)  
+    - SDK アプリ内ユーザー名の更新を反映させる  
+    [https://github.com/kayac/Lobi/issues/108](https://github.com/kayac/Lobi/issues/108)  
+    - 過去のバージョンのSDKも含める  
+    [https://github.com/kayac/Lobi/issues/107](https://github.com/kayac/Lobi/issues/107)  
+    - Lobi投稿画面にてソフトキーボード開いた後SNS導線が反応しなくなる  
+    [https://github.com/kayac/Lobi/issues/106](https://github.com/kayac/Lobi/issues/106)  
+
+
 - v5.2.5 - 2014/04/10
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.5.zip)  
     - 英語でローカライズされた友だち削除のラベルがプレースホルダのまま  
