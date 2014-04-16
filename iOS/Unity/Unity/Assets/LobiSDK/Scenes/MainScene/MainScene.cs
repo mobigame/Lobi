@@ -10,6 +10,8 @@ public class MainScene : MonoBehaviour {
 		Debug.Log("IsReady() = " + (LobiCoreBridge.IsReady() ? "true" : "false"));
 		// Lobi Rec SDK を使用する際は起動時に以下の設定を必ず行ってください。
 		AudioSettings.outputSampleRate = 44100;
+
+		LobiCoreBridge.SetupPopOverController(100, 100, LobiCoreBridge.PopOverArrowDirection.Left);
 	}
 	
 	void OnGUI()

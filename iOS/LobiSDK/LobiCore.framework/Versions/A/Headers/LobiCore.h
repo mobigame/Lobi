@@ -17,6 +17,11 @@ typedef NS_ENUM (NSInteger, LobiKlassTag) {
     LobiRecKlassTag
 };
 
+typedef NS_ENUM (NSInteger, LobiPopOverArrowDirection) {
+    LobiPopOverArrowDirectionUp,
+    LobiPopOverArrowDirectionLeft,
+    LobiPopOverArrowDirectionRight,
+};
 
 /**
  Lobiのコア機能（アカウント関連の操作と基本画面）を扱うクラスです。
@@ -88,6 +93,14 @@ typedef NS_ENUM (NSInteger, LobiKlassTag) {
  *  自身のLobiアカウントのプロフィール画面を表示します。
  */
 + (void)presentProfile;
+
+/**
+ *  iPadで表示する際に表示の開始位置と吹き出しの出る方向を設定する
+ *
+ *  @param origin    表示の開始位置
+ *  @param direction 吹き出しの出る方向
+ */
++ (void)setupPopOverController:(CGPoint)origin direction:(LobiPopOverArrowDirection)direction;
 
 @property (nonatomic, readonly) NSString *clientId;
 @property (nonatomic, copy)     NSString *accountBaseName;

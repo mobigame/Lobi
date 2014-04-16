@@ -34,3 +34,8 @@ void LobiCore_present_profile_()
     [LobiCore setRootViewController:sGetUnityViewController()];
     [LobiCore presentProfile];
 }
+
+void LobiCore_setup_pop_over_controller_(int x, int y, LobiPopOverArrowDirection direction)
+{
+    [LobiCore setupPopOverController:CGPointMake(x, y) direction:direction];
+}
