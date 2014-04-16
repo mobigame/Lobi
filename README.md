@@ -26,6 +26,13 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.2.7 - 2014/04/16
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.7.zip)
+    - iPadでのチャット表示が崩れる  
+    [https://github.com/kayac/Lobi/issues/111](https://github.com/kayac/Lobi/issues/111)  
+    - landscape表示時、メニューが逆からスライドする  
+    [https://github.com/kayac/Lobi/issues/110](https://github.com/kayac/Lobi/issues/110)__
+
 - v5.2.6 - 2014/04/11
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.6.zip)  
     - SDK アプリ内ユーザー名の更新を反映させる  

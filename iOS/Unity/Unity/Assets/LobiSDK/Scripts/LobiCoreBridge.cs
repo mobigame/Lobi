@@ -5,6 +5,12 @@ using System.Runtime.InteropServices;
 namespace Kayac.Lobi.SDK
 {
 	public class LobiCoreBridge : object {
+		public enum PopOverArrowDirection {
+			Up = 0,
+			Left,
+			Right,
+		};
+
 		public static bool IsReady(){
 			bool isReady = false;
 			#if UNITY_ANDROID
@@ -31,7 +37,15 @@ namespace Kayac.Lobi.SDK
 			LobiCore_present_profile_();
 			#endif
 		}
-		
+
+		public static void SetupPopOverController(int x, int y, LobiCoreBridge.PopOverArrowDirection direction){
+			#if UNITY_ANDROID
+			#endif
+			#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+			LobiCore_setup_pop_over_controller_(x, y, (int)direction);
+			#endif
+		}
+
 		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
 		[DllImport("__Internal")]
 		private static extern int LobiCore_is_ready_();
@@ -41,6 +55,9 @@ namespace Kayac.Lobi.SDK
 
 		[DllImport("__Internal")]
 		private static extern void LobiCore_present_profile_();
+
+		[DllImport("__Internal")]
+		private static extern void LobiCore_setup_pop_over_controller_(int x, int y, int direction);
 		#endif
 	}
 }
