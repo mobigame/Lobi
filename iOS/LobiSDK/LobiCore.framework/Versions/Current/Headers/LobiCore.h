@@ -102,6 +102,8 @@ typedef NS_ENUM (NSInteger, LobiPopOverArrowDirection) {
  */
 + (void)setupPopOverController:(CGPoint)origin direction:(LobiPopOverArrowDirection)direction;
 
++ (void)setNavigationBarCustomColor:(UIColor *)color;
+
 @property (nonatomic, readonly) NSString *clientId;
 @property (nonatomic, copy)     NSString *accountBaseName;
 @property (nonatomic, readonly) NSString *adPlatform;
