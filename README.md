@@ -28,7 +28,7 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 - v5.2.8 - 2014/04/17
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.8.zip)
     - ナビゲーションバー（ヘッダー）の背景色のカスタマイズ、チャット画面の背景色カスタマイズ機能の追加  
-	[https://github.com/kayac/Lobi/issues/111](https://github.com/kayac/Lobi/issues/113) 
+	[https://github.com/kayac/Lobi/issues/113](https://github.com/kayac/Lobi/issues/113) 
 	
 - v5.2.7 - 2014/04/16
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.7.zip)
