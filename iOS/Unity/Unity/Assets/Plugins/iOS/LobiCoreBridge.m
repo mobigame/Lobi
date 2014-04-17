@@ -39,3 +39,9 @@ void LobiCore_setup_pop_over_controller_(int x, int y, LobiPopOverArrowDirection
 {
     [LobiCore setupPopOverController:CGPointMake(x, y) direction:direction];
 }
+
+void LobiCore_set_navigation_bar_custom_color_(float r, float g, float b)
+{
+    UIColor *color = [UIColor colorWithRed:r green:g blue:b alpha:1.0];
+    [LobiCore setNavigationBarCustomColor:color];
+}

@@ -75,6 +75,6 @@ typedef NS_ENUM(NSUInteger, LobiChatGroupListType)
  *
  *  @param color 指定する背景色
  */
-+ (void)setBackGrounfCustomColor:(UIColor *)color;
++ (void)setBackGroundCustomColor:(UIColor *)color;
 
 @end

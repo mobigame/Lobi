@@ -8,6 +8,8 @@ public class LobiChatScene : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Debug.Log("IsReady() = " + (LobiCoreBridge.IsReady() ? "true" : "false"));
+		// Use for customize
+		// LobiChatBridge.SetBackGroundCustomColor(0.0f, 0.1f, 0.5f);
 	}
 	
 	void OnGUI()

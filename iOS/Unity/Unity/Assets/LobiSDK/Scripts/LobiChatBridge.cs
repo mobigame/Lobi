@@ -45,6 +45,14 @@ namespace Kayac.Lobi.SDK
 			#endif
 		}
 
+		public static void SetBackGroundCustomColor(float r, float g, float b){
+			#if UNITY_ANDROID
+			#endif
+			#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+			LobiChat_set_back_ground_custom_color_(r, g, b);
+			#endif
+		}
+
 		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
 		[DllImport("__Internal")]
 		private static extern void LobiChat_present_group_list_();
@@ -57,6 +65,9 @@ namespace Kayac.Lobi.SDK
 			                                                               byte[] callback_method_name, int callback_method_name_len,
 			                                                               byte[] group_ex_id, int group_ex_id_len,
 		                                                                   byte[] group_name, int group_name_len);
+		
+		[DllImport("__Internal")]
+		private static extern void LobiChat_set_back_ground_custom_color_(float r, float g, float b);
 		#endif
 	}
 }
