@@ -8,6 +8,7 @@
 
 #import "RRAppDelegate.h"
 #import <LobiCore/LobiCore.h>
+#import <LobiChat/LobiChat.h>
 
 @implementation RRAppDelegate
 
@@ -18,6 +19,10 @@
 {
     if ([LobiCore handleOpenURL:url])
     {
+        if ([LobiChat appFromURL:url])
+        {
+            NSLog(@"%@",[LobiChat appFromURL:url]);
+        }
         return YES;
     }
     return NO;
@@ -27,7 +32,7 @@
 {
     // サンプルのクライアントIDは公開されているIDです。アップロードされた動画は公開されます。
     // アプリケーションに実装する場合は新規のクライアントIDを取得してご利用ください。
-    [LobiCore setupClientId:@"f92bd261db0bf4a1cf277fcee37d26d07d1e06ec" accountBaseName:@"Kayac"];
+    [LobiCore setupClientId:@"18a062b60fd2e432f2a70d779fd2b6c6ef1fa36a" accountBaseName:@"Kayac"];
     return YES;
 }
 

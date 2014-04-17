@@ -70,4 +70,11 @@ typedef NS_ENUM(NSUInteger, LobiChatGroupListType)
  */
 + (void)presentChatViewController:(UIViewController *)viewController;
 
+/**
+ *  LobiChat画面の背景色を変更します。
+ *
+ *  @param color 指定する背景色
+ */
++ (void)setBackGrounfCustomColor:(UIColor *)color;
+
 @end
