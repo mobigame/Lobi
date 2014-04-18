@@ -102,6 +102,11 @@ typedef NS_ENUM (NSInteger, LobiPopOverArrowDirection) {
  */
 + (void)setupPopOverController:(CGPoint)origin direction:(LobiPopOverArrowDirection)direction;
 
+/**
+ *  ナビゲーションバーの色を変更します。
+ *
+ *  @param color 指定する色
+ */
 + (void)setNavigationBarCustomColor:(UIColor *)color;
 
 @property (nonatomic, readonly) NSString *clientId;

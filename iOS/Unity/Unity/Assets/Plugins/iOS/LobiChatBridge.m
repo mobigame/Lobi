@@ -43,3 +43,9 @@ void LobiChat_create_group_with_group_ex_id_(const char *game_object_name, int g
         }
     }];
 }
+
+void LobiChat_set_back_ground_custom_color_(float r, float g, float b)
+{
+    UIColor *color = [UIColor colorWithRed:r green:g blue:b alpha:1.0];
+    [LobiChat setBackGroundCustomColor:color];
+}

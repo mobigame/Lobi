@@ -12,6 +12,8 @@ public class MainScene : MonoBehaviour {
 		AudioSettings.outputSampleRate = 44100;
 
 		LobiCoreBridge.SetupPopOverController(100, 100, LobiCoreBridge.PopOverArrowDirection.Left);
+		// Use for customize
+		// LobiCoreBridge.SetNavigationBarCustomColor(1.0f, 0.5f, 0.0f);
 	}
 	
 	void OnGUI()

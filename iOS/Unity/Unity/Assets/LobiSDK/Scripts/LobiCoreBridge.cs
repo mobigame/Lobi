@@ -46,6 +46,14 @@ namespace Kayac.Lobi.SDK
 			#endif
 		}
 
+		public static void SetNavigationBarCustomColor(float r, float g, float b){
+			#if UNITY_ANDROID
+			#endif
+			#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
+			LobiCore_set_navigation_bar_custom_color_(r, g, b);
+			#endif
+		}		
+		
 		#if ((UNITY_IOS || UNITY_IPHONE) && ! UNITY_EDITOR)
 		[DllImport("__Internal")]
 		private static extern int LobiCore_is_ready_();
@@ -58,6 +66,9 @@ namespace Kayac.Lobi.SDK
 
 		[DllImport("__Internal")]
 		private static extern void LobiCore_setup_pop_over_controller_(int x, int y, int direction);
+		
+		[DllImport("__Internal")]
+		private static extern void LobiCore_set_navigation_bar_custom_color_(float r, float g, float b);
 		#endif
 	}
 }
