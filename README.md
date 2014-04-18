@@ -29,6 +29,8 @@ SDKを使用するにはアプリケーションの登録しクライアントID
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.9.zip)
     - ナビゲーションバーとチャットビュー背景カスタマイズのUnity対応  
 	[https://github.com/kayac/Lobi/issues/116](https://github.com/kayac/Lobi/issues/116) 
+	- プロフィール画面の編集ボタンが表示されない問題
+	[https://github.com/kayac/Lobi/issues/117](https://github.com/kayac/Lobi/issues/117) 
 
 - v5.2.8 - 2014/04/17
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.8.zip)
