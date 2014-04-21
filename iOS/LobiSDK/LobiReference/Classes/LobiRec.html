@@ -78,6 +78,8 @@
 	
 	<option value="//api/name/hasMovie">&nbsp;&nbsp;&nbsp;&nbsp;+ hasMovie</option>
 	
+	<option value="//api/name/isMicEnabled:">&nbsp;&nbsp;&nbsp;&nbsp;+ isMicEnabled:</option>
+	
 	<option value="//api/name/prepareFrame">&nbsp;&nbsp;&nbsp;&nbsp;+ prepareFrame</option>
 	
 	<option value="//api/name/presentLobiPlay">&nbsp;&nbsp;&nbsp;&nbsp;+ presentLobiPlay</option>
@@ -87,6 +89,8 @@
 	<option value="//api/name/setCurrentContext:withGLView:">&nbsp;&nbsp;&nbsp;&nbsp;+ setCurrentContext:withGLView:</option>
 	
 	<option value="//api/name/snap:">&nbsp;&nbsp;&nbsp;&nbsp;+ snap:</option>
+	
+	<option value="//api/name/snapFace:">&nbsp;&nbsp;&nbsp;&nbsp;+ snapFace:</option>
 	
 	<option value="//api/name/startCapturing">&nbsp;&nbsp;&nbsp;&nbsp;+ startCapturing</option>
 	
@@ -158,6 +162,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasMovie">hasMovie</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isMicEnabled:">isMicEnabled:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareFrame">prepareFrame</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/presentLobiPlay">presentLobiPlay</a></span></li>
@@ -167,6 +173,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCurrentContext:withGLView:">setCurrentContext:withGLView:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/snap:">snap:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/snapFace:">snapFace:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startCapturing">startCapturing</a></span></li>
 	
@@ -388,6 +396,18 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/snap:">+&nbsp;snap:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/snapFace:">+&nbsp;snapFace:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isMicEnabled:">+&nbsp;isMicEnabled:</a></code>
 	</span>
 	
 	
@@ -1059,6 +1079,52 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/isMicEnabled:" title="isMicEnabled:"></a>
+	<h3 class="subsubtitle method-title">isMicEnabled:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>マイク録音がプライバシーにおいて有効か無効かを返します。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)isMicEnabled:(void ( ^ ) ( BOOL ))<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handler</em></dt>
+			<dd><p>micEnabledを返却します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiRec.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/prepareFrame" title="prepareFrame"></a>
 	<h3 class="subsubtitle method-title">prepareFrame</h3>
 	
@@ -1270,6 +1336,52 @@
     
 
 	<div class="method-subsection method-declaration"><code>+ (void)snap:(void ( ^ ) ( UIImage *))<em>handler</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>handler</em></dt>
+			<dd><p>UIImageを返却します。</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiRec.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/snapFace:" title="snapFace:"></a>
+	<h3 class="subsubtitle method-title">snapFace:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>ゲーム実況録画中に顔のスクリーンショットを取得することができます。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)snapFace:(void ( ^ ) ( UIImage *))<em>handler</em></code></div>
 
     
 	
