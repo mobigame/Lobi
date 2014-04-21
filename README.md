@@ -25,6 +25,13 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+
+- v5.2.10 - 2014/04/21
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.10.zip)
+    - iPadにてLobiPlay参照時の表示不正
+	[https://github.com/kayac/Lobi/issues/119](https://github.com/kayac/Lobi/issues/119) 
+
+
 - v5.2.9 - 2014/04/18
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.9.zip)
     - ナビゲーションバーとチャットビュー背景カスタマイズのUnity対応  

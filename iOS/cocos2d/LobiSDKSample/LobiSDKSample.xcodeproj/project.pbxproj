@@ -1155,13 +1155,13 @@
 				GCC_PREFIX_HEADER = LobiSDKSample/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"LobiSDKSample/libs/kazmath/include\"";
 				INFOPLIST_FILE = LobiSDKSample/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1181,13 +1181,13 @@
 				GCC_PREFIX_HEADER = LobiSDKSample/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"LobiSDKSample/libs/kazmath/include\"";
 				INFOPLIST_FILE = LobiSDKSample/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "arm64 armv7";
 				WRAPPER_EXTENSION = app;
