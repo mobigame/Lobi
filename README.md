@@ -26,17 +26,23 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.2.11 - 2014/04/22
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.11.zip)  
+    - マイクプライバシー設定の状態を取得できるIF追加  
+	[https://github.com/kayac/Lobi/issues/121](https://github.com/kayac/Lobi/issues/121) 
+
+
 - v5.2.10 - 2014/04/21
-    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.10.zip)
-    - iPadにてLobiPlay参照時の表示不正
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.10.zip)  
+    - iPadにてLobiPlay参照時の表示不正  
 	[https://github.com/kayac/Lobi/issues/119](https://github.com/kayac/Lobi/issues/119) 
 
 
 - v5.2.9 - 2014/04/18
-    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.9.zip)
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.9.zip)  
     - ナビゲーションバーとチャットビュー背景カスタマイズのUnity対応  
 	[https://github.com/kayac/Lobi/issues/116](https://github.com/kayac/Lobi/issues/116) 
-	- プロフィール画面の編集ボタンが表示されない問題
+	- プロフィール画面の編集ボタンが表示されない問題  
 	[https://github.com/kayac/Lobi/issues/117](https://github.com/kayac/Lobi/issues/117) 
 
 - v5.2.8 - 2014/04/17
@@ -49,7 +55,7 @@ SDKを使用するにはアプリケーションの登録しクライアントID
     - iPadでのチャット表示が崩れる  
     [https://github.com/kayac/Lobi/issues/111](https://github.com/kayac/Lobi/issues/111)  
     - landscape表示時、メニューが逆からスライドする  
-    [https://github.com/kayac/Lobi/issues/110](https://github.com/kayac/Lobi/issues/110)__
+    [https://github.com/kayac/Lobi/issues/110](https://github.com/kayac/Lobi/issues/110)
 
 - v5.2.6 - 2014/04/11
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.6.zip)  

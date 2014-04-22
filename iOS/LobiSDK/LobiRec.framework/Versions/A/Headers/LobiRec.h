@@ -60,6 +60,11 @@ extern NSString *const KLVMovieUploadedErrorNotification;
 extern NSString *const KLVDismissingPostVideoViewControllerNotification;
 
 /**
+ *  mic録音をYESに設定した際にプライバシーにより設定できなかった場合に、userInfoにnilを格納して通知する通知名称です。
+ */
+extern NSString *const KLVMicEnableErrorNotification;
+
+/**
  ゲーム録画エンジンクラス。シングルトンでインスタンスを提供します。
  
  OpenGLコンテキストとviewを受け、フレームバッファに描画されたゲームを動画ファイルとして保存します。
@@ -83,6 +88,9 @@ extern NSString *const KLVDismissingPostVideoViewControllerNotification;
  
  - KLVDismissingPostVideoViewControllerNotification;
  動画ポストviewControllerを閉じた時に、userInfoに動画のポスト処理の有無を格納して通知する通知名称です。
+
+ - KLVMicEnableErrorNotification;
+ マイク録音をYESに設定した際にプライバシーにより設定できなかった場合に、userInfoにnilを格納して通知する通知名称です。
  */
 
 @interface LobiRec : NSObject
@@ -241,6 +249,20 @@ extern NSString *const KLVDismissingPostVideoViewControllerNotification;
  * @param handler UIImageを返却します。
  */
 + (void)snap:(void(^)(UIImage*))handler;
+
+
+/**
+ * ゲーム実況録画中に顔のスクリーンショットを取得することができます。
+ * @param handler UIImageを返却します。
+ */
++ (void)snapFace:(void(^)(UIImage*))handler;
+
+
+/**
+ * マイク録音がプライバシーにおいて有効か無効かを返します。
+ * @param handler micEnabledを返却します。
+ */
++ (void)isMicEnabled:(void(^)(BOOL))handler;
 
 @end
 
