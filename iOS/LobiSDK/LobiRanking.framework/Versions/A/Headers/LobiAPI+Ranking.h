@@ -83,4 +83,23 @@ typedef NS_ENUM (NSUInteger, KLRRankingCursorOrigin)
                   user:(NSString*)uid
                handler:(LobiNetworkHandler)handler;
 
+
++ (void)sendAppData:(NSString *)data
+            handler:(LobiNetworkHandler)handler;
+
++ (void)getAppData:(NSArray *)fields
+           handler:(LobiNetworkHandler)handler;
+
++ (void)removeAppData:(NSArray *)fields
+              handler:(LobiNetworkHandler)handler;
+
++ (void)sendAppDataGlobal:(NSString *)data
+                  handler:(LobiNetworkHandler)handler;
+
++ (void)getAppDataGlobal:(NSArray *)fields
+                 handler:(LobiNetworkHandler)handler;
+
++ (void)removeAppDataGlobal:(NSArray *)fields
+                    handler:(LobiNetworkHandler)handler;
+
 @end

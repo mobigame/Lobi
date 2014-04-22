@@ -88,6 +88,9 @@ extern NSString *const KLVMicEnableErrorNotification;
  
  - KLVDismissingPostVideoViewControllerNotification;
  動画ポストviewControllerを閉じた時に、userInfoに動画のポスト処理の有無を格納して通知する通知名称です。
+
+ - KLVMicEnableErrorNotification;
+ マイク録音をYESに設定した際にプライバシーにより設定できなかった場合に、userInfoにnilを格納して通知する通知名称です。
  */
 
 @interface LobiRec : NSObject
