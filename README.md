@@ -26,6 +26,15 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.2.12 - 2014/04/23
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.12.zip)  
+	- i386をframeworkに追加  
+	[https://github.com/kayac/Lobi/issues/125](https://github.com/kayac/Lobi/issues/125)  
+    - 外部ID利用時のアカウント情報取得対応  
+	[https://github.com/kayac/Lobi/issues/123](https://github.com/kayac/Lobi/issues/123) 
+	- プロフィール編集時のエラーアラート表示不正  
+	[https://github.com/kayac/Lobi/issues/126](https://github.com/kayac/Lobi/issues/126) 
+
 - v5.2.11 - 2014/04/22
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.11.zip)  
     - マイクプライバシー設定の状態を取得できるIF追加  

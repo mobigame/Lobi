@@ -29,7 +29,7 @@ typedef void (^LobiNetworkHandler)(LobiNetworkResponse *res);
 /**
  *  LobiAPIリクエストのレスポンスBody
  */
-@property (nonatomic, retain)   NSString      *body;
+@property (nonatomic, retain)   id      body;
 
 /**
  *  LobiAPIリクエストのレスポンスdictionary
