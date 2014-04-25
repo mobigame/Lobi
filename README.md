@@ -26,6 +26,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.2.13 - 2014/04/25
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.13.zip)  
+	- 外部ID利用時のアカウント情報の更新  
+	[https://github.com/kayac/Lobi/issues/127](https://github.com/kayac/Lobi/issues/127)  
+
 - v5.2.12 - 2014/04/23
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.12.zip)  
 	- i386をframeworkに追加  
