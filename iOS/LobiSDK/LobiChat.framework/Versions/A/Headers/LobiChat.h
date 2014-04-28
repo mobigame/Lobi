@@ -70,6 +70,17 @@ typedef NS_ENUM(NSUInteger, LobiChatGroupListType)
  */
 + (void)presentChatViewController:(UIViewController *)viewController;
 
+
+/**
+ *  リンク機能（ハッシュタグ）が有効になっているアプリでにて
+ *  ハッシュタグ(#)以降に表示されるメッセージをゲーム側に渡します。
+ *
+ *  @param URL application:openURL:sourceApplication:annotation:から渡されるURL
+ *
+ *  @return ハッシュタグ以降のメッセージ
+ */
++ (NSString *)appFromURL:(NSURL *)URL;
+
 /**
  *  LobiChat画面の背景色を変更します。
  *
