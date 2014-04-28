@@ -25,7 +25,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
-
+- v5.2.14 - 2014/04/28
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.14.zip)
+    - x86_64の追加、"Debug Information Format"の項目を"DWARF"に変更
+    [https://github.com/kayac/Lobi/issues/129](https://github.com/kayac/Lobi/issues/129)
+    
 - v5.2.13 - 2014/04/25
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.13.zip)  
 	- 外部ID利用時のアカウント情報の更新  
