@@ -94,6 +94,12 @@ typedef NS_ENUM (NSInteger, LobiPopOverArrowDirection) {
  */
 + (void)presentProfile;
 
+
+/**
+ *  Ad画面を表示します。
+ */
++ (void)presentAdWall;
+
 /**
  *  iPadで表示する際に表示の開始位置と吹き出しの出る方向を設定する
  *
