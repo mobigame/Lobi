@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lobi="http://schemas.android.com/apk/res/com.kayac.nakamap" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:background="@color/lobi_rec_white"  >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <TextView
+                android:id="@+id/lobi_custom_dialog_content_text"
+                style="@style/lobi_textview_black_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/lobi_rec_padding_high"
+                android:paddingRight="@dimen/lobi_rec_padding_high"
+                android:paddingBottom="16dp"
+                android:paddingLeft="@dimen/lobi_rec_padding_high" />
+        </FrameLayout>
+
+<!--         <com.kayac.nakamap.components.ListRow -->
+<!--             android:id="@+id/lobi_custom_dialog_content_checkbox_text" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             lobi:lobi_centerContentLayoutId="@layout/lobi_list_row_content_one_line_small" -->
+<!--             lobi:lobi_leftContentLayoutId="@layout/lobi_list_row_content_checkbox_small" -->
+<!--             android:paddingBottom="12dp" -->
+<!--             lobi:lobi_rightContentVisible="false" /> -->
+    </LinearLayout>
+
+</merge>

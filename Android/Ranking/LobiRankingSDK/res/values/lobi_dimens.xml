@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="lobi_rec_padding_default">10dp</dimen>
+    <dimen name="lobi_rec_padding_small">7dp</dimen>
+    <dimen name="lobi_rec_padding_high">12dp</dimen>
+    <dimen name="lobi_margin_low">4dp</dimen>
+    <dimen name="lobi_margin_high">12dp</dimen>
+    <dimen name="lobi_rec_text_very_small">10dp</dimen>
+    <dimen name="lobi_rec_text_small">12dp</dimen>
+    <dimen name="lobi_rec_text_default">14dp</dimen>
+    <dimen name="lobi_rec_text_large">16dp</dimen>
+    <dimen name="lobi_rec_text_very_large">18dp</dimen>
+    <dimen name="lobi_rec_text_extra_large">30dp</dimen>
+    <dimen name="lobi_rec_custom_dialog_padding_left">20dp</dimen>
+    <dimen name="lobi_rec_custom_dialog_padding_right">20dp</dimen>
+    <dimen name="lobi_rec_custom_dialog_button_area_height">48dp</dimen>
+    <dimen name="lobi_rec_custom_dialog_aitsu_width">32dp</dimen>
+    <dimen name="lobi_rec_custom_dialog_aitsu_height">32dp</dimen>
+    <dimen name="lobi_rec_icon_medium">40dp</dimen>
+</resources>

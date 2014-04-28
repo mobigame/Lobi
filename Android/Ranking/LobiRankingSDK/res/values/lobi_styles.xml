@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="LobiRecText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/lobi_rec_black</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/lobi_rec_text_default</item>
+    </style>
+
+    <style name="LobiRecText.VerySmall" parent="LobiRecText">
+        <item name="android:textSize">@dimen/lobi_rec_text_very_small</item>
+    </style>
+
+    <style name="LobiRecText.VerySmall.Gray" parent="LobiRecText.VerySmall">
+        <item name="android:textColor">@color/lobi_rec_gray</item>
+    </style>
+
+    <style name="LobiRecText.Small" parent="LobiRecText">
+        <item name="android:textSize">@dimen/lobi_rec_text_small</item>
+    </style>
+
+    <style name="LobiRecText.Small.Gray" parent="LobiRecText.Small">
+        <item name="android:textColor">@color/lobi_rec_gray</item>
+    </style>
+
+    <style name="LobiRecText.VeryLarge" parent="LobiRecText">
+        <item name="android:textSize">@dimen/lobi_rec_text_very_large</item>
+    </style>
+
+    <style name="LobiRecText.VeryLarge.White" parent="LobiRecText.VeryLarge">
+        <item name="android:textColor">@color/lobi_rec_white</item>
+    </style>
+
+    <style name="LobiRecContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="LobiRecLine">
+        <item name="android:background">@color/lobi_rec_pearl_gray</item>
+    </style>
+
+    <style name="LobiRecLine.Horizontal" parent="LobiRecLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="LobiRecLine.Vertical" parent="LobiRecLine">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LobiRecLine.Vertical.Gray" parent="LobiRecLine.Vertical">
+        <item name="android:background">@color/lobi_rec_gray</item>
+    </style>
+
+    <style name="LobiRecButtonShare">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">#000</item>
+    </style>
+
+    <style name="LobiRecActionBar">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/lobi_bg_actionbar</item>
+    </style>
+    
+    <style name="lobi_custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="lobi_custom_dialog_button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/lobi_custom_dialog_button_selector</item>
+        <item name="android:textColor">@drawable/lobi_custom_dialog_button_text_selector</item>
+        <item name="android:textSize">@dimen/lobi_rec_text_large</item>
+    </style>
+    
+    <style name="lobi_textview_black_very_large_shadow_white" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/lobi_rec_black</item>
+        <item name="android:textSize">@dimen/lobi_rec_text_very_large</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-1.0</item>1
+        <item name="android:shadowRadius">0.5</item>
+        <item name="android:shadowColor">@color/lobi_rec_text_shadow_white</item>
+    </style>
+
+    <style name="lobi_textview_black_default" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/lobi_rec_black</item>
+        <item name="android:textSize">@dimen/lobi_rec_text_default</item>
+    </style>
+    
+    <style name="lobi_textview_black_large" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/lobi_rec_black</item>
+        <item name="android:textSize">@dimen/lobi_rec_text_large</item>
+    </style>
+    
+</resources>

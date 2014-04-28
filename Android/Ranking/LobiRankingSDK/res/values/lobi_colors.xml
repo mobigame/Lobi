@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- MAIN BACKGROUND -->
+    <color name="lobi_rec_background">#F7F7F7</color>
+
+    <!-- LOBI COLORS -->
+    <color name="lobi_orange">#FF6633</color>
+    <color name="lobi_rec_black">#333333</color>
+    <color name="lobi_rec_white">#fff</color>
+    <color name="lobi_rec_gray">#999999</color>
+    <color name="lobi_rec_pearl_gray">#CCCCCC</color>
+    <color name="lobi_rec_text_shadow_white">#FFFFFF</color>
+
+</resources>

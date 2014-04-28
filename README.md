@@ -25,6 +25,10 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.2.15 - 2014/04/28
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.15.zip)
+    - Android の追加
+
 - v5.2.14 - 2014/04/28
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.14.zip)
     - x86_64の追加、"Debug Information Format"の項目を"DWARF"に変更
