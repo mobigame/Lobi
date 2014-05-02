@@ -25,6 +25,13 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.2.16 - 2014/05/02
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.16.zip)
+    - フレームワークによる設定項目の変更を汎化
+    [https://github.com/kayac/Lobi/issues/132](https://github.com/kayac/Lobi/issues/132)
+    - ハッシュタグと画像を同時に投稿するとレイアウトが崩れる問題に対応
+	[https://github.com/kayac/Lobi/issues/133](https://github.com/kayac/Lobi/issues/133)
+
 - v5.2.15 - 2014/04/28
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.15.zip)
     - Android の追加
