@@ -25,6 +25,12 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+
+- v5.2.17 - 2014/05/07
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.17.zip)
+    - Unity のドキュメントと実装に差異がある
+    [https://github.com/kayac/Lobi/issues/135](https://github.com/kayac/Lobi/issues/135)
+
 - v5.2.16 - 2014/05/02
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.16.zip)
     - フレームワークによる設定項目の変更を汎化
