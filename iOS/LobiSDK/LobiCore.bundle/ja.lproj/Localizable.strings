@@ -49,7 +49,7 @@
 "KLC_ERROR_502_MAINTENANCE" = "現在メンテナンス中です、しばらくお待ちください";
 
 "KLC_ACKNOWLEDGEMENT_FILE" = "acknowledgement_ja";
-"KLC_BIND_NAKAMAP_APP" = "Lobiアプリに関連付ける";
+"KLC_BIND_NAKAMAP_APP" = "Lobiとつなげる";
 "KLC_BLOCK_USER_LIST" = "ブロックユーザーリスト";
 "KLC_CANCEL" = "キャンセル";
 "KLC_FONT_SIZE_LARGE" = "大";

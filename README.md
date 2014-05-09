@@ -25,18 +25,24 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
-
+- v5.2.18 - 2014/05/09
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.18.zip)
+    - 動画投稿時にキーボードが閉じない。   
+     [https://github.com/kayac/Lobi/issues/138](https://github.com/kayac/Lobi/issues/138)
+    - Lobi本体アプリとの連携ボタンを押した際の挙動が不正。  
+     [https://github.com/kayac/Lobi/issues/139](https://github.com/kayac/Lobi/issues/139)
+    
 - v5.2.17 - 2014/05/07
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.17.zip)
-    - Unity のドキュメントと実装に差異がある
+    - Unity のドキュメントと実装に差異がある    
     [https://github.com/kayac/Lobi/issues/135](https://github.com/kayac/Lobi/issues/135)
 
 - v5.2.16 - 2014/05/02
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.16.zip)
-    - フレームワークによる設定項目の変更を汎化
+    - フレームワークによる設定項目の変更を汎化    
     [https://github.com/kayac/Lobi/issues/132](https://github.com/kayac/Lobi/issues/132)
-    - ハッシュタグと画像を同時に投稿するとレイアウトが崩れる問題に対応
-	[https://github.com/kayac/Lobi/issues/133](https://github.com/kayac/Lobi/issues/133)
+    - ハッシュタグと画像を同時に投稿するとレイアウトが崩れる問題に対応  
+    [https://github.com/kayac/Lobi/issues/133](https://github.com/kayac/Lobi/issues/133)
 
 - v5.2.15 - 2014/04/28
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.15.zip)
@@ -44,7 +50,7 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 - v5.2.14 - 2014/04/28
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.14.zip)
-    - x86_64の追加、"Debug Information Format"の項目を"DWARF"に変更
+    - x86_64の追加、"Debug Information Format"の項目を"DWARF"に変更   
     [https://github.com/kayac/Lobi/issues/129](https://github.com/kayac/Lobi/issues/129)
     
 - v5.2.13 - 2014/04/25
