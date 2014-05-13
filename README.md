@@ -25,6 +25,13 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.2.19 - 2014/05/13
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.19.zip)
+    - iOS Unity サンプルに置いてチャットシーンのスクリプトが正しくアタッチされていない  
+     [https://github.com/kayac/Lobi/issues/142](https://github.com/kayac/Lobi/issues/142)
+    - Android Rec cocos2d-x サンプルの追加  
+     [https://github.com/kayac/Lobi/issues/143](https://github.com/kayac/Lobi/issues/143)
+
 - v5.2.18 - 2014/05/09
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.18.zip)
     - 動画投稿時にキーボードが閉じない。   
