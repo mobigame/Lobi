@@ -339,7 +339,7 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 利用規約
 ------------
 開発会社等利用規約  
-[https://developer.lobi.co/terms/ja](https://developer.lobi.co/terms/ja)  
+[https://developer.lobi.co/ja/terms](https://developer.lobi.co/ja/terms)  
 
 Terms of Use for Developers  
-[https://developer.lobi.co/terms/en](https://developer.lobi.co/terms/en)  
+[https://developer.lobi.co/en/terms](https://developer.lobi.co/en/terms)  
