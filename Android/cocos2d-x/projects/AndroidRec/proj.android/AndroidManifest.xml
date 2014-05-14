@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.raftriders.androidRec"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+    <!-- 以下のパーミッションを許可してください -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 実況を有効にする場合のみ必要です -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-sdk android:minSdkVersion="8"/>
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <application android:label="@string/app_name"
+        android:name="com.raftriders.androidRec.MyApplication"
+        android:icon="@drawable/icon">
+
+        <activity android:name=".AndroidRec"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- for LobiRecSDK START -->
+        <!-- 現在はRankingSDK同梱されているためRankingSDK用の設定も必要です -->
+        <activity
+            android:name="com.kayac.lobi.ranking.sdk.activity.RankingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="nakamapapp-f92bd261db0bf4a1cf277fcee37d26d07d1e06ec" />
+            </intent-filter>
+        </activity>
+
+        <!-- リプレイ動画一覧画面 -->
+        <activity
+            android:name="com.kayac.lobi.rec.ui.RecPlayActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            />
+        <!-- プレイ動画シェア画面 -->
+        <activity
+            android:name="com.kayac.lobi.rec.ui.RecPostVideoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            />
+        <!-- プレイ動画シェア時用のSNSログイン画面 -->
+        <activity
+            android:name="com.kayac.lobi.rec.ui.RecSNSLoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            />
+        <!-- 動画再生画面 -->
+        <activity
+            android:name="com.kayac.lobi.rec.ui.RecVideoPlayerActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            />
+        <!-- プレイ動画投稿サービス -->
+        <service android:name="com.kayac.lobi.rec.service.MovieUploadService" />
+        <!-- 広告の効果測定の為に使用します -->
+        <receiver
+            android:name="com.kayac.lobi.ranking.sdk.receiver.PackageAddedReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <!-- for LobiRecSDK END -->
+        
+    </application>
+    <supports-screens android:largeScreens="true"
+                      android:smallScreens="true"
+                      android:anyDensity="true"
+                      android:normalScreens="true"/>
+                         
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest> 
