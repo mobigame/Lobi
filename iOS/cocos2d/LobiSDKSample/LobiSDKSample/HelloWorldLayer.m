@@ -73,7 +73,10 @@
 
 		{
             CCMenuItem *rankingList = [CCMenuItemFont itemWithString:@"ランキング表示" block:^(id sender) {
-                [LobiRanking presentRanking];
+                //[LobiRanking presentRanking];
+                [LobiAPI getRanking:@"devmassive01" type:KLRRankingRangeAll origin:KLRRankingCursorOriginTop cursor:1 limit:10 handler:^(LobiNetworkResponse *res) {
+                    NSLog(@"Response:%@",res);
+                }];
             }];
             
             CCMenuItem *sendRanking = [CCMenuItemFont itemWithString:@"ランキング送信" block:^(id sender) {
