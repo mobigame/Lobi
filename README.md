@@ -25,7 +25,7 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
-- v5.2.19 - 2014/05/13
+- v5.2.19 - 2014/05/14
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.19.zip)
     - iOS Unity サンプルに置いてチャットシーンのスクリプトが正しくアタッチされていない  
      [https://github.com/kayac/Lobi/issues/142](https://github.com/kayac/Lobi/issues/142)
