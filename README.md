@@ -25,6 +25,10 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.2.20 - 2014/05/15
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.20.zip)
+    - UnityLandscapeアプリにて、メニューが表示されない故障を修正
+
 - v5.2.19 - 2014/05/14
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.19.zip)
     - iOS Unity サンプルに置いてチャットシーンのスクリプトが正しくアタッチされていない  
