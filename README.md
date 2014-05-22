@@ -25,6 +25,15 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.2.21 - 2014/05/22
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.21.zip)
+    - iOS でカスタムスキーマが正しく設定されていない場合に info.plist に表示すべき項目がログに出力されない  
+     [https://github.com/kayac/Lobi/issues/146](https://github.com/kayac/Lobi/issues/146)  
+    - Lobiの画面が閉じているときでもオフライン状態のエラーが表示されてしまう。  
+     [https://github.com/kayac/Lobi/issues/148](https://github.com/kayac/Lobi/issues/148)  
+    - 1on1チャットのLobiAPIインターフェイスを追加。  
+     [https://github.com/kayac/Lobi/issues/147](https://github.com/kayac/Lobi/issues/147)  
+
 - v5.2.20 - 2014/05/15
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.20.zip)
     - UnityLandscapeアプリにて、メニューが表示されない故障を修正

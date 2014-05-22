@@ -57,6 +57,15 @@
                        completion:(LobiNetworkHandler)handler;
 
 /**
+ *  ユーザーのExternalIDを指定して1on1チャットグループを作成します。
+ *
+ *  @param userExternalID 1on1チャットグループを作成するユーザーのExternalID
+ */
+
++ (void)create1on1GroupWithUserExternalID:(NSString *)userExternalID
+                               completion:(LobiNetworkHandler)handler;
+
+/**
  * 指定したGroupExternalIDに対応したグループの名前とメモを変更します。
  * このAPIはリーダーのみが実行することができ、リーダー以外のメンバーが実行した場合にはエラーとなります。
  *
