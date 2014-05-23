@@ -233,6 +233,9 @@
 		49446B2518975CB00099BD8B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49446B2418975CB00099BD8B /* libsqlite3.0.dylib */; };
 		49446D33189781890099BD8B /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49446D32189781890099BD8B /* libcurl.a */; };
 		4956CAA81897B5FC005C0BF8 /* nuko.png in Resources */ = {isa = PBXBuildFile; fileRef = 4956CAA71897B5FC005C0BF8 /* nuko.png */; };
+		4975C87B192F40510088A3C6 /* pauseindicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 4975C878192F40510088A3C6 /* pauseindicator.png */; };
+		4975C87C192F40510088A3C6 /* recindicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 4975C879192F40510088A3C6 /* recindicator.png */; };
+		4975C87D192F40510088A3C6 /* stopindicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 4975C87A192F40510088A3C6 /* stopindicator.png */; };
 		497ACD7218B70E7100998DE6 /* track.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 497ACD7118B70E7100998DE6 /* track.mp3 */; };
 		49A2CD6A189A457200BC1215 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A2CD69189A457200BC1215 /* libwebsockets.a */; };
 		49F8225F18F2A54500D72262 /* LobiRec.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 49F8225B18F2A54500D72262 /* LobiRec.bundle */; };
@@ -740,6 +743,9 @@
 		49446B2418975CB00099BD8B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		49446D32189781890099BD8B /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		4956CAA71897B5FC005C0BF8 /* nuko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nuko.png; sourceTree = "<group>"; };
+		4975C878192F40510088A3C6 /* pauseindicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pauseindicator.png; sourceTree = "<group>"; };
+		4975C879192F40510088A3C6 /* recindicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recindicator.png; sourceTree = "<group>"; };
+		4975C87A192F40510088A3C6 /* stopindicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopindicator.png; sourceTree = "<group>"; };
 		497ACD7118B70E7100998DE6 /* track.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = track.mp3; sourceTree = "<group>"; };
 		49A2CD69189A457200BC1215 /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebsockets.a; sourceTree = "<group>"; };
 		49F8225318F2A52000D72262 /* LobiRec.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = LobiRec.bundle; path = ../../../../LobiSDK/LobiRec.bundle; sourceTree = "<group>"; };
@@ -1775,6 +1781,9 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4975C878192F40510088A3C6 /* pauseindicator.png */,
+				4975C879192F40510088A3C6 /* recindicator.png */,
+				4975C87A192F40510088A3C6 /* stopindicator.png */,
 				497ACD7118B70E7100998DE6 /* track.mp3 */,
 				4956CAA71897B5FC005C0BF8 /* nuko.png */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
@@ -1865,10 +1874,13 @@
 			files = (
 				49F8225F18F2A54500D72262 /* LobiRec.bundle in Resources */,
 				49F8226018F2A54500D72262 /* LobiRanking.bundle in Resources */,
+				4975C87B192F40510088A3C6 /* pauseindicator.png in Resources */,
+				4975C87D192F40510088A3C6 /* stopindicator.png in Resources */,
 				49F8226118F2A54500D72262 /* LobiCore.bundle in Resources */,
 				49F8226218F2A54500D72262 /* LobiChat.bundle in Resources */,
 				7855E0E1153FEF240059DD9A /* Default.png in Resources */,
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
+				4975C87C192F40510088A3C6 /* recindicator.png in Resources */,
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				497ACD7218B70E7100998DE6 /* track.mp3 in Resources */,

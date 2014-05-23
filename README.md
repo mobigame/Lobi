@@ -33,6 +33,12 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.2.22 - 2014/05/23
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.22.zip)
+    - 録画のポーズ機能の実装  
+     [https://github.com/kayac/Lobi/issues/150](https://github.com/kayac/Lobi/issues/150)   
+
+
 - v5.2.21 - 2014/05/22
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.21.zip)
     - iOS でカスタムスキーマが正しく設定されていない場合に info.plist に表示すべき項目がログに出力されない  

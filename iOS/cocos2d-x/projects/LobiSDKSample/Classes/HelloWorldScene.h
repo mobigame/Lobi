@@ -8,8 +8,8 @@ using namespace cocos2d;
 class HelloWorld : public CCLayer
 {
 protected:
-    cocos2d::CCParticleSystem *emitter;
-
+    CCParticleSystem *emitter;
+    CCSprite *status;
 public:
 
     virtual bool init();
@@ -27,6 +27,9 @@ public:
     void recStartCB(CCObject* pSender);
     void recStopCB(CCObject* pSender);
     void presentShareCB(CCObject* pSender);
+
+    void recPauseCB(CCObject* pSender);
+    void recResumeCB(CCObject* pSender);
 
     void ccTouchesBegan(CCSet *pTouches, CCEvent *pEvent);
     void ccTouchesMoved(CCSet *pTouches, CCEvent *pEvent);

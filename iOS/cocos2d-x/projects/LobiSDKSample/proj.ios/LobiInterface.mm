@@ -86,6 +86,16 @@ void LobiInterface::recStop()
     [LobiRec stopCapturing];
 }
 
+void LobiInterface::recPause()
+{
+    [LobiRec pause];
+}
+
+void LobiInterface::recResume()
+{
+    [LobiRec resume];
+}
+
 void LobiInterface::presentShare()
 {
     NSString *postTitle = @"プレイ動画をシェアします！";
@@ -99,4 +109,15 @@ void LobiInterface::presentShare()
                        } afterHandler:^{
                            cocos2d::CCDirector::sharedDirector()->startAnimation();
                        }];
+}
+
+
+bool LobiInterface::isRecording()
+{
+    return [LobiRec sharedInstance].isCapturing;
+}
+
+bool LobiInterface::isPause()
+{
+    return [LobiRec isPause];
 }
