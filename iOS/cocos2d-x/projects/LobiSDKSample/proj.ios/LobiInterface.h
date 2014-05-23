@@ -19,6 +19,9 @@ namespace LobiInterface
     
     void recStart();
     void recStop();
+    void recPause();
+    void recResume();
+
     void presentShare();
     void wipePostion(float x, float y);
 }

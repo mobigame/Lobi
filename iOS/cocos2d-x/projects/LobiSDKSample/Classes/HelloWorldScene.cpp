@@ -74,6 +74,16 @@ bool HelloWorld::init()
         addChild(menu, 1);
     }
 
+    {
+        CCMenuItemFont *recPause  = CCMenuItemFont::create("ポーズ", this, menu_selector(HelloWorld::recPauseCB));
+        CCMenuItemFont *recResume = CCMenuItemFont::create("再開", this, menu_selector(HelloWorld::recResumeCB));
+        
+        CCMenu* menu = CCMenu::create(recPause, recResume, NULL);
+        menu->alignItemsHorizontallyWithPadding(20);
+        menu->setPosition(ccp(size.width/2, size.height/2 -150));
+        addChild(menu, 1);
+    }
+
     SimpleAudioEngine::sharedEngine()->playBackgroundMusic("track.mp3", true);
     
     return true;
@@ -211,5 +221,15 @@ void HelloWorld::recStopCB(CCObject* pSender)
 void HelloWorld::presentShareCB(CCObject* pSender)
 {
     LobiInterface::presentShare();
+}
+
+void HelloWorld::recPauseCB(CCObject* pSender)
+{
+    LobiInterface::recPause();
+}
+
+void HelloWorld::recResumeCB(CCObject* pSender)
+{
+    LobiInterface::recResume();
 }
 

@@ -264,5 +264,21 @@ extern NSString *const KLVMicEnableErrorNotification;
  */
 + (void)isMicEnabled:(void(^)(BOOL))handler;
 
+/**
+ * 録画ポーズ状態を取得します
+ * @return ポーズ中の場合YESを返します。
+ */
++ (BOOL)isPause;
+
+/**
+ * 録画のポーズを行います。startCapturingを行うことでポーズが解除されます。
+ */
++ (void)pause;
+
+/**
+ * 録画のポーズの解除を行います。
+ */
++ (void)resume;
+
 @end
 

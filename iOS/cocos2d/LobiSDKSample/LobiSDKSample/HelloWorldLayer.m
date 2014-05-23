@@ -151,6 +151,18 @@
             [menu alignItemsHorizontallyWithPadding:20];
             [menu setPosition:ccp(size.width/2, size.height/2 - 100)];
             [self addChild:menu];
+            
+            CCMenuItem *recPause = [CCMenuItemFont itemWithString:@"ポーズ" block:^(id sender) {
+                [LobiRec pause];
+            }];
+            CCMenuItem *resumePause = [CCMenuItemFont itemWithString:@"再開" block:^(id sender) {
+                [LobiRec resume];
+            }];
+            CCMenu *recMenu = [CCMenu menuWithItems:recPause, resumePause, nil];
+            [recMenu alignItemsHorizontallyWithPadding:20];
+            [recMenu setPosition:ccp(size.width/2, size.height/2 - 150)];
+            [self addChild:recMenu];
+
         }
 
         [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"track.mp3" loop:YES];

@@ -28,6 +28,9 @@ public:
     void recStopCB(CCObject* pSender);
     void presentShareCB(CCObject* pSender);
 
+    void recPauseCB(CCObject* pSender);
+    void recResumeCB(CCObject* pSender);
+
     void ccTouchesBegan(CCSet *pTouches, CCEvent *pEvent);
     void ccTouchesMoved(CCSet *pTouches, CCEvent *pEvent);
     void ccTouchesEnded(CCSet *pTouches, CCEvent *pEvent);
