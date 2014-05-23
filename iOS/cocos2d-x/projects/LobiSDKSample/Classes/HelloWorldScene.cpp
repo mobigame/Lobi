@@ -84,6 +84,10 @@ bool HelloWorld::init()
         addChild(menu, 1);
     }
 
+    this->status = CCSprite::create("stopindicator.png");
+    status->setPosition(ccp(size.width - status->getContentSize().width, size.height - status->getContentSize().height));
+    addChild(status);
+
     SimpleAudioEngine::sharedEngine()->playBackgroundMusic("track.mp3", true);
     
     return true;
@@ -210,11 +214,15 @@ void HelloWorld::sendRankingCB(CCObject* pSender)
 
 void HelloWorld::recStartCB(CCObject* pSender)
 {
+    CCTexture2D *texture = CCTextureCache::sharedTextureCache()->addImage("recindicator.png");
+    this->status->setTexture(texture);
     LobiInterface::recStart();
 }
 
 void HelloWorld::recStopCB(CCObject* pSender)
 {
+    CCTexture2D *texture = CCTextureCache::sharedTextureCache()->addImage("stopindicator.png");
+    this->status->setTexture(texture);
     LobiInterface::recStop();
 }
 
@@ -225,11 +233,19 @@ void HelloWorld::presentShareCB(CCObject* pSender)
 
 void HelloWorld::recPauseCB(CCObject* pSender)
 {
+    if (LobiInterface::isRecording()) {
+        CCTexture2D *texture = CCTextureCache::sharedTextureCache()->addImage("pauseindicator.png");
+        this->status->setTexture(texture);
+    }
     LobiInterface::recPause();
 }
 
 void HelloWorld::recResumeCB(CCObject* pSender)
 {
+    if (LobiInterface::isRecording()) {
+        CCTexture2D *texture = CCTextureCache::sharedTextureCache()->addImage("recindicator.png");
+        this->status->setTexture(texture);
+    }
     LobiInterface::recResume();
 }
 

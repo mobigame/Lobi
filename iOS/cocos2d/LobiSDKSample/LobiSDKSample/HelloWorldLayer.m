@@ -115,6 +115,9 @@
         
         {
             CCMenuItem *recStart = [CCMenuItemFont itemWithString:@"録画開始" block:^(id sender) {
+                CCTexture2D *texture = [[CCTextureCache sharedTextureCache] addImage:@"recindicator.png"];
+                [status setTexture:texture];
+
                 static int const offset   = 8;
                 static int const wipesize = 100;
                 [LobiRec sharedInstance].liveWipeStatus  = KLVWipeStatusInCamera;
@@ -131,6 +134,8 @@
             }];
             
             CCMenuItem *recStop = [CCMenuItemFont itemWithString:@"録画停止" block:^(id sender) {
+                CCTexture2D *texture = [[CCTextureCache sharedTextureCache] addImage:@"stopindicator.png"];
+                [status setTexture:texture];
                 [LobiRec stopCapturing];
             }];
             
@@ -153,9 +158,17 @@
             [self addChild:menu];
             
             CCMenuItem *recPause = [CCMenuItemFont itemWithString:@"ポーズ" block:^(id sender) {
+                if ([LobiRec sharedInstance].isCapturing) {
+                    CCTexture2D *texture = [[CCTextureCache sharedTextureCache] addImage:@"pauseindicator.png"];
+                    [status setTexture:texture];
+                }
                 [LobiRec pause];
             }];
             CCMenuItem *resumePause = [CCMenuItemFont itemWithString:@"再開" block:^(id sender) {
+                if ([LobiRec sharedInstance].isCapturing) {
+                    CCTexture2D *texture = [[CCTextureCache sharedTextureCache] addImage:@"recindicator.png"];
+                    [status setTexture:texture];
+                }
                 [LobiRec resume];
             }];
             CCMenu *recMenu = [CCMenu menuWithItems:recPause, resumePause, nil];
@@ -164,6 +177,10 @@
             [self addChild:recMenu];
 
         }
+        
+        status = [CCSprite spriteWithFile:@"stopindicator.png"];
+        [status setPosition:ccp(size.width -status.contentSize.width, size.height -status.contentSize.height)];
+        [self addChild:status];
 
         [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"track.mp3" loop:YES];
 		[self scheduleUpdate];

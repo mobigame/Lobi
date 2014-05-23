@@ -19,8 +19,10 @@ namespace LobiInterface
     
     void recStart();
     void recStop();
+    bool isRecording();
     void recPause();
     void recResume();
+    bool isPause();
 
     void presentShare();
     void wipePostion(float x, float y);

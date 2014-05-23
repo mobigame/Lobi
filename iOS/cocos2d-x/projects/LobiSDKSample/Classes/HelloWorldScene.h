@@ -8,8 +8,8 @@ using namespace cocos2d;
 class HelloWorld : public CCLayer
 {
 protected:
-    cocos2d::CCParticleSystem *emitter;
-
+    CCParticleSystem *emitter;
+    CCSprite *status;
 public:
 
     virtual bool init();

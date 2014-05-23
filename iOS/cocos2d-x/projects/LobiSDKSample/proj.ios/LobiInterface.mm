@@ -110,3 +110,14 @@ void LobiInterface::presentShare()
                            cocos2d::CCDirector::sharedDirector()->startAnimation();
                        }];
 }
+
+
+bool LobiInterface::isRecording()
+{
+    return [LobiRec sharedInstance].isCapturing;
+}
+
+bool LobiInterface::isPause()
+{
+    return [LobiRec isPause];
+}

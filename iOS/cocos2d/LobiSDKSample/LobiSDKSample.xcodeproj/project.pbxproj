@@ -149,6 +149,9 @@
 		493C547318E302FB00C12896 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 493C547218E302FB00C12896 /* libsqlite3.0.dylib */; };
 		493C548518E3098B00C12896 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493C52A718E2D5FA00C12896 /* QuartzCore.framework */; };
 		493C548618E3099000C12896 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493C52B518E2D5FA00C12896 /* CoreGraphics.framework */; };
+		4975C881192F47500088A3C6 /* pauseindicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 4975C87E192F47500088A3C6 /* pauseindicator.png */; };
+		4975C882192F47500088A3C6 /* recindicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 4975C87F192F47500088A3C6 /* recindicator.png */; };
+		4975C883192F47500088A3C6 /* stopindicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 4975C880192F47500088A3C6 /* stopindicator.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -440,6 +443,9 @@
 		493C546618E2E04100C12896 /* nuko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nuko.png; path = Resources/nuko.png; sourceTree = "<group>"; };
 		493C546718E2E04100C12896 /* track.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = track.mp3; path = Resources/track.mp3; sourceTree = "<group>"; };
 		493C547218E302FB00C12896 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		4975C87E192F47500088A3C6 /* pauseindicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pauseindicator.png; path = Resources/pauseindicator.png; sourceTree = "<group>"; };
+		4975C87F192F47500088A3C6 /* recindicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recindicator.png; path = Resources/recindicator.png; sourceTree = "<group>"; };
+		4975C880192F47500088A3C6 /* stopindicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stopindicator.png; path = Resources/stopindicator.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -526,6 +532,9 @@
 		493C52BA18E2D5FA00C12896 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4975C87E192F47500088A3C6 /* pauseindicator.png */,
+				4975C87F192F47500088A3C6 /* recindicator.png */,
+				4975C880192F47500088A3C6 /* stopindicator.png */,
 				493C546618E2E04100C12896 /* nuko.png */,
 				493C546718E2E04100C12896 /* track.mp3 */,
 				493C52BB18E2D5FA00C12896 /* Default.png */,
@@ -961,13 +970,16 @@
 				493176EC18EBE7DE00E83DD3 /* LobiCore.bundle in Resources */,
 				493C52CC18E2D5FA00C12896 /* Icon.png in Resources */,
 				493C542718E2D60100C12896 /* ChangeLog in Resources */,
+				4975C883192F47500088A3C6 /* stopindicator.png in Resources */,
 				493C52BE18E2D5FA00C12896 /* Default@2x.png in Resources */,
 				493C52C818E2D5FA00C12896 /* Icon-Small.png in Resources */,
 				493C52C418E2D5FA00C12896 /* Icon-72.png in Resources */,
 				493C546918E2E04100C12896 /* track.mp3 in Resources */,
 				493C546818E2E04100C12896 /* nuko.png in Resources */,
+				4975C881192F47500088A3C6 /* pauseindicator.png in Resources */,
 				493C52BC18E2D5FA00C12896 /* Default.png in Resources */,
 				493C52C618E2D5FA00C12896 /* Icon-Small-50.png in Resources */,
+				4975C882192F47500088A3C6 /* recindicator.png in Resources */,
 				493C52D118E2D5FA00C12896 /* iTunesArtwork in Resources */,
 				493C52CA18E2D5FA00C12896 /* Icon-Small@2x.png in Resources */,
 				493C52C218E2D5FA00C12896 /* Default-Landscape~ipad.png in Resources */,
