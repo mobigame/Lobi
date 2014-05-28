@@ -80,11 +80,17 @@
 	
 	<option value="//api/name/isMicEnabled:">&nbsp;&nbsp;&nbsp;&nbsp;+ isMicEnabled:</option>
 	
+	<option value="//api/name/isPause">&nbsp;&nbsp;&nbsp;&nbsp;+ isPause</option>
+	
+	<option value="//api/name/pause">&nbsp;&nbsp;&nbsp;&nbsp;+ pause</option>
+	
 	<option value="//api/name/prepareFrame">&nbsp;&nbsp;&nbsp;&nbsp;+ prepareFrame</option>
 	
 	<option value="//api/name/presentLobiPlay">&nbsp;&nbsp;&nbsp;&nbsp;+ presentLobiPlay</option>
 	
 	<option value="//api/name/presentLobiPostWithTitle:postDescrition:postScore:postCategory:prepareHandler:afterHandler:">&nbsp;&nbsp;&nbsp;&nbsp;+ presentLobiPostWithTitle:postDescrition:postScore:postCategory:prepareHandler:afterHandler:</option>
+	
+	<option value="//api/name/resume">&nbsp;&nbsp;&nbsp;&nbsp;+ resume</option>
 	
 	<option value="//api/name/setCurrentContext:withGLView:">&nbsp;&nbsp;&nbsp;&nbsp;+ setCurrentContext:withGLView:</option>
 	
@@ -164,11 +170,17 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isMicEnabled:">isMicEnabled:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isPause">isPause</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pause">pause</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareFrame">prepareFrame</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/presentLobiPlay">presentLobiPlay</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/presentLobiPostWithTitle:postDescrition:postScore:postCategory:prepareHandler:afterHandler:">presentLobiPostWithTitle:postDescrition:postScore:postCategory:prepareHandler:afterHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resume">resume</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCurrentContext:withGLView:">setCurrentContext:withGLView:</a></span></li>
 	
@@ -410,6 +422,24 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isMicEnabled:">+&nbsp;isMicEnabled:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isPause">+&nbsp;isPause</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pause">+&nbsp;pause</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resume">+&nbsp;resume</a></code>
 	</span>
 	
 	
@@ -1127,6 +1157,83 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/isPause" title="isPause"></a>
+	<h3 class="subsubtitle method-title">isPause</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>録画ポーズ状態を取得します</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isPause</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ポーズ中の場合YESを返します。</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiRec.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pause" title="pause"></a>
+	<h3 class="subsubtitle method-title">pause</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>録画のポーズを行います。startCapturingを行うことでポーズが解除されます。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)pause</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiRec.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/prepareFrame" title="prepareFrame"></a>
 	<h3 class="subsubtitle method-title">prepareFrame</h3>
 	
@@ -1253,6 +1360,42 @@
 		</dl>
 		
 	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">LobiRec.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resume" title="resume"></a>
+	<h3 class="subsubtitle method-title">resume</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>録画のポーズの解除を行います。</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)resume</code></div>
+
+    
 	
 	
 	
@@ -1506,7 +1649,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 KAYAC. All rights reserved. (Last updated: 2014-04-24)</span><br />
+						<p><span class="copyright">&copy; 2014 KAYAC. All rights reserved. (Last updated: 2014-05-28)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
