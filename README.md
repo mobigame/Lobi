@@ -25,6 +25,12 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.2.23 - 2014/05/28
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.23.zip)
+    - ios4.3にて利用時にクラッシュしないようにする  
+     [https://github.com/kayac/Lobi/issues/153](https://github.com/kayac/Lobi/issues/153)   
+
+
 - v5.2.22 - 2014/05/23
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.22.zip)
     - 録画のポーズ機能の実装  
