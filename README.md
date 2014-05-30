@@ -33,6 +33,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.2.24 - 2014/05/30
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.24.zip)
+    - Unity ディレクトリの移動  
+    - Android Rec Unity の追加  
+
 - v5.2.23 - 2014/05/28
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.23.zip)
     - ios4.3にて利用時にクラッシュしないようにする  
