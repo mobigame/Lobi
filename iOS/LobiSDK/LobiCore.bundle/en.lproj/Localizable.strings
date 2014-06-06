@@ -8,6 +8,7 @@
 "KLC_MENU_FRIENDS" = "FRIENDS";
 "KLC_MENU_INVITE" = "INVITE";
 "KLC_MENU_BIND" = "BIND Lobi";
+"KLC_MENU_CONNECTAPP" = "Connect to Lobi";
 "KLC_MENU_AD_ROW_TITLE_APPS" = "HOT GAMES";
 "KLC_PROFILE_TITLE_NORMAL" = "Profile";
 "KLC_PROFILE_MENU_TITLE_ACCUSE" = "Accuse";
@@ -18,8 +19,11 @@
 "KLC_PROFILE_BUTTON_CHAT" = "Chat";
 "KLC_PROFILE_CONTACTS" = "Lobi friends %@";
 "KLC_PROFILE_DESCRIPTION_EDIT_TEXT" = "Profile";
+"KLC_PROFILE_DEFAULT_USER_HEADER" = "Lobi's Profile";
+"KLC_PROFILE_NOT_CONNECT_LOBI" = "Not Connected to Lobi";
 "KLC_FRIEND_LIST" = "Friends";
 "KLC_FRIEND_ADD" = "Add friends";
+"KLC_LOBI_FRIEND_ADD" = "Add Lobi friends";
 "KLC_SORT_NAME" = "Name";
 "KLC_SORT_NEW" = "New";
 "KLC_FRIEND_SEARCH" = "Search";

@@ -33,6 +33,13 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.2.25 - 2014/06/06
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.25.zip)
+    - 同じゲームで遊んでいるLobi本体のユーザーを連携時に自動追加する機能の追加     
+    [https://github.com/kayac/Lobi/issues/153](https://github.com/kayac/Lobi/issues/156)
+    - CMPopTipViewが競合する問題に対応する。  
+    [https://github.com/kayac/Lobi/issues/157](https://github.com/kayac/Lobi/issues/157)
+
 - v5.2.24 - 2014/05/30
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.24.zip)
     - Unity ディレクトリの移動  

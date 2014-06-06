@@ -137,6 +137,7 @@
 "KLM_SERVER_TITLE" = "Server";
 "KLM_SETTINGS_SHOUT_NOTIFY" = "Shout Notification";
 "KLM_SETTINGS_SECTION_TITLE_SHOUT" = "Receive Shout";
+"KLM_SETTINGS_SECTION_TITLE_CONNECT" = "Connect Lobi & Receive Shout";
 "KLM_SETTINGS_SECTION_TITLE_CHAT" = "Chat";
 "KLM_FACEBOOK_CHAT" = "Chat";
 "KLM_SERVER_TEST" = "Test server";
