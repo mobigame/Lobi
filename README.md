@@ -5,6 +5,14 @@ Lobi
 ------------
 
 バージョン毎のSDK及びサンプルコードがパッケージされたものが取得できます。  
+
+- iOS
+	- チャット / LobiRec /ランキング
+		- CocoaTouch / Unity / Cocos2d / Cocos2d-x  
+- Android
+	- LobiRec / ランキング
+		- AndroidOS / Unity / Cocos2d-x  
+
 [https://github.com/kayac/Lobi/releases](https://github.com/kayac/Lobi/releases)
 
 登録
@@ -25,6 +33,17 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.2.24 - 2014/05/30
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.24.zip)
+    - Unity ディレクトリの移動  
+    - Android Rec Unity の追加  
+
+- v5.2.23 - 2014/05/28
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.23.zip)
+    - ios4.3にて利用時にクラッシュしないようにする  
+     [https://github.com/kayac/Lobi/issues/153](https://github.com/kayac/Lobi/issues/153)   
+
+
 - v5.2.22 - 2014/05/23
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.22.zip)
     - 録画のポーズ機能の実装  
@@ -367,7 +386,7 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 利用規約
 ------------
 開発会社等利用規約  
-[https://developer.lobi.co/terms/ja](https://developer.lobi.co/terms/ja)  
+[https://developer.lobi.co/ja/terms](https://developer.lobi.co/ja/terms)  
 
 Terms of Use for Developers  
-[https://developer.lobi.co/terms/en](https://developer.lobi.co/terms/en)  
+[https://developer.lobi.co/en/terms](https://developer.lobi.co/en/terms)  
