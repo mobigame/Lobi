@@ -8,6 +8,7 @@
 "KLC_MENU_FRIENDS" = "友だちリスト";
 "KLC_MENU_INVITE" = "友だちを招待する";
 "KLC_MENU_BIND" = "Lobiと連携";
+"KLC_MENU_CONNECTAPP" = "Lobiとつなげる";
 "KLC_MENU_AD_ROW_TITLE_APPS" = "人気のゲーム";
 "KLC_PROFILE_TITLE_NORMAL" = "プロフィール";
 "KLC_PROFILE_MENU_TITLE_ACCUSE" = "通報する";
@@ -18,8 +19,11 @@
 "KLC_PROFILE_BUTTON_CHAT" = "チャットする";
 "KLC_PROFILE_CONTACTS" = "友だち %@人";
 "KLC_PROFILE_DESCRIPTION_EDIT_TEXT" = "プロフィールを入力できます";
+"KLC_PROFILE_DEFAULT_USER_HEADER" = "Lobiアカウント";
+"KLC_PROFILE_NOT_CONNECT_LOBI" = "Lobiとつながっていません";
 "KLC_FRIEND_LIST" = "友だちリスト";
 "KLC_FRIEND_ADD" = "友だち追加";
+"KLC_LOBI_FRIEND_ADD" = "Lobiの友だちを追加";
 "KLC_SORT_NAME" = "名前";
 "KLC_SORT_NEW" = "新着";
 "KLC_FRIEND_SEARCH" = "絞り込み";
