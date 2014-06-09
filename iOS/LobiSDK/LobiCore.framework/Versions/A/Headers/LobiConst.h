@@ -9,3 +9,9 @@ typedef enum {
     LobiPermissionTypeLeader,
     LobiPermissionTypeSuperUser,
 } LobiPermissionType;
+
+typedef NS_ENUM (NSInteger, LobiPopOverArrowDirection) {
+    LobiPopOverArrowDirectionUp,
+    LobiPopOverArrowDirectionLeft,
+    LobiPopOverArrowDirectionRight,
+};

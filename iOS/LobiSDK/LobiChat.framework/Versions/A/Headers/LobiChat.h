@@ -1,16 +1,7 @@
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import <LobiCore/LobiCore.h>
-#import <LobiCore/LobiAPI.h>
-#import <LobiCore/LobiNetworkResponse.h>
-#import <LobiCore/LobiConst.h>
-#import "LobiAPI+Chat.h"
-
-typedef NS_ENUM(NSUInteger, LobiChatGroupListType)
-{
-    LobiChatGroupListTypePublic,
-    LobiChatGroupListTypePrivate,
-};
+#import "LobiChatConst.h"
 
 /**
  LobiSDKのチャット機能を制御するクラスです。

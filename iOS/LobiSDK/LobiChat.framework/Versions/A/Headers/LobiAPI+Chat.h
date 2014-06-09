@@ -1,5 +1,4 @@
 
-#import <LobiCore/LobiCore.h>
 #import <LobiCore/LobiAPI.h>
 #import <LobiCore/LobiNetworkResponse.h>
 #import <LobiCore/LobiConst.h>
