@@ -37,6 +37,7 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 - v5.2.26 - 2014/06/09
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.26.zip)
     - 録画非対応端末でのバグを修正
+    - iOS4.3をDeploymentTargetとした場合、起動できるように改修
 
 - v5.2.25 - 2014/06/06
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.25.zip)
