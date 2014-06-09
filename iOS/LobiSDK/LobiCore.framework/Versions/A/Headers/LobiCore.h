@@ -5,23 +5,11 @@
 //  Created by takahashi-kohei on 2014/03/11.
 //  Copyright (c) 2014年 面白法人カヤック. All rights reserved.
 
+#ifndef _LobiCore_h
+#define _LobiCore_h
+
 #import <Foundation/Foundation.h>
-
-extern NSString *const LobiChatKlass;
-extern NSString *const LobiRankingKlass;
-extern NSString *const LobiRecKlass;
-
-typedef NS_ENUM (NSInteger, LobiKlassTag) {
-    LobiChatKlassTag    = 1,
-    LobiRankingKlassTag,
-    LobiRecKlassTag
-};
-
-typedef NS_ENUM (NSInteger, LobiPopOverArrowDirection) {
-    LobiPopOverArrowDirectionUp,
-    LobiPopOverArrowDirectionLeft,
-    LobiPopOverArrowDirectionRight,
-};
+#import "LobiConst.h"
 
 /**
  Lobiのコア機能（アカウント関連の操作と基本画面）を扱うクラスです。
@@ -121,3 +109,5 @@ typedef NS_ENUM (NSInteger, LobiPopOverArrowDirection) {
 @property (nonatomic, readonly) NSString *adPlatformId;
 
 @end
+
+#endif

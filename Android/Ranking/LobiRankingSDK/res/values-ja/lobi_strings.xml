@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lobirec_profile">プロフィール</string>
+    <string name="lobirec_playlist">動画一覧</string>
+    <string name="lobirec_help">ヘルプ</string>
+    <string name="lobirec_video_list_none">動画を投稿していません</string>
+
+</resources>

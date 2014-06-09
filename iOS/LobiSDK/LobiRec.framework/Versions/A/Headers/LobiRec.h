@@ -10,59 +10,7 @@
 #import <OpenGLES/ES1/glext.h>
 #import <OpenGLES/ES2/glext.h>
 #import <UIKit/UIKit.h>
-
-/**
- *  ゲーム録画中のワイプ表示
- */
-typedef NS_ENUM(NSUInteger, KLVLiveWipeStatus) {
-    /**
-     *  ワイプなし
-     */
-    KLVWipeStatusNone = 0,
-    /**
-     *  インカメラワイプ
-     */
-    KLVWipeStatusInCamera,
-    /**
-     *  アイコン
-     */
-    KLVWipeStatusIcon,
-};
-
-/**
- *  ゲーム録画ファイルの保存領域が100MB以下になった際に録画処理が停止され、userInfoにnilを格納して通知する通知名称です。
- */
-extern NSString *const KLVDryingUpInStorageNotification;
-
-/**
- *  ゲーム録画情報をサーバにPOSTした際に、userInfoに"url"をキーとしたhttp://play.lobi.coのプレビューURLを格納して通知する通知名称です。
- */
-extern NSString *const KLVMovieCreatedNotification;
-
-/**
- *  ゲーム録画情報をサーバにPOST中エラーが発生した際に、userInfoにnilを格納して通知する通知名称です。
- */
-extern NSString *const KLVMovieCreatedErrorNotification;
-
-/**
- *  ゲーム録画ファイルをサーバにPOSTした際に、userInfoにnilを格納して通知する通知名称です。
- */
-extern NSString *const KLVMovieUploadedNotification;
-
-/**
- *  ゲーム録画ファイルをサーバにPOSTエラーが発生した際に、userInfoにnilを格納して通知する通知名称です。
- */
-extern NSString *const KLVMovieUploadedErrorNotification;
-
-/**
- *  動画ポストviewControllerを閉じた時に、userInfoに"tryPost"キー、BOOL値を値とした動画のポスト処理の有無を格納して通知する通知名称です。
- */
-extern NSString *const KLVDismissingPostVideoViewControllerNotification;
-
-/**
- *  mic録音をYESに設定した際にプライバシーにより設定できなかった場合に、userInfoにnilを格納して通知する通知名称です。
- */
-extern NSString *const KLVMicEnableErrorNotification;
+#import "LobiRecConst.h"
 
 /**
  ゲーム録画エンジンクラス。シングルトンでインスタンスを提供します。
@@ -88,7 +36,7 @@ extern NSString *const KLVMicEnableErrorNotification;
  
  - KLVDismissingPostVideoViewControllerNotification;
  動画ポストviewControllerを閉じた時に、userInfoに動画のポスト処理の有無を格納して通知する通知名称です。
-
+ 
  - KLVMicEnableErrorNotification;
  マイク録音をYESに設定した際にプライバシーにより設定できなかった場合に、userInfoにnilを格納して通知する通知名称です。
  */

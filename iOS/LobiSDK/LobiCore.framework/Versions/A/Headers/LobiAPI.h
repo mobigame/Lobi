@@ -6,6 +6,10 @@
 //  Copyright (c) 2014年 面白法人カヤック. All rights reserved.
 //
 
+#ifndef _LobiAPI_h
+#define _LobiAPI_h
+
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "LobiNetworkResponse.h"
 
@@ -55,3 +59,5 @@
 
 
 @end
+
+#endif
