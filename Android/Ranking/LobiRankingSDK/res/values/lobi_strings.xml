@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lobirec_profile">profile</string>
+    <string name="lobirec_playlist">playlist</string>
+    <string name="lobirec_help">help</string>
+    <string name="lobirec_video_list_none">No Videos</string>
+
+</resources>
