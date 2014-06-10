@@ -33,6 +33,10 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.2.27 - 2014/06/10
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.27.zip)
+    - EGORefreshが重複してしまっていた問題への対応     
+    [https://github.com/kayac/Lobi/issues/161](https://github.com/kayac/Lobi/issues/161)
 
 - v5.2.26 - 2014/06/09
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.26.zip)
