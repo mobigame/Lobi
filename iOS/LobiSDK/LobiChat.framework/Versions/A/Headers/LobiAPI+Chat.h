@@ -18,7 +18,7 @@
  * @param params パラメータを指定します。
  */
 + (void)callAPI:(NSString *)path
-//         method:(LobiHTTPMethod)method
+         method:(LobiHTTPMethod)method
          params:(NSDictionary *)params
      completion:(LobiNetworkHandler)handler;
 
