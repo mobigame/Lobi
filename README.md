@@ -33,6 +33,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+- v5.2.28 - 2014/06/12
+	[ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.28.zip)
+	- チャットのジャンプ機能不具合修正     
+	[https://github.com/kayac/Lobi/issues/163](https://github.com/kayac/Lobi/issues/163)
+	
 - v5.2.27 - 2014/06/10
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.27.zip)
     - EGORefreshが重複してしまっていた問題への対応     
