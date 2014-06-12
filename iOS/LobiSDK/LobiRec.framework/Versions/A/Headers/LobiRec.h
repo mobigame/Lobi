@@ -78,8 +78,9 @@
 
 /**
  *  アフレコ録画中のボリュームの大きさを設定します。(0.0 - 1.0)
+ *  値を入力しても何も行われません。また、常に0.0が取得できます。
  */
-@property (nonatomic, assign) CGFloat           afterRecordingVolume;
+@property (nonatomic, assign) CGFloat           afterRecordingVolume __attribute__ ((deprecated));
 
 /**
  *  録画中のマイク入力ボリュームの大きさを設定します。(0.0 - 1.0)
