@@ -34,6 +34,11 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 リリースノート
 ----------------------------
 
+- v5.2.30 - 2014/06/13
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.30.zip)
+    - Android 特定条件での色ずれを修正
+    - Android 特定条件での録画中の画面揺れを修正
+
 - v5.2.29 - 2014/06/13
     [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.29.zip)
     - Adreno GPUでの録画処理を高速化
