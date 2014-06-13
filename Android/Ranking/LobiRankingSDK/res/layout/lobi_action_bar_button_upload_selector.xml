@@ -1,4 +1,5 @@
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:lobi="http://schemas.android.com/apk/res-auto">
     <!-- pressed -->
     <item
         android:state_enabled="true"

@@ -33,6 +33,13 @@ SDKを使用するにはアプリケーションの登録しクライアントID
 
 リリースノート
 ----------------------------
+
+- v5.2.29 - 2014/06/13
+    [ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.29.zip)
+    - Adreno GPUでの録画処理を高速化
+    - Androidでの録画品質の調整
+    - Androidでの録画ファイルの削除タイミングの変更
+
 - v5.2.28 - 2014/06/12
 	[ダウンロード](https://github.com/kayac/Lobi/archive/v5.2.28.zip)
 	- チャットのジャンプ機能不具合修正     
